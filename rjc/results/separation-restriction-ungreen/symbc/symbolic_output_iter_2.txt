@@ -1,0 +1,2171 @@
+Running Symbolic PathFinder ...
+symbolic.dp=coral
+symbolic.string_dp_timeout_ms=0
+symbolic.string_dp=none
+symbolic.min_int=-1000000
+symbolic.max_int=1000000
+symbolic.min_double=-8.0
+symbolic.max_double=7.0
+JavaPathfinder v6.0 (rev ${version}) - (C) RIACS/NASA Ames Research Center
+
+
+====================================================== system under test
+application: rjc/RJCMain.java
+
+====================================================== search started: 10/16/14 9:47 PM
+
+***Execute symbolic INVOKEVIRTUAL: MainSymbolic(DDDDDD[D[D)V  ( in1_0_1_SYMREAL, in1_1_2_SYMREAL, in1_2_3_SYMREAL, in2_0_4_SYMREAL, in2_1_5_SYMREAL, in2_2_6_SYMREAL, out1_CONCRETE, out2_CONCRETE )  
+
+====================================================== search constraint
+depth limit reached: 50
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.jvm.Verify.getBoolean(Verify.java)
+	at rjc.rjc.MainSymbolic(rjc.java:488)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== search constraint
+depth limit reached: 50
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.jvm.Verify.ignoreIf(Verify.java)
+	at rjc.rjc.MainSymbolic(rjc.java:485)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== search constraint
+depth limit reached: 50
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at utilMDE.FuzzyFloat.eq(FuzzyFloat.java:91)
+	at utilMDE.FuzzyFloat.ne(FuzzyFloat.java:115)
+	at rjc.rjc.MainSymbolic(rjc.java:473)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+Property Violated: PC is constraint # = 1
+in2_1_5_SYMREAL[0.006285533905932738] == CONST_0.006285533905932738
+SPC # = 0
+
+Property Violated: result is  "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.u_Control_Law_100000081_class_member17.Value944, in2_1)..."
+****************************
+
+====================================================== error #1
+gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.u_Control_Law_100000081_class_member17.Value944, in2_1)
+	at rjc.rjc.MainSymbolic(rjc.java:475)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at rjc.rjc.MainSymbolic(rjc.java:475)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== search constraint
+depth limit reached: 50
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at rjc.rjc.MainSymbolic(rjc.java:475)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== search constraint
+depth limit reached: 50
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at utilMDE.FuzzyFloat.eq(FuzzyFloat.java:91)
+	at utilMDE.FuzzyFloat.ne(FuzzyFloat.java:115)
+	at rjc.rjc.MainSymbolic(rjc.java:473)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+in2_2_6_SYMREAL < CONST_0.0 &&
+CONST_0.5 < in2_2_6_SYMREAL
+SPC # = 0
+
+
+====================================================== search constraint
+depth limit reached: 50
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at utilMDE.FuzzyFloat.eq(FuzzyFloat.java:91)
+	at utilMDE.FuzzyFloat.ne(FuzzyFloat.java:115)
+	at rjc.rjc.MainSymbolic(rjc.java:465)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+CONST_0.0 == in2_2_6_SYMREAL &&
+CONST_0.5 < in2_2_6_SYMREAL
+SPC # = 0
+
+
+====================================================== search constraint
+depth limit reached: 50
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at utilMDE.FuzzyFloat.eq(FuzzyFloat.java:91)
+	at utilMDE.FuzzyFloat.ne(FuzzyFloat.java:115)
+	at rjc.rjc.MainSymbolic(rjc.java:465)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== search constraint
+depth limit reached: 50
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at utilMDE.FuzzyFloat.eq(FuzzyFloat.java:105)
+	at utilMDE.FuzzyFloat.ne(FuzzyFloat.java:115)
+	at rjc.rjc.MainSymbolic(rjc.java:465)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+Property Violated: PC is constraint # = 1
+in2_2_6_SYMREAL[0.5] == CONST_0.5
+SPC # = 0
+
+Property Violated: result is  "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Gain1030, in2_2)..."
+****************************
+
+====================================================== error #2
+gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Gain1030, in2_2)
+	at rjc.rjc.MainSymbolic(rjc.java:467)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== snapshot #2
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at rjc.rjc.MainSymbolic(rjc.java:467)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== search constraint
+depth limit reached: 50
+
+====================================================== snapshot #2
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at utilMDE.FuzzyFloat.eq(FuzzyFloat.java:105)
+	at utilMDE.FuzzyFloat.ne(FuzzyFloat.java:115)
+	at rjc.rjc.MainSymbolic(rjc.java:465)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+here!!!!!
+
+====================================================== search constraint
+depth limit reached: 50
+
+====================================================== snapshot #2
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.jvm.Verify.ignoreIf(Verify.java)
+	at rjc.rjc.MainSymbolic(rjc.java:469)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+in2_2_6_SYMREAL > CONST_0.0 &&
+CONST_0.5 > in2_2_6_SYMREAL
+SPC # = 0
+
+
+====================================================== search constraint
+depth limit reached: 50
+
+====================================================== snapshot #2
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at utilMDE.FuzzyFloat.eq(FuzzyFloat.java:91)
+	at utilMDE.FuzzyFloat.ne(FuzzyFloat.java:115)
+	at rjc.rjc.MainSymbolic(rjc.java:465)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+in2_2_6_SYMREAL < CONST_0.0 &&
+CONST_6.25E-4 < in2_2_6_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+CONST_0.0 == in2_2_6_SYMREAL &&
+CONST_6.25E-4 < in2_2_6_SYMREAL
+SPC # = 0
+
+
+====================================================== search constraint
+depth limit reached: 50
+
+====================================================== snapshot #2
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at utilMDE.FuzzyFloat.eq(FuzzyFloat.java:106)
+	at utilMDE.FuzzyFloat.ne(FuzzyFloat.java:115)
+	at rjc.rjc.MainSymbolic(rjc.java:457)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 3
+in2_2_6_SYMREAL == CONST_0.0 &&
+in2_2_6_SYMREAL > CONST_0.0 &&
+CONST_6.25E-4 < in2_2_6_SYMREAL
+SPC # = 0
+
+
+====================================================== search constraint
+depth limit reached: 50
+
+====================================================== snapshot #2
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at utilMDE.FuzzyFloat.eq(FuzzyFloat.java:105)
+	at utilMDE.FuzzyFloat.ne(FuzzyFloat.java:115)
+	at rjc.rjc.MainSymbolic(rjc.java:457)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+Property Violated: PC is constraint # = 1
+in2_2_6_SYMREAL[6.25E-4] == CONST_6.25E-4
+SPC # = 0
+
+Property Violated: result is  "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Gain913, in2_2)..."
+****************************
+
+====================================================== error #3
+gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Gain913, in2_2)
+	at rjc.rjc.MainSymbolic(rjc.java:459)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== snapshot #3
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at rjc.rjc.MainSymbolic(rjc.java:459)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== search constraint
+depth limit reached: 50
+
+====================================================== snapshot #3
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at utilMDE.FuzzyFloat.eq(FuzzyFloat.java:106)
+	at utilMDE.FuzzyFloat.ne(FuzzyFloat.java:115)
+	at rjc.rjc.MainSymbolic(rjc.java:457)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 3
+in2_2_6_SYMREAL == CONST_0.0 &&
+in2_2_6_SYMREAL < CONST_0.0 &&
+CONST_6.25E-4 > in2_2_6_SYMREAL
+SPC # = 0
+
+
+====================================================== search constraint
+depth limit reached: 50
+
+====================================================== snapshot #3
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at utilMDE.FuzzyFloat.eq(FuzzyFloat.java:105)
+	at utilMDE.FuzzyFloat.ne(FuzzyFloat.java:115)
+	at rjc.rjc.MainSymbolic(rjc.java:457)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+here!!!!!
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+in2_2_6_SYMREAL > CONST_0.0 &&
+CONST_6.25E-4 > in2_2_6_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+in2_0_4_SYMREAL < CONST_0.0 &&
+CONST_2.0 < in2_0_4_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+CONST_0.0 == in2_0_4_SYMREAL &&
+CONST_2.0 < in2_0_4_SYMREAL
+SPC # = 0
+
+
+====================================================== search constraint
+depth limit reached: 50
+
+====================================================== snapshot #3
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.jvm.Verify.ignoreIf(Verify.java)
+	at rjc.rjc.MainSymbolic(rjc.java:453)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 4
+CONST_0.9999 == (CONST_2.0 / in2_0_4_SYMREAL) &&
+in2_0_4_SYMREAL != CONST_0.0 &&
+in2_0_4_SYMREAL > CONST_0.0 &&
+CONST_2.0 < in2_0_4_SYMREAL
+SPC # = 0
+
+
+====================================================== search constraint
+depth limit reached: 50
+
+====================================================== snapshot #3
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at utilMDE.FuzzyFloat.eq(FuzzyFloat.java:106)
+	at utilMDE.FuzzyFloat.ne(FuzzyFloat.java:115)
+	at rjc.rjc.MainSymbolic(rjc.java:449)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== search constraint
+depth limit reached: 50
+
+====================================================== snapshot #3
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at utilMDE.FuzzyFloat.eq(FuzzyFloat.java:106)
+	at utilMDE.FuzzyFloat.ne(FuzzyFloat.java:115)
+	at rjc.rjc.MainSymbolic(rjc.java:449)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 3
+in2_0_4_SYMREAL == CONST_0.0 &&
+in2_0_4_SYMREAL > CONST_0.0 &&
+CONST_2.0 < in2_0_4_SYMREAL
+SPC # = 0
+
+Property Violated: PC is constraint # = 1
+in2_0_4_SYMREAL[2.0] == CONST_2.0
+SPC # = 0
+
+Property Violated: result is  "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Value793, in2_0)..."
+****************************
+
+====================================================== error #4
+gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Value793, in2_0)
+	at rjc.rjc.MainSymbolic(rjc.java:451)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== snapshot #4
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at rjc.rjc.MainSymbolic(rjc.java:451)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== search constraint
+depth limit reached: 50
+
+====================================================== snapshot #4
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.jvm.Verify.ignoreIf(Verify.java)
+	at rjc.rjc.MainSymbolic(rjc.java:453)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 4
+CONST_0.9999 == (CONST_2.0 / in2_0_4_SYMREAL) &&
+in2_0_4_SYMREAL != CONST_0.0 &&
+in2_0_4_SYMREAL < CONST_0.0 &&
+CONST_2.0 > in2_0_4_SYMREAL
+SPC # = 0
+
+
+====================================================== search constraint
+depth limit reached: 50
+
+====================================================== snapshot #4
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at utilMDE.FuzzyFloat.eq(FuzzyFloat.java:106)
+	at utilMDE.FuzzyFloat.ne(FuzzyFloat.java:115)
+	at rjc.rjc.MainSymbolic(rjc.java:449)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 4
+(CONST_2.0 / in2_0_4_SYMREAL) > CONST_0.9999 &&
+in2_0_4_SYMREAL != CONST_0.0 &&
+in2_0_4_SYMREAL < CONST_0.0 &&
+CONST_2.0 > in2_0_4_SYMREAL
+SPC # = 0
+
+
+====================================================== search constraint
+depth limit reached: 50
+
+====================================================== snapshot #4
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at utilMDE.FuzzyFloat.eq(FuzzyFloat.java:106)
+	at utilMDE.FuzzyFloat.ne(FuzzyFloat.java:115)
+	at rjc.rjc.MainSymbolic(rjc.java:449)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 3
+in2_0_4_SYMREAL == CONST_0.0 &&
+in2_0_4_SYMREAL < CONST_0.0 &&
+CONST_2.0 > in2_0_4_SYMREAL
+SPC # = 0
+
+here!!!!!
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 4
+(CONST_2.0 / in2_0_4_SYMREAL) < CONST_0.9999 &&
+in2_0_4_SYMREAL != CONST_0.0 &&
+in2_0_4_SYMREAL > CONST_0.0 &&
+CONST_2.0 > in2_0_4_SYMREAL
+SPC # = 0
+
+
+====================================================== search constraint
+depth limit reached: 50
+
+====================================================== snapshot #4
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at utilMDE.FuzzyFloat.eq(FuzzyFloat.java:106)
+	at utilMDE.FuzzyFloat.ne(FuzzyFloat.java:115)
+	at rjc.rjc.MainSymbolic(rjc.java:449)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 4
+CONST_0.9999 == (CONST_2.0 / in2_0_4_SYMREAL) &&
+in2_0_4_SYMREAL != CONST_0.0 &&
+in2_0_4_SYMREAL > CONST_0.0 &&
+CONST_2.0 > in2_0_4_SYMREAL
+SPC # = 0
+
+
+====================================================== search constraint
+depth limit reached: 50
+
+====================================================== snapshot #4
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at utilMDE.FuzzyFloat.eq(FuzzyFloat.java:106)
+	at utilMDE.FuzzyFloat.ne(FuzzyFloat.java:115)
+	at rjc.rjc.MainSymbolic(rjc.java:449)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== search constraint
+depth limit reached: 50
+
+====================================================== snapshot #4
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at utilMDE.FuzzyFloat.eq(FuzzyFloat.java:106)
+	at utilMDE.FuzzyFloat.ne(FuzzyFloat.java:115)
+	at rjc.rjc.MainSymbolic(rjc.java:449)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 3
+in2_0_4_SYMREAL == CONST_0.0 &&
+in2_0_4_SYMREAL > CONST_0.0 &&
+CONST_2.0 > in2_0_4_SYMREAL
+SPC # = 0
+
+here!!!!!
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+in1_2_3_SYMREAL < CONST_0.0 &&
+CONST_7.855339059327378E-4 < in1_2_3_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+CONST_0.0 == in1_2_3_SYMREAL &&
+CONST_7.855339059327378E-4 < in1_2_3_SYMREAL
+SPC # = 0
+
+Property Violated: PC is constraint # = 5
+(CONST_7.855339059327378E-4 / in1_2_3_SYMREAL[7.856124671794558E-4]) < CONST_1.0001 &&
+CONST_0.9999 == (CONST_7.855339059327378E-4 / in1_2_3_SYMREAL[7.856124671794558E-4]) &&
+in1_2_3_SYMREAL[7.856124671794558E-4] != CONST_0.0 &&
+in1_2_3_SYMREAL[7.856124671794558E-4] > CONST_0.0 &&
+CONST_7.855339059327378E-4 < in1_2_3_SYMREAL[7.856124671794558E-4]
+SPC # = 0
+
+Property Violated: result is  "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.v_Control_Law_100000084_class_member16.Value948, in1_2)..."
+****************************
+
+====================================================== error #5
+gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.v_Control_Law_100000084_class_member16.Value948, in1_2)
+	at rjc.rjc.MainSymbolic(rjc.java:411)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== snapshot #5
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at rjc.rjc.MainSymbolic(rjc.java:411)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 5
+CONST_1.0001 == (CONST_7.855339059327378E-4 / in1_2_3_SYMREAL) &&
+CONST_0.9999 == (CONST_7.855339059327378E-4 / in1_2_3_SYMREAL) &&
+in1_2_3_SYMREAL != CONST_0.0 &&
+in1_2_3_SYMREAL > CONST_0.0 &&
+CONST_7.855339059327378E-4 < in1_2_3_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 5
+(CONST_7.855339059327378E-4 / in1_2_3_SYMREAL) > CONST_1.0001 &&
+CONST_0.9999 == (CONST_7.855339059327378E-4 / in1_2_3_SYMREAL) &&
+in1_2_3_SYMREAL != CONST_0.0 &&
+in1_2_3_SYMREAL > CONST_0.0 &&
+CONST_7.855339059327378E-4 < in1_2_3_SYMREAL
+SPC # = 0
+
+Property Violated: PC is constraint # = 5
+(CONST_7.855339059327378E-4 / in1_2_3_SYMREAL[7.85542103470993E-4]) < CONST_1.0001 &&
+(CONST_7.855339059327378E-4 / in1_2_3_SYMREAL[7.85542103470993E-4]) > CONST_0.9999 &&
+in1_2_3_SYMREAL[7.85542103470993E-4] != CONST_0.0 &&
+in1_2_3_SYMREAL[7.85542103470993E-4] > CONST_0.0 &&
+CONST_7.855339059327378E-4 < in1_2_3_SYMREAL[7.85542103470993E-4]
+SPC # = 0
+
+Property Violated: result is  "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.v_Control_Law_100000084_class_member16.Value948, in1_2)..."
+****************************
+
+====================================================== error #6
+gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.v_Control_Law_100000084_class_member16.Value948, in1_2)
+	at rjc.rjc.MainSymbolic(rjc.java:411)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== snapshot #6
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at rjc.rjc.MainSymbolic(rjc.java:411)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 5
+CONST_1.0001 == (CONST_7.855339059327378E-4 / in1_2_3_SYMREAL) &&
+(CONST_7.855339059327378E-4 / in1_2_3_SYMREAL) > CONST_0.9999 &&
+in1_2_3_SYMREAL != CONST_0.0 &&
+in1_2_3_SYMREAL > CONST_0.0 &&
+CONST_7.855339059327378E-4 < in1_2_3_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 5
+(CONST_7.855339059327378E-4 / in1_2_3_SYMREAL) > CONST_1.0001 &&
+(CONST_7.855339059327378E-4 / in1_2_3_SYMREAL) > CONST_0.9999 &&
+in1_2_3_SYMREAL != CONST_0.0 &&
+in1_2_3_SYMREAL > CONST_0.0 &&
+CONST_7.855339059327378E-4 < in1_2_3_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 3
+in1_2_3_SYMREAL == CONST_0.0 &&
+in1_2_3_SYMREAL > CONST_0.0 &&
+CONST_7.855339059327378E-4 < in1_2_3_SYMREAL
+SPC # = 0
+
+Property Violated: PC is constraint # = 1
+in1_2_3_SYMREAL[7.855339059327378E-4] == CONST_7.855339059327378E-4
+SPC # = 0
+
+Property Violated: result is  "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.v_Control_Law_100000084_class_member16.Value948, in1_2)..."
+****************************
+
+====================================================== error #7
+gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.v_Control_Law_100000084_class_member16.Value948, in1_2)
+	at rjc.rjc.MainSymbolic(rjc.java:411)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== snapshot #7
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at rjc.rjc.MainSymbolic(rjc.java:411)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 4
+CONST_0.9999 == (CONST_7.855339059327378E-4 / in1_2_3_SYMREAL) &&
+in1_2_3_SYMREAL != CONST_0.0 &&
+in1_2_3_SYMREAL < CONST_0.0 &&
+CONST_7.855339059327378E-4 > in1_2_3_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 4
+(CONST_7.855339059327378E-4 / in1_2_3_SYMREAL) > CONST_0.9999 &&
+in1_2_3_SYMREAL != CONST_0.0 &&
+in1_2_3_SYMREAL < CONST_0.0 &&
+CONST_7.855339059327378E-4 > in1_2_3_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 3
+in1_2_3_SYMREAL == CONST_0.0 &&
+in1_2_3_SYMREAL < CONST_0.0 &&
+CONST_7.855339059327378E-4 > in1_2_3_SYMREAL
+SPC # = 0
+
+here!!!!!
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+in1_2_3_SYMREAL > CONST_0.0 &&
+CONST_7.855339059327378E-4 > in1_2_3_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+in1_1_2_SYMREAL < CONST_0.0 &&
+CONST_0.006285533905932738 < in1_1_2_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+CONST_0.0 == in1_1_2_SYMREAL &&
+CONST_0.006285533905932738 < in1_1_2_SYMREAL
+SPC # = 0
+
+Property Violated: PC is constraint # = 5
+(CONST_0.006285533905932738 / in1_1_2_SYMREAL[0.006286162522184956]) < CONST_1.0001 &&
+CONST_0.9999 == (CONST_0.006285533905932738 / in1_1_2_SYMREAL[0.006286162522184956]) &&
+in1_1_2_SYMREAL[0.006286162522184956] != CONST_0.0 &&
+in1_1_2_SYMREAL[0.006286162522184956] > CONST_0.0 &&
+CONST_0.006285533905932738 < in1_1_2_SYMREAL[0.006286162522184956]
+SPC # = 0
+
+Property Violated: result is  "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.u_Control_Law_100000081_class_member17.Value944, in1_1)..."
+****************************
+
+====================================================== error #8
+gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.u_Control_Law_100000081_class_member17.Value944, in1_1)
+	at rjc.rjc.MainSymbolic(rjc.java:371)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== snapshot #8
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at rjc.rjc.MainSymbolic(rjc.java:371)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 5
+CONST_1.0001 == (CONST_0.006285533905932738 / in1_1_2_SYMREAL) &&
+CONST_0.9999 == (CONST_0.006285533905932738 / in1_1_2_SYMREAL) &&
+in1_1_2_SYMREAL != CONST_0.0 &&
+in1_1_2_SYMREAL > CONST_0.0 &&
+CONST_0.006285533905932738 < in1_1_2_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 5
+(CONST_0.006285533905932738 / in1_1_2_SYMREAL) > CONST_1.0001 &&
+CONST_0.9999 == (CONST_0.006285533905932738 / in1_1_2_SYMREAL) &&
+in1_1_2_SYMREAL != CONST_0.0 &&
+in1_1_2_SYMREAL > CONST_0.0 &&
+CONST_0.006285533905932738 < in1_1_2_SYMREAL
+SPC # = 0
+
+Property Violated: PC is constraint # = 5
+(CONST_0.006285533905932738 / in1_1_2_SYMREAL[0.006286120316967092]) < CONST_1.0001 &&
+(CONST_0.006285533905932738 / in1_1_2_SYMREAL[0.006286120316967092]) > CONST_0.9999 &&
+in1_1_2_SYMREAL[0.006286120316967092] != CONST_0.0 &&
+in1_1_2_SYMREAL[0.006286120316967092] > CONST_0.0 &&
+CONST_0.006285533905932738 < in1_1_2_SYMREAL[0.006286120316967092]
+SPC # = 0
+
+Property Violated: result is  "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.u_Control_Law_100000081_class_member17.Value944, in1_1)..."
+****************************
+
+====================================================== error #9
+gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.u_Control_Law_100000081_class_member17.Value944, in1_1)
+	at rjc.rjc.MainSymbolic(rjc.java:371)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== snapshot #9
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at rjc.rjc.MainSymbolic(rjc.java:371)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 5
+CONST_1.0001 == (CONST_0.006285533905932738 / in1_1_2_SYMREAL) &&
+(CONST_0.006285533905932738 / in1_1_2_SYMREAL) > CONST_0.9999 &&
+in1_1_2_SYMREAL != CONST_0.0 &&
+in1_1_2_SYMREAL > CONST_0.0 &&
+CONST_0.006285533905932738 < in1_1_2_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 5
+(CONST_0.006285533905932738 / in1_1_2_SYMREAL) > CONST_1.0001 &&
+(CONST_0.006285533905932738 / in1_1_2_SYMREAL) > CONST_0.9999 &&
+in1_1_2_SYMREAL != CONST_0.0 &&
+in1_1_2_SYMREAL > CONST_0.0 &&
+CONST_0.006285533905932738 < in1_1_2_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 3
+in1_1_2_SYMREAL == CONST_0.0 &&
+in1_1_2_SYMREAL > CONST_0.0 &&
+CONST_0.006285533905932738 < in1_1_2_SYMREAL
+SPC # = 0
+
+Property Violated: PC is constraint # = 1
+in1_1_2_SYMREAL[0.006285533905932738] == CONST_0.006285533905932738
+SPC # = 0
+
+Property Violated: result is  "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.u_Control_Law_100000081_class_member17.Value944, in1_1)..."
+****************************
+
+====================================================== error #10
+gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.u_Control_Law_100000081_class_member17.Value944, in1_1)
+	at rjc.rjc.MainSymbolic(rjc.java:371)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== snapshot #10
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at rjc.rjc.MainSymbolic(rjc.java:371)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 4
+CONST_0.9999 == (CONST_0.006285533905932738 / in1_1_2_SYMREAL) &&
+in1_1_2_SYMREAL != CONST_0.0 &&
+in1_1_2_SYMREAL < CONST_0.0 &&
+CONST_0.006285533905932738 > in1_1_2_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 4
+(CONST_0.006285533905932738 / in1_1_2_SYMREAL) > CONST_0.9999 &&
+in1_1_2_SYMREAL != CONST_0.0 &&
+in1_1_2_SYMREAL < CONST_0.0 &&
+CONST_0.006285533905932738 > in1_1_2_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 3
+in1_1_2_SYMREAL == CONST_0.0 &&
+in1_1_2_SYMREAL < CONST_0.0 &&
+CONST_0.006285533905932738 > in1_1_2_SYMREAL
+SPC # = 0
+
+here!!!!!
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+in1_1_2_SYMREAL > CONST_0.0 &&
+CONST_0.006285533905932738 > in1_1_2_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+in2_1_5_SYMREAL < CONST_0.0 &&
+CONST_0.055 < in2_1_5_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+CONST_0.0 == in2_1_5_SYMREAL &&
+CONST_0.055 < in2_1_5_SYMREAL
+SPC # = 0
+
+Property Violated: PC is constraint # = 5
+(CONST_0.055 / in2_1_5_SYMREAL[0.05500550055005501]) < CONST_1.0001 &&
+CONST_0.9999 == (CONST_0.055 / in2_1_5_SYMREAL[0.05500550055005501]) &&
+in2_1_5_SYMREAL[0.05500550055005501] != CONST_0.0 &&
+in2_1_5_SYMREAL[0.05500550055005501] > CONST_0.0 &&
+CONST_0.055 < in2_1_5_SYMREAL[0.05500550055005501]
+SPC # = 0
+
+Property Violated: result is  "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Value940, in2_1)..."
+****************************
+
+====================================================== error #11
+gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Value940, in2_1)
+	at rjc.rjc.MainSymbolic(rjc.java:363)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== snapshot #11
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at rjc.rjc.MainSymbolic(rjc.java:363)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 5
+CONST_1.0001 == (CONST_0.055 / in2_1_5_SYMREAL) &&
+CONST_0.9999 == (CONST_0.055 / in2_1_5_SYMREAL) &&
+in2_1_5_SYMREAL != CONST_0.0 &&
+in2_1_5_SYMREAL > CONST_0.0 &&
+CONST_0.055 < in2_1_5_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 5
+(CONST_0.055 / in2_1_5_SYMREAL) > CONST_1.0001 &&
+CONST_0.9999 == (CONST_0.055 / in2_1_5_SYMREAL) &&
+in2_1_5_SYMREAL != CONST_0.0 &&
+in2_1_5_SYMREAL > CONST_0.0 &&
+CONST_0.055 < in2_1_5_SYMREAL
+SPC # = 0
+
+Property Violated: PC is constraint # = 5
+(CONST_0.055 / in2_1_5_SYMREAL[0.05500231841538081]) < CONST_1.0001 &&
+(CONST_0.055 / in2_1_5_SYMREAL[0.05500231841538081]) > CONST_0.9999 &&
+in2_1_5_SYMREAL[0.05500231841538081] != CONST_0.0 &&
+in2_1_5_SYMREAL[0.05500231841538081] > CONST_0.0 &&
+CONST_0.055 < in2_1_5_SYMREAL[0.05500231841538081]
+SPC # = 0
+
+Property Violated: result is  "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Value940, in2_1)..."
+****************************
+
+====================================================== error #12
+gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Value940, in2_1)
+	at rjc.rjc.MainSymbolic(rjc.java:363)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== snapshot #12
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at rjc.rjc.MainSymbolic(rjc.java:363)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 5
+CONST_1.0001 == (CONST_0.055 / in2_1_5_SYMREAL) &&
+(CONST_0.055 / in2_1_5_SYMREAL) > CONST_0.9999 &&
+in2_1_5_SYMREAL != CONST_0.0 &&
+in2_1_5_SYMREAL > CONST_0.0 &&
+CONST_0.055 < in2_1_5_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 5
+(CONST_0.055 / in2_1_5_SYMREAL) > CONST_1.0001 &&
+(CONST_0.055 / in2_1_5_SYMREAL) > CONST_0.9999 &&
+in2_1_5_SYMREAL != CONST_0.0 &&
+in2_1_5_SYMREAL > CONST_0.0 &&
+CONST_0.055 < in2_1_5_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 3
+in2_1_5_SYMREAL == CONST_0.0 &&
+in2_1_5_SYMREAL > CONST_0.0 &&
+CONST_0.055 < in2_1_5_SYMREAL
+SPC # = 0
+
+Property Violated: PC is constraint # = 1
+in2_1_5_SYMREAL[0.055] == CONST_0.055
+SPC # = 0
+
+Property Violated: result is  "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Value940, in2_1)..."
+****************************
+
+====================================================== error #13
+gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Value940, in2_1)
+	at rjc.rjc.MainSymbolic(rjc.java:363)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== snapshot #13
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at rjc.rjc.MainSymbolic(rjc.java:363)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 4
+CONST_0.9999 == (CONST_0.055 / in2_1_5_SYMREAL) &&
+in2_1_5_SYMREAL != CONST_0.0 &&
+in2_1_5_SYMREAL < CONST_0.0 &&
+CONST_0.055 > in2_1_5_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 4
+(CONST_0.055 / in2_1_5_SYMREAL) > CONST_0.9999 &&
+in2_1_5_SYMREAL != CONST_0.0 &&
+in2_1_5_SYMREAL < CONST_0.0 &&
+CONST_0.055 > in2_1_5_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 3
+in2_1_5_SYMREAL == CONST_0.0 &&
+in2_1_5_SYMREAL < CONST_0.0 &&
+CONST_0.055 > in2_1_5_SYMREAL
+SPC # = 0
+
+here!!!!!
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+in2_1_5_SYMREAL > CONST_0.0 &&
+CONST_0.055 > in2_1_5_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+in2_2_6_SYMREAL < CONST_0.0 &&
+CONST_0.005235987755982988 < in2_2_6_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+CONST_0.0 == in2_2_6_SYMREAL &&
+CONST_0.005235987755982988 < in2_2_6_SYMREAL
+SPC # = 0
+
+Property Violated: PC is constraint # = 5
+(CONST_0.005235987755982988 / in2_2_6_SYMREAL[0.0052365114071237]) < CONST_1.0001 &&
+CONST_0.9999 == (CONST_0.005235987755982988 / in2_2_6_SYMREAL[0.0052365114071237]) &&
+in2_2_6_SYMREAL[0.0052365114071237] != CONST_0.0 &&
+in2_2_6_SYMREAL[0.0052365114071237] > CONST_0.0 &&
+CONST_0.005235987755982988 < in2_2_6_SYMREAL[0.0052365114071237]
+SPC # = 0
+
+Property Violated: result is  "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Value928, in2_2)..."
+****************************
+
+====================================================== error #14
+gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Value928, in2_2)
+	at rjc.rjc.MainSymbolic(rjc.java:355)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== snapshot #14
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at rjc.rjc.MainSymbolic(rjc.java:355)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 5
+CONST_1.0001 == (CONST_0.005235987755982988 / in2_2_6_SYMREAL) &&
+CONST_0.9999 == (CONST_0.005235987755982988 / in2_2_6_SYMREAL) &&
+in2_2_6_SYMREAL != CONST_0.0 &&
+in2_2_6_SYMREAL > CONST_0.0 &&
+CONST_0.005235987755982988 < in2_2_6_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 5
+(CONST_0.005235987755982988 / in2_2_6_SYMREAL) > CONST_1.0001 &&
+CONST_0.9999 == (CONST_0.005235987755982988 / in2_2_6_SYMREAL) &&
+in2_2_6_SYMREAL != CONST_0.0 &&
+in2_2_6_SYMREAL > CONST_0.0 &&
+CONST_0.005235987755982988 < in2_2_6_SYMREAL
+SPC # = 0
+
+Property Violated: PC is constraint # = 5
+(CONST_0.005235987755982988 / in2_2_6_SYMREAL[0.005236023456505787]) < CONST_1.0001 &&
+(CONST_0.005235987755982988 / in2_2_6_SYMREAL[0.005236023456505787]) > CONST_0.9999 &&
+in2_2_6_SYMREAL[0.005236023456505787] != CONST_0.0 &&
+in2_2_6_SYMREAL[0.005236023456505787] > CONST_0.0 &&
+CONST_0.005235987755982988 < in2_2_6_SYMREAL[0.005236023456505787]
+SPC # = 0
+
+Property Violated: result is  "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Value928, in2_2)..."
+****************************
+
+====================================================== error #15
+gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Value928, in2_2)
+	at rjc.rjc.MainSymbolic(rjc.java:355)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== snapshot #15
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at rjc.rjc.MainSymbolic(rjc.java:355)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 5
+CONST_1.0001 == (CONST_0.005235987755982988 / in2_2_6_SYMREAL) &&
+(CONST_0.005235987755982988 / in2_2_6_SYMREAL) > CONST_0.9999 &&
+in2_2_6_SYMREAL != CONST_0.0 &&
+in2_2_6_SYMREAL > CONST_0.0 &&
+CONST_0.005235987755982988 < in2_2_6_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 5
+(CONST_0.005235987755982988 / in2_2_6_SYMREAL) > CONST_1.0001 &&
+(CONST_0.005235987755982988 / in2_2_6_SYMREAL) > CONST_0.9999 &&
+in2_2_6_SYMREAL != CONST_0.0 &&
+in2_2_6_SYMREAL > CONST_0.0 &&
+CONST_0.005235987755982988 < in2_2_6_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 3
+in2_2_6_SYMREAL == CONST_0.0 &&
+in2_2_6_SYMREAL > CONST_0.0 &&
+CONST_0.005235987755982988 < in2_2_6_SYMREAL
+SPC # = 0
+
+Property Violated: PC is constraint # = 1
+in2_2_6_SYMREAL[0.005235987755982988] == CONST_0.005235987755982988
+SPC # = 0
+
+Property Violated: result is  "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Value928, in2_2)..."
+****************************
+
+====================================================== error #16
+gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Value928, in2_2)
+	at rjc.rjc.MainSymbolic(rjc.java:355)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== snapshot #16
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at rjc.rjc.MainSymbolic(rjc.java:355)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 4
+CONST_0.9999 == (CONST_0.005235987755982988 / in2_2_6_SYMREAL) &&
+in2_2_6_SYMREAL != CONST_0.0 &&
+in2_2_6_SYMREAL < CONST_0.0 &&
+CONST_0.005235987755982988 > in2_2_6_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 4
+(CONST_0.005235987755982988 / in2_2_6_SYMREAL) > CONST_0.9999 &&
+in2_2_6_SYMREAL != CONST_0.0 &&
+in2_2_6_SYMREAL < CONST_0.0 &&
+CONST_0.005235987755982988 > in2_2_6_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 3
+in2_2_6_SYMREAL == CONST_0.0 &&
+in2_2_6_SYMREAL < CONST_0.0 &&
+CONST_0.005235987755982988 > in2_2_6_SYMREAL
+SPC # = 0
+
+here!!!!!
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+in2_2_6_SYMREAL > CONST_0.0 &&
+CONST_0.005235987755982988 > in2_2_6_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+in1_1_2_SYMREAL < CONST_0.0 &&
+CONST_0.055 < in1_1_2_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+CONST_0.0 == in1_1_2_SYMREAL &&
+CONST_0.055 < in1_1_2_SYMREAL
+SPC # = 0
+
+Property Violated: PC is constraint # = 5
+(CONST_0.055 / in1_1_2_SYMREAL[0.05500550055005501]) < CONST_1.0001 &&
+CONST_0.9999 == (CONST_0.055 / in1_1_2_SYMREAL[0.05500550055005501]) &&
+in1_1_2_SYMREAL[0.05500550055005501] != CONST_0.0 &&
+in1_1_2_SYMREAL[0.05500550055005501] > CONST_0.0 &&
+CONST_0.055 < in1_1_2_SYMREAL[0.05500550055005501]
+SPC # = 0
+
+Property Violated: result is  "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Value940, in1_1)..."
+****************************
+
+====================================================== error #17
+gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Value940, in1_1)
+	at rjc.rjc.MainSymbolic(rjc.java:339)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== snapshot #17
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at rjc.rjc.MainSymbolic(rjc.java:339)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 5
+CONST_1.0001 == (CONST_0.055 / in1_1_2_SYMREAL) &&
+CONST_0.9999 == (CONST_0.055 / in1_1_2_SYMREAL) &&
+in1_1_2_SYMREAL != CONST_0.0 &&
+in1_1_2_SYMREAL > CONST_0.0 &&
+CONST_0.055 < in1_1_2_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 5
+(CONST_0.055 / in1_1_2_SYMREAL) > CONST_1.0001 &&
+CONST_0.9999 == (CONST_0.055 / in1_1_2_SYMREAL) &&
+in1_1_2_SYMREAL != CONST_0.0 &&
+in1_1_2_SYMREAL > CONST_0.0 &&
+CONST_0.055 < in1_1_2_SYMREAL
+SPC # = 0
+
+Property Violated: PC is constraint # = 5
+(CONST_0.055 / in1_1_2_SYMREAL[0.05500231841538081]) < CONST_1.0001 &&
+(CONST_0.055 / in1_1_2_SYMREAL[0.05500231841538081]) > CONST_0.9999 &&
+in1_1_2_SYMREAL[0.05500231841538081] != CONST_0.0 &&
+in1_1_2_SYMREAL[0.05500231841538081] > CONST_0.0 &&
+CONST_0.055 < in1_1_2_SYMREAL[0.05500231841538081]
+SPC # = 0
+
+Property Violated: result is  "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Value940, in1_1)..."
+****************************
+
+====================================================== error #18
+gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Value940, in1_1)
+	at rjc.rjc.MainSymbolic(rjc.java:339)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== snapshot #18
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at rjc.rjc.MainSymbolic(rjc.java:339)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 5
+CONST_1.0001 == (CONST_0.055 / in1_1_2_SYMREAL) &&
+(CONST_0.055 / in1_1_2_SYMREAL) > CONST_0.9999 &&
+in1_1_2_SYMREAL != CONST_0.0 &&
+in1_1_2_SYMREAL > CONST_0.0 &&
+CONST_0.055 < in1_1_2_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 5
+(CONST_0.055 / in1_1_2_SYMREAL) > CONST_1.0001 &&
+(CONST_0.055 / in1_1_2_SYMREAL) > CONST_0.9999 &&
+in1_1_2_SYMREAL != CONST_0.0 &&
+in1_1_2_SYMREAL > CONST_0.0 &&
+CONST_0.055 < in1_1_2_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 3
+in1_1_2_SYMREAL == CONST_0.0 &&
+in1_1_2_SYMREAL > CONST_0.0 &&
+CONST_0.055 < in1_1_2_SYMREAL
+SPC # = 0
+
+Property Violated: PC is constraint # = 1
+in1_1_2_SYMREAL[0.055] == CONST_0.055
+SPC # = 0
+
+Property Violated: result is  "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Value940, in1_1)..."
+****************************
+
+====================================================== error #19
+gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Value940, in1_1)
+	at rjc.rjc.MainSymbolic(rjc.java:339)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== snapshot #19
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at rjc.rjc.MainSymbolic(rjc.java:339)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 4
+CONST_0.9999 == (CONST_0.055 / in1_1_2_SYMREAL) &&
+in1_1_2_SYMREAL != CONST_0.0 &&
+in1_1_2_SYMREAL < CONST_0.0 &&
+CONST_0.055 > in1_1_2_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 4
+(CONST_0.055 / in1_1_2_SYMREAL) > CONST_0.9999 &&
+in1_1_2_SYMREAL != CONST_0.0 &&
+in1_1_2_SYMREAL < CONST_0.0 &&
+CONST_0.055 > in1_1_2_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 3
+in1_1_2_SYMREAL == CONST_0.0 &&
+in1_1_2_SYMREAL < CONST_0.0 &&
+CONST_0.055 > in1_1_2_SYMREAL
+SPC # = 0
+
+here!!!!!
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+in1_1_2_SYMREAL > CONST_0.0 &&
+CONST_0.055 > in1_1_2_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+in1_0_1_SYMREAL < CONST_0.0 &&
+CONST_0.005235987755982988 < in1_0_1_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+CONST_0.0 == in1_0_1_SYMREAL &&
+CONST_0.005235987755982988 < in1_0_1_SYMREAL
+SPC # = 0
+
+Property Violated: PC is constraint # = 5
+(CONST_0.005235987755982988 / in1_0_1_SYMREAL[0.0052365114071237]) < CONST_1.0001 &&
+CONST_0.9999 == (CONST_0.005235987755982988 / in1_0_1_SYMREAL[0.0052365114071237]) &&
+in1_0_1_SYMREAL[0.0052365114071237] != CONST_0.0 &&
+in1_0_1_SYMREAL[0.0052365114071237] > CONST_0.0 &&
+CONST_0.005235987755982988 < in1_0_1_SYMREAL[0.0052365114071237]
+SPC # = 0
+
+Property Violated: result is  "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Value928, in1_0)..."
+****************************
+
+====================================================== error #20
+gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Value928, in1_0)
+	at rjc.rjc.MainSymbolic(rjc.java:315)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== snapshot #20
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at rjc.rjc.MainSymbolic(rjc.java:315)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 5
+CONST_1.0001 == (CONST_0.005235987755982988 / in1_0_1_SYMREAL) &&
+CONST_0.9999 == (CONST_0.005235987755982988 / in1_0_1_SYMREAL) &&
+in1_0_1_SYMREAL != CONST_0.0 &&
+in1_0_1_SYMREAL > CONST_0.0 &&
+CONST_0.005235987755982988 < in1_0_1_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 5
+(CONST_0.005235987755982988 / in1_0_1_SYMREAL) > CONST_1.0001 &&
+CONST_0.9999 == (CONST_0.005235987755982988 / in1_0_1_SYMREAL) &&
+in1_0_1_SYMREAL != CONST_0.0 &&
+in1_0_1_SYMREAL > CONST_0.0 &&
+CONST_0.005235987755982988 < in1_0_1_SYMREAL
+SPC # = 0
+
+Property Violated: PC is constraint # = 5
+(CONST_0.005235987755982988 / in1_0_1_SYMREAL[0.005236023456505787]) < CONST_1.0001 &&
+(CONST_0.005235987755982988 / in1_0_1_SYMREAL[0.005236023456505787]) > CONST_0.9999 &&
+in1_0_1_SYMREAL[0.005236023456505787] != CONST_0.0 &&
+in1_0_1_SYMREAL[0.005236023456505787] > CONST_0.0 &&
+CONST_0.005235987755982988 < in1_0_1_SYMREAL[0.005236023456505787]
+SPC # = 0
+
+Property Violated: result is  "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Value928, in1_0)..."
+****************************
+
+====================================================== error #21
+gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Value928, in1_0)
+	at rjc.rjc.MainSymbolic(rjc.java:315)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== snapshot #21
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at rjc.rjc.MainSymbolic(rjc.java:315)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 5
+CONST_1.0001 == (CONST_0.005235987755982988 / in1_0_1_SYMREAL) &&
+(CONST_0.005235987755982988 / in1_0_1_SYMREAL) > CONST_0.9999 &&
+in1_0_1_SYMREAL != CONST_0.0 &&
+in1_0_1_SYMREAL > CONST_0.0 &&
+CONST_0.005235987755982988 < in1_0_1_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 5
+(CONST_0.005235987755982988 / in1_0_1_SYMREAL) > CONST_1.0001 &&
+(CONST_0.005235987755982988 / in1_0_1_SYMREAL) > CONST_0.9999 &&
+in1_0_1_SYMREAL != CONST_0.0 &&
+in1_0_1_SYMREAL > CONST_0.0 &&
+CONST_0.005235987755982988 < in1_0_1_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 3
+in1_0_1_SYMREAL == CONST_0.0 &&
+in1_0_1_SYMREAL > CONST_0.0 &&
+CONST_0.005235987755982988 < in1_0_1_SYMREAL
+SPC # = 0
+
+Property Violated: PC is constraint # = 1
+in1_0_1_SYMREAL[0.005235987755982988] == CONST_0.005235987755982988
+SPC # = 0
+
+Property Violated: result is  "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Value928, in1_0)..."
+****************************
+
+====================================================== error #22
+gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Value928, in1_0)
+	at rjc.rjc.MainSymbolic(rjc.java:315)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== snapshot #22
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at rjc.rjc.MainSymbolic(rjc.java:315)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 4
+CONST_0.9999 == (CONST_0.005235987755982988 / in1_0_1_SYMREAL) &&
+in1_0_1_SYMREAL != CONST_0.0 &&
+in1_0_1_SYMREAL < CONST_0.0 &&
+CONST_0.005235987755982988 > in1_0_1_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 4
+(CONST_0.005235987755982988 / in1_0_1_SYMREAL) > CONST_0.9999 &&
+in1_0_1_SYMREAL != CONST_0.0 &&
+in1_0_1_SYMREAL < CONST_0.0 &&
+CONST_0.005235987755982988 > in1_0_1_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 3
+in1_0_1_SYMREAL == CONST_0.0 &&
+in1_0_1_SYMREAL < CONST_0.0 &&
+CONST_0.005235987755982988 > in1_0_1_SYMREAL
+SPC # = 0
+
+here!!!!!
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+in1_0_1_SYMREAL > CONST_0.0 &&
+CONST_0.005235987755982988 > in1_0_1_SYMREAL
+SPC # = 0
+
+here!!!!!
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+in1_1_2_SYMREAL < CONST_0.0 &&
+CONST_6.25E-4 < in1_1_2_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+CONST_0.0 == in1_1_2_SYMREAL &&
+CONST_6.25E-4 < in1_1_2_SYMREAL
+SPC # = 0
+
+Property Violated: PC is constraint # = 5
+(CONST_6.25E-4 / in1_1_2_SYMREAL[6.250625062506251E-4]) < CONST_1.0001 &&
+CONST_0.9999 == (CONST_6.25E-4 / in1_1_2_SYMREAL[6.250625062506251E-4]) &&
+in1_1_2_SYMREAL[6.250625062506251E-4] != CONST_0.0 &&
+in1_1_2_SYMREAL[6.250625062506251E-4] > CONST_0.0 &&
+CONST_6.25E-4 < in1_1_2_SYMREAL[6.250625062506251E-4]
+SPC # = 0
+
+Property Violated: result is  "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Gain913, in1_1)..."
+****************************
+
+====================================================== error #23
+gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Gain913, in1_1)
+	at rjc.rjc.MainSymbolic(rjc.java:291)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== snapshot #23
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at rjc.rjc.MainSymbolic(rjc.java:291)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 5
+CONST_1.0001 == (CONST_6.25E-4 / in1_1_2_SYMREAL) &&
+CONST_0.9999 == (CONST_6.25E-4 / in1_1_2_SYMREAL) &&
+in1_1_2_SYMREAL != CONST_0.0 &&
+in1_1_2_SYMREAL > CONST_0.0 &&
+CONST_6.25E-4 < in1_1_2_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 5
+(CONST_6.25E-4 / in1_1_2_SYMREAL) > CONST_1.0001 &&
+CONST_0.9999 == (CONST_6.25E-4 / in1_1_2_SYMREAL) &&
+in1_1_2_SYMREAL != CONST_0.0 &&
+in1_1_2_SYMREAL > CONST_0.0 &&
+CONST_6.25E-4 < in1_1_2_SYMREAL
+SPC # = 0
+
+Property Violated: PC is constraint # = 5
+(CONST_6.25E-4 / in1_1_2_SYMREAL[6.250550658738875E-4]) < CONST_1.0001 &&
+(CONST_6.25E-4 / in1_1_2_SYMREAL[6.250550658738875E-4]) > CONST_0.9999 &&
+in1_1_2_SYMREAL[6.250550658738875E-4] != CONST_0.0 &&
+in1_1_2_SYMREAL[6.250550658738875E-4] > CONST_0.0 &&
+CONST_6.25E-4 < in1_1_2_SYMREAL[6.250550658738875E-4]
+SPC # = 0
+
+Property Violated: result is  "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Gain913, in1_1)..."
+****************************
+
+====================================================== error #24
+gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Gain913, in1_1)
+	at rjc.rjc.MainSymbolic(rjc.java:291)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== snapshot #24
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at rjc.rjc.MainSymbolic(rjc.java:291)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 5
+CONST_1.0001 == (CONST_6.25E-4 / in1_1_2_SYMREAL) &&
+(CONST_6.25E-4 / in1_1_2_SYMREAL) > CONST_0.9999 &&
+in1_1_2_SYMREAL != CONST_0.0 &&
+in1_1_2_SYMREAL > CONST_0.0 &&
+CONST_6.25E-4 < in1_1_2_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 5
+(CONST_6.25E-4 / in1_1_2_SYMREAL) > CONST_1.0001 &&
+(CONST_6.25E-4 / in1_1_2_SYMREAL) > CONST_0.9999 &&
+in1_1_2_SYMREAL != CONST_0.0 &&
+in1_1_2_SYMREAL > CONST_0.0 &&
+CONST_6.25E-4 < in1_1_2_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 3
+in1_1_2_SYMREAL == CONST_0.0 &&
+in1_1_2_SYMREAL > CONST_0.0 &&
+CONST_6.25E-4 < in1_1_2_SYMREAL
+SPC # = 0
+
+Property Violated: PC is constraint # = 1
+in1_1_2_SYMREAL[6.25E-4] == CONST_6.25E-4
+SPC # = 0
+
+Property Violated: result is  "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Gain913, in1_1)..."
+****************************
+
+====================================================== error #25
+gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Gain913, in1_1)
+	at rjc.rjc.MainSymbolic(rjc.java:291)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== snapshot #25
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at rjc.rjc.MainSymbolic(rjc.java:291)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 4
+CONST_0.9999 == (CONST_6.25E-4 / in1_1_2_SYMREAL) &&
+in1_1_2_SYMREAL != CONST_0.0 &&
+in1_1_2_SYMREAL < CONST_0.0 &&
+CONST_6.25E-4 > in1_1_2_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 4
+(CONST_6.25E-4 / in1_1_2_SYMREAL) > CONST_0.9999 &&
+in1_1_2_SYMREAL != CONST_0.0 &&
+in1_1_2_SYMREAL < CONST_0.0 &&
+CONST_6.25E-4 > in1_1_2_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 3
+in1_1_2_SYMREAL == CONST_0.0 &&
+in1_1_2_SYMREAL < CONST_0.0 &&
+CONST_6.25E-4 > in1_1_2_SYMREAL
+SPC # = 0
+
+here!!!!!
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+in1_1_2_SYMREAL > CONST_0.0 &&
+CONST_6.25E-4 > in1_1_2_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+in2_2_6_SYMREAL < CONST_0.0 &&
+CONST_7.855339059327378E-4 < in2_2_6_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+CONST_0.0 == in2_2_6_SYMREAL &&
+CONST_7.855339059327378E-4 < in2_2_6_SYMREAL
+SPC # = 0
+
+Property Violated: PC is constraint # = 5
+(CONST_7.855339059327378E-4 / in2_2_6_SYMREAL[7.856124671794558E-4]) < CONST_1.0001 &&
+CONST_0.9999 == (CONST_7.855339059327378E-4 / in2_2_6_SYMREAL[7.856124671794558E-4]) &&
+in2_2_6_SYMREAL[7.856124671794558E-4] != CONST_0.0 &&
+in2_2_6_SYMREAL[7.856124671794558E-4] > CONST_0.0 &&
+CONST_7.855339059327378E-4 < in2_2_6_SYMREAL[7.856124671794558E-4]
+SPC # = 0
+
+Property Violated: result is  "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.v_Control_Law_100000084_class_member16.Value948, in2_2)..."
+****************************
+
+====================================================== error #26
+gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.v_Control_Law_100000084_class_member16.Value948, in2_2)
+	at rjc.rjc.MainSymbolic(rjc.java:283)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== snapshot #26
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at rjc.rjc.MainSymbolic(rjc.java:283)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 5
+CONST_1.0001 == (CONST_7.855339059327378E-4 / in2_2_6_SYMREAL) &&
+CONST_0.9999 == (CONST_7.855339059327378E-4 / in2_2_6_SYMREAL) &&
+in2_2_6_SYMREAL != CONST_0.0 &&
+in2_2_6_SYMREAL > CONST_0.0 &&
+CONST_7.855339059327378E-4 < in2_2_6_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 5
+(CONST_7.855339059327378E-4 / in2_2_6_SYMREAL) > CONST_1.0001 &&
+CONST_0.9999 == (CONST_7.855339059327378E-4 / in2_2_6_SYMREAL) &&
+in2_2_6_SYMREAL != CONST_0.0 &&
+in2_2_6_SYMREAL > CONST_0.0 &&
+CONST_7.855339059327378E-4 < in2_2_6_SYMREAL
+SPC # = 0
+
+Property Violated: PC is constraint # = 5
+(CONST_7.855339059327378E-4 / in2_2_6_SYMREAL[7.85542103470993E-4]) < CONST_1.0001 &&
+(CONST_7.855339059327378E-4 / in2_2_6_SYMREAL[7.85542103470993E-4]) > CONST_0.9999 &&
+in2_2_6_SYMREAL[7.85542103470993E-4] != CONST_0.0 &&
+in2_2_6_SYMREAL[7.85542103470993E-4] > CONST_0.0 &&
+CONST_7.855339059327378E-4 < in2_2_6_SYMREAL[7.85542103470993E-4]
+SPC # = 0
+
+Property Violated: result is  "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.v_Control_Law_100000084_class_member16.Value948, in2_2)..."
+****************************
+
+====================================================== error #27
+gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.v_Control_Law_100000084_class_member16.Value948, in2_2)
+	at rjc.rjc.MainSymbolic(rjc.java:283)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== snapshot #27
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at rjc.rjc.MainSymbolic(rjc.java:283)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 5
+CONST_1.0001 == (CONST_7.855339059327378E-4 / in2_2_6_SYMREAL) &&
+(CONST_7.855339059327378E-4 / in2_2_6_SYMREAL) > CONST_0.9999 &&
+in2_2_6_SYMREAL != CONST_0.0 &&
+in2_2_6_SYMREAL > CONST_0.0 &&
+CONST_7.855339059327378E-4 < in2_2_6_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 5
+(CONST_7.855339059327378E-4 / in2_2_6_SYMREAL) > CONST_1.0001 &&
+(CONST_7.855339059327378E-4 / in2_2_6_SYMREAL) > CONST_0.9999 &&
+in2_2_6_SYMREAL != CONST_0.0 &&
+in2_2_6_SYMREAL > CONST_0.0 &&
+CONST_7.855339059327378E-4 < in2_2_6_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 3
+in2_2_6_SYMREAL == CONST_0.0 &&
+in2_2_6_SYMREAL > CONST_0.0 &&
+CONST_7.855339059327378E-4 < in2_2_6_SYMREAL
+SPC # = 0
+
+Property Violated: PC is constraint # = 1
+in2_2_6_SYMREAL[7.855339059327378E-4] == CONST_7.855339059327378E-4
+SPC # = 0
+
+Property Violated: result is  "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.v_Control_Law_100000084_class_member16.Value948, in2_2)..."
+****************************
+
+====================================================== error #28
+gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.v_Control_Law_100000084_class_member16.Value948, in2_2)
+	at rjc.rjc.MainSymbolic(rjc.java:283)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== snapshot #28
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at rjc.rjc.MainSymbolic(rjc.java:283)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 4
+CONST_0.9999 == (CONST_7.855339059327378E-4 / in2_2_6_SYMREAL) &&
+in2_2_6_SYMREAL != CONST_0.0 &&
+in2_2_6_SYMREAL < CONST_0.0 &&
+CONST_7.855339059327378E-4 > in2_2_6_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 4
+(CONST_7.855339059327378E-4 / in2_2_6_SYMREAL) > CONST_0.9999 &&
+in2_2_6_SYMREAL != CONST_0.0 &&
+in2_2_6_SYMREAL < CONST_0.0 &&
+CONST_7.855339059327378E-4 > in2_2_6_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 3
+in2_2_6_SYMREAL == CONST_0.0 &&
+in2_2_6_SYMREAL < CONST_0.0 &&
+CONST_7.855339059327378E-4 > in2_2_6_SYMREAL
+SPC # = 0
+
+here!!!!!
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+in2_2_6_SYMREAL > CONST_0.0 &&
+CONST_7.855339059327378E-4 > in2_2_6_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+in2_0_4_SYMREAL < CONST_0.0 &&
+CONST_0.006285533905932738 < in2_0_4_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+CONST_0.0 == in2_0_4_SYMREAL &&
+CONST_0.006285533905932738 < in2_0_4_SYMREAL
+SPC # = 0
+
+Property Violated: PC is constraint # = 5
+(CONST_0.006285533905932738 / in2_0_4_SYMREAL[0.006286162522184956]) < CONST_1.0001 &&
+CONST_0.9999 == (CONST_0.006285533905932738 / in2_0_4_SYMREAL[0.006286162522184956]) &&
+in2_0_4_SYMREAL[0.006286162522184956] != CONST_0.0 &&
+in2_0_4_SYMREAL[0.006286162522184956] > CONST_0.0 &&
+CONST_0.006285533905932738 < in2_0_4_SYMREAL[0.006286162522184956]
+SPC # = 0
+
+Property Violated: result is  "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.u_Control_Law_100000081_class_member17.Value944, in2_0)..."
+****************************
+
+====================================================== error #29
+gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.u_Control_Law_100000081_class_member17.Value944, in2_0)
+	at rjc.rjc.MainSymbolic(rjc.java:267)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== snapshot #29
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at rjc.rjc.MainSymbolic(rjc.java:267)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 5
+CONST_1.0001 == (CONST_0.006285533905932738 / in2_0_4_SYMREAL) &&
+CONST_0.9999 == (CONST_0.006285533905932738 / in2_0_4_SYMREAL) &&
+in2_0_4_SYMREAL != CONST_0.0 &&
+in2_0_4_SYMREAL > CONST_0.0 &&
+CONST_0.006285533905932738 < in2_0_4_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 5
+(CONST_0.006285533905932738 / in2_0_4_SYMREAL) > CONST_1.0001 &&
+CONST_0.9999 == (CONST_0.006285533905932738 / in2_0_4_SYMREAL) &&
+in2_0_4_SYMREAL != CONST_0.0 &&
+in2_0_4_SYMREAL > CONST_0.0 &&
+CONST_0.006285533905932738 < in2_0_4_SYMREAL
+SPC # = 0
+
+Property Violated: PC is constraint # = 5
+(CONST_0.006285533905932738 / in2_0_4_SYMREAL[0.006286120316967092]) < CONST_1.0001 &&
+(CONST_0.006285533905932738 / in2_0_4_SYMREAL[0.006286120316967092]) > CONST_0.9999 &&
+in2_0_4_SYMREAL[0.006286120316967092] != CONST_0.0 &&
+in2_0_4_SYMREAL[0.006286120316967092] > CONST_0.0 &&
+CONST_0.006285533905932738 < in2_0_4_SYMREAL[0.006286120316967092]
+SPC # = 0
+
+Property Violated: result is  "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.u_Control_Law_100000081_class_member17.Value944, in2_0)..."
+****************************
+
+====================================================== error #30
+gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.u_Control_Law_100000081_class_member17.Value944, in2_0)
+	at rjc.rjc.MainSymbolic(rjc.java:267)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== snapshot #30
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at rjc.rjc.MainSymbolic(rjc.java:267)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 5
+CONST_1.0001 == (CONST_0.006285533905932738 / in2_0_4_SYMREAL) &&
+(CONST_0.006285533905932738 / in2_0_4_SYMREAL) > CONST_0.9999 &&
+in2_0_4_SYMREAL != CONST_0.0 &&
+in2_0_4_SYMREAL > CONST_0.0 &&
+CONST_0.006285533905932738 < in2_0_4_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 5
+(CONST_0.006285533905932738 / in2_0_4_SYMREAL) > CONST_1.0001 &&
+(CONST_0.006285533905932738 / in2_0_4_SYMREAL) > CONST_0.9999 &&
+in2_0_4_SYMREAL != CONST_0.0 &&
+in2_0_4_SYMREAL > CONST_0.0 &&
+CONST_0.006285533905932738 < in2_0_4_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 3
+in2_0_4_SYMREAL == CONST_0.0 &&
+in2_0_4_SYMREAL > CONST_0.0 &&
+CONST_0.006285533905932738 < in2_0_4_SYMREAL
+SPC # = 0
+
+Property Violated: PC is constraint # = 1
+in2_0_4_SYMREAL[0.006285533905932738] == CONST_0.006285533905932738
+SPC # = 0
+
+Property Violated: result is  "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.u_Control_Law_100000081_class_member17.Value944, in2_0)..."
+****************************
+
+====================================================== error #31
+gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.u_Control_Law_100000081_class_member17.Value944, in2_0)
+	at rjc.rjc.MainSymbolic(rjc.java:267)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== snapshot #31
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at rjc.rjc.MainSymbolic(rjc.java:267)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 4
+CONST_0.9999 == (CONST_0.006285533905932738 / in2_0_4_SYMREAL) &&
+in2_0_4_SYMREAL != CONST_0.0 &&
+in2_0_4_SYMREAL < CONST_0.0 &&
+CONST_0.006285533905932738 > in2_0_4_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 4
+(CONST_0.006285533905932738 / in2_0_4_SYMREAL) > CONST_0.9999 &&
+in2_0_4_SYMREAL != CONST_0.0 &&
+in2_0_4_SYMREAL < CONST_0.0 &&
+CONST_0.006285533905932738 > in2_0_4_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 3
+in2_0_4_SYMREAL == CONST_0.0 &&
+in2_0_4_SYMREAL < CONST_0.0 &&
+CONST_0.006285533905932738 > in2_0_4_SYMREAL
+SPC # = 0
+
+here!!!!!
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+in2_0_4_SYMREAL > CONST_0.0 &&
+CONST_0.006285533905932738 > in2_0_4_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+in2_2_6_SYMREAL < CONST_0.0 &&
+CONST_0.18181818181818185 < in2_2_6_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+CONST_0.0 == in2_2_6_SYMREAL &&
+CONST_0.18181818181818185 < in2_2_6_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 4
+CONST_0.9999 == (CONST_0.18181818181818185 / in2_2_6_SYMREAL) &&
+in2_2_6_SYMREAL != CONST_0.0 &&
+in2_2_6_SYMREAL > CONST_0.0 &&
+CONST_0.18181818181818185 < in2_2_6_SYMREAL
+SPC # = 0
+
+Property Violated: PC is constraint # = 5
+(CONST_0.18181818181818185 / in2_2_6_SYMREAL[0.18182883930822058]) < CONST_1.0001 &&
+(CONST_0.18181818181818185 / in2_2_6_SYMREAL[0.18182883930822058]) > CONST_0.9999 &&
+in2_2_6_SYMREAL[0.18182883930822058] != CONST_0.0 &&
+in2_2_6_SYMREAL[0.18182883930822058] > CONST_0.0 &&
+CONST_0.18181818181818185 < in2_2_6_SYMREAL[0.18182883930822058]
+SPC # = 0
+
+Property Violated: result is  "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Gain1072, in2_2)..."
+****************************
+
+====================================================== error #32
+gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Gain1072, in2_2)
+	at rjc.rjc.MainSymbolic(rjc.java:259)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== snapshot #32
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at rjc.rjc.MainSymbolic(rjc.java:259)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 5
+CONST_1.0001 == (CONST_0.18181818181818185 / in2_2_6_SYMREAL) &&
+(CONST_0.18181818181818185 / in2_2_6_SYMREAL) > CONST_0.9999 &&
+in2_2_6_SYMREAL != CONST_0.0 &&
+in2_2_6_SYMREAL > CONST_0.0 &&
+CONST_0.18181818181818185 < in2_2_6_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 5
+(CONST_0.18181818181818185 / in2_2_6_SYMREAL) > CONST_1.0001 &&
+(CONST_0.18181818181818185 / in2_2_6_SYMREAL) > CONST_0.9999 &&
+in2_2_6_SYMREAL != CONST_0.0 &&
+in2_2_6_SYMREAL > CONST_0.0 &&
+CONST_0.18181818181818185 < in2_2_6_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 3
+in2_2_6_SYMREAL == CONST_0.0 &&
+in2_2_6_SYMREAL > CONST_0.0 &&
+CONST_0.18181818181818185 < in2_2_6_SYMREAL
+SPC # = 0
+
+Property Violated: PC is constraint # = 1
+in2_2_6_SYMREAL[0.18181818181818185] == CONST_0.18181818181818185
+SPC # = 0
+
+Property Violated: result is  "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Gain1072, in2_2)..."
+****************************
+
+====================================================== error #33
+gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Gain1072, in2_2)
+	at rjc.rjc.MainSymbolic(rjc.java:259)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== snapshot #33
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at rjc.rjc.MainSymbolic(rjc.java:259)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 4
+CONST_0.9999 == (CONST_0.18181818181818185 / in2_2_6_SYMREAL) &&
+in2_2_6_SYMREAL != CONST_0.0 &&
+in2_2_6_SYMREAL < CONST_0.0 &&
+CONST_0.18181818181818185 > in2_2_6_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 4
+(CONST_0.18181818181818185 / in2_2_6_SYMREAL) > CONST_0.9999 &&
+in2_2_6_SYMREAL != CONST_0.0 &&
+in2_2_6_SYMREAL < CONST_0.0 &&
+CONST_0.18181818181818185 > in2_2_6_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 3
+in2_2_6_SYMREAL == CONST_0.0 &&
+in2_2_6_SYMREAL < CONST_0.0 &&
+CONST_0.18181818181818185 > in2_2_6_SYMREAL
+SPC # = 0
+
+here!!!!!
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+in2_2_6_SYMREAL > CONST_0.0 &&
+CONST_0.18181818181818185 > in2_2_6_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+in1_0_1_SYMREAL < CONST_0.0 &&
+CONST_0.5 < in1_0_1_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+CONST_0.0 == in1_0_1_SYMREAL &&
+CONST_0.5 < in1_0_1_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 4
+CONST_0.9999 == (CONST_0.5 / in1_0_1_SYMREAL) &&
+in1_0_1_SYMREAL != CONST_0.0 &&
+in1_0_1_SYMREAL > CONST_0.0 &&
+CONST_0.5 < in1_0_1_SYMREAL
+SPC # = 0
+
+Property Violated: PC is constraint # = 5
+(CONST_0.5 / in1_0_1_SYMREAL[0.5000419949511393]) < CONST_1.0001 &&
+(CONST_0.5 / in1_0_1_SYMREAL[0.5000419949511393]) > CONST_0.9999 &&
+in1_0_1_SYMREAL[0.5000419949511393] != CONST_0.0 &&
+in1_0_1_SYMREAL[0.5000419949511393] > CONST_0.0 &&
+CONST_0.5 < in1_0_1_SYMREAL[0.5000419949511393]
+SPC # = 0
+
+Property Violated: result is  "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Gain1030, in1_0)..."
+****************************
+
+====================================================== error #34
+gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Gain1030, in1_0)
+	at rjc.rjc.MainSymbolic(rjc.java:251)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== snapshot #34
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at rjc.rjc.MainSymbolic(rjc.java:251)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 5
+CONST_1.0001 == (CONST_0.5 / in1_0_1_SYMREAL) &&
+(CONST_0.5 / in1_0_1_SYMREAL) > CONST_0.9999 &&
+in1_0_1_SYMREAL != CONST_0.0 &&
+in1_0_1_SYMREAL > CONST_0.0 &&
+CONST_0.5 < in1_0_1_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 5
+(CONST_0.5 / in1_0_1_SYMREAL) > CONST_1.0001 &&
+(CONST_0.5 / in1_0_1_SYMREAL) > CONST_0.9999 &&
+in1_0_1_SYMREAL != CONST_0.0 &&
+in1_0_1_SYMREAL > CONST_0.0 &&
+CONST_0.5 < in1_0_1_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 3
+in1_0_1_SYMREAL == CONST_0.0 &&
+in1_0_1_SYMREAL > CONST_0.0 &&
+CONST_0.5 < in1_0_1_SYMREAL
+SPC # = 0
+
+Property Violated: PC is constraint # = 1
+in1_0_1_SYMREAL[0.5] == CONST_0.5
+SPC # = 0
+
+Property Violated: result is  "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Gain1030, in1_0)..."
+****************************
+
+====================================================== error #35
+gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Gain1030, in1_0)
+	at rjc.rjc.MainSymbolic(rjc.java:251)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+
+====================================================== snapshot #35
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,lockCount:0,suspendCount:0}
+  call stack:
+	at rjc.rjc.MainSymbolic(rjc.java:251)
+	at rjc.RJCMain.DoSimSymbolic(RJCMain.java:112)
+	at rjc.RJCMain.main(RJCMain.java:131)
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 4
+CONST_0.9999 == (CONST_0.5 / in1_0_1_SYMREAL) &&
+in1_0_1_SYMREAL != CONST_0.0 &&
+in1_0_1_SYMREAL < CONST_0.0 &&
+CONST_0.5 > in1_0_1_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 4
+(CONST_0.5 / in1_0_1_SYMREAL) > CONST_0.9999 &&
+in1_0_1_SYMREAL != CONST_0.0 &&
+in1_0_1_SYMREAL < CONST_0.0 &&
+CONST_0.5 > in1_0_1_SYMREAL
+SPC # = 0
+
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 3
+in1_0_1_SYMREAL == CONST_0.0 &&
+in1_0_1_SYMREAL < CONST_0.0 &&
+CONST_0.5 > in1_0_1_SYMREAL
+SPC # = 0
+
+here!!!!!
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 2
+in1_0_1_SYMREAL > CONST_0.0 &&
+CONST_0.5 > in1_0_1_SYMREAL
+SPC # = 0
+
+here!!!!!
+here!!!!!
+here!!!!!
+>>> searchFinished
+<SOLVERCALL> 318
+
+====================================================== Generated Test Inputs: 
+Inputs: in1_0_1_SYMREAL,in1_1_2_SYMREAL,in1_2_3_SYMREAL,in2_0_4_SYMREAL,in2_1_5_SYMREAL,in2_2_6_SYMREAL,out1_CONCRETE,,out2_CONCRETE,
+
+<TEST>MainSymbolic:	0,0,0,0,0.006285533905932738,0,[D@1bc,[D@1bd	--> "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.u_Control_Law_100000081_class_member17.Value944, in2_1)..."
+<TEST>MainSymbolic:	0,0,0,0,0,0.5,[D@1bc,[D@1bd	--> "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Gain1030, in2_2)..."
+<TEST>MainSymbolic:	0,0,0,0,0,6.25E-4,[D@1bc,[D@1bd	--> "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Gain913, in2_2)..."
+<TEST>MainSymbolic:	0,0,0,2.0,0,0,[D@1bc,[D@1bd	--> "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Value793, in2_0)..."
+<TEST>MainSymbolic:	0,0,7.856124671794558E-4,0,0,0,[D@1bc,[D@1bd	--> "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.v_Control_Law_100000084_class_member16.Value948, in1_2)..."
+<TEST>MainSymbolic:	0,0,7.85542103470993E-4,0,0,0,[D@1bc,[D@1bd	--> "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.v_Control_Law_100000084_class_member16.Value948, in1_2)..."
+<TEST>MainSymbolic:	0,0,7.855339059327378E-4,0,0,0,[D@1bc,[D@1bd	--> "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.v_Control_Law_100000084_class_member16.Value948, in1_2)..."
+<TEST>MainSymbolic:	0,0.006286162522184956,0,0,0,0,[D@1bc,[D@1bd	--> "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.u_Control_Law_100000081_class_member17.Value944, in1_1)..."
+<TEST>MainSymbolic:	0,0.006286120316967092,0,0,0,0,[D@1bc,[D@1bd	--> "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.u_Control_Law_100000081_class_member17.Value944, in1_1)..."
+<TEST>MainSymbolic:	0,0.006285533905932738,0,0,0,0,[D@1bc,[D@1bd	--> "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.u_Control_Law_100000081_class_member17.Value944, in1_1)..."
+<TEST>MainSymbolic:	0,0,0,0,0.05500550055005501,0,[D@1bc,[D@1bd	--> "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Value940, in2_1)..."
+<TEST>MainSymbolic:	0,0,0,0,0.05500231841538081,0,[D@1bc,[D@1bd	--> "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Value940, in2_1)..."
+<TEST>MainSymbolic:	0,0,0,0,0.055,0,[D@1bc,[D@1bd	--> "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Value940, in2_1)..."
+<TEST>MainSymbolic:	0,0,0,0,0,0.0052365114071237,[D@1bc,[D@1bd	--> "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Value928, in2_2)..."
+<TEST>MainSymbolic:	0,0,0,0,0,0.005236023456505787,[D@1bc,[D@1bd	--> "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Value928, in2_2)..."
+<TEST>MainSymbolic:	0,0,0,0,0,0.005235987755982988,[D@1bc,[D@1bd	--> "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Value928, in2_2)..."
+<TEST>MainSymbolic:	0,0.05500550055005501,0,0,0,0,[D@1bc,[D@1bd	--> "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Value940, in1_1)..."
+<TEST>MainSymbolic:	0,0.05500231841538081,0,0,0,0,[D@1bc,[D@1bd	--> "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Value940, in1_1)..."
+<TEST>MainSymbolic:	0,0.055,0,0,0,0,[D@1bc,[D@1bd	--> "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Value940, in1_1)..."
+<TEST>MainSymbolic:	0.0052365114071237,0,0,0,0,0,[D@1bc,[D@1bd	--> "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Value928, in1_0)..."
+<TEST>MainSymbolic:	0.005236023456505787,0,0,0,0,0,[D@1bc,[D@1bd	--> "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Value928, in1_0)..."
+<TEST>MainSymbolic:	0.005235987755982988,0,0,0,0,0,[D@1bc,[D@1bd	--> "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Value928, in1_0)..."
+<TEST>MainSymbolic:	0,6.250625062506251E-4,0,0,0,0,[D@1bc,[D@1bd	--> "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Gain913, in1_1)..."
+<TEST>MainSymbolic:	0,6.250550658738875E-4,0,0,0,0,[D@1bc,[D@1bd	--> "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Gain913, in1_1)..."
+<TEST>MainSymbolic:	0,6.25E-4,0,0,0,0,[D@1bc,[D@1bd	--> "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Gain913, in1_1)..."
+<TEST>MainSymbolic:	0,0,0,0,0,7.856124671794558E-4,[D@1bc,[D@1bd	--> "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.v_Control_Law_100000084_class_member16.Value948, in2_2)..."
+<TEST>MainSymbolic:	0,0,0,0,0,7.85542103470993E-4,[D@1bc,[D@1bd	--> "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.v_Control_Law_100000084_class_member16.Value948, in2_2)..."
+<TEST>MainSymbolic:	0,0,0,0,0,7.855339059327378E-4,[D@1bc,[D@1bd	--> "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.v_Control_Law_100000084_class_member16.Value948, in2_2)..."
+<TEST>MainSymbolic:	0,0,0,0.006286162522184956,0,0,[D@1bc,[D@1bd	--> "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.u_Control_Law_100000081_class_member17.Value944, in2_0)..."
+<TEST>MainSymbolic:	0,0,0,0.006286120316967092,0,0,[D@1bc,[D@1bd	--> "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.u_Control_Law_100000081_class_member17.Value944, in2_0)..."
+<TEST>MainSymbolic:	0,0,0,0.006285533905932738,0,0,[D@1bc,[D@1bd	--> "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.u_Control_Law_100000081_class_member17.Value944, in2_0)..."
+<TEST>MainSymbolic:	0,0,0,0,0,0.18182883930822058,[D@1bc,[D@1bd	--> "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Gain1072, in2_2)..."
+<TEST>MainSymbolic:	0,0,0,0,0,0.18181818181818185,[D@1bc,[D@1bd	--> "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Gain1072, in2_2)..."
+<TEST>MainSymbolic:	0.5000419949511393,0,0,0,0,0,[D@1bc,[D@1bd	--> "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Gain1030, in1_0)..."
+<TEST>MainSymbolic:	0.5,0,0,0,0,0,[D@1bc,[D@1bd	--> "java.lang.AssertionError: daikon.Quant.fuzzy.ne(this.Reaction_Jet_Control_100000006_class_member0.Yaw_Control_Law_100000076_class_member15.Gain1030, in1_0)..."
+
+====================================================== results
+error #1: gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty "java.lang.AssertionError: daikon.Quant.fuzzy.ne(th..."
+error #2: gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty "java.lang.AssertionError: daikon.Quant.fuzzy.ne(th..."
+error #3: gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty "java.lang.AssertionError: daikon.Quant.fuzzy.ne(th..."
+error #4: gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty "java.lang.AssertionError: daikon.Quant.fuzzy.ne(th..."
+error #5: gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty "java.lang.AssertionError: daikon.Quant.fuzzy.ne(th..."
+error #6: gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty "java.lang.AssertionError: daikon.Quant.fuzzy.ne(th..."
+error #7: gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty "java.lang.AssertionError: daikon.Quant.fuzzy.ne(th..."
+error #8: gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty "java.lang.AssertionError: daikon.Quant.fuzzy.ne(th..."
+error #9: gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty "java.lang.AssertionError: daikon.Quant.fuzzy.ne(th..."
+error #10: gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty "java.lang.AssertionError: daikon.Quant.fuzzy.ne(th..."
+error #11: gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty "java.lang.AssertionError: daikon.Quant.fuzzy.ne(th..."
+error #12: gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty "java.lang.AssertionError: daikon.Quant.fuzzy.ne(th..."
+error #13: gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty "java.lang.AssertionError: daikon.Quant.fuzzy.ne(th..."
+error #14: gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty "java.lang.AssertionError: daikon.Quant.fuzzy.ne(th..."
+error #15: gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty "java.lang.AssertionError: daikon.Quant.fuzzy.ne(th..."
+error #16: gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty "java.lang.AssertionError: daikon.Quant.fuzzy.ne(th..."
+error #17: gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty "java.lang.AssertionError: daikon.Quant.fuzzy.ne(th..."
+error #18: gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty "java.lang.AssertionError: daikon.Quant.fuzzy.ne(th..."
+error #19: gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty "java.lang.AssertionError: daikon.Quant.fuzzy.ne(th..."
+error #20: gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty "java.lang.AssertionError: daikon.Quant.fuzzy.ne(th..."
+error #21: gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty "java.lang.AssertionError: daikon.Quant.fuzzy.ne(th..."
+error #22: gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty "java.lang.AssertionError: daikon.Quant.fuzzy.ne(th..."
+error #23: gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty "java.lang.AssertionError: daikon.Quant.fuzzy.ne(th..."
+error #24: gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty "java.lang.AssertionError: daikon.Quant.fuzzy.ne(th..."
+error #25: gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty "java.lang.AssertionError: daikon.Quant.fuzzy.ne(th..."
+error #26: gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty "java.lang.AssertionError: daikon.Quant.fuzzy.ne(th..."
+error #27: gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty "java.lang.AssertionError: daikon.Quant.fuzzy.ne(th..."
+error #28: gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty "java.lang.AssertionError: daikon.Quant.fuzzy.ne(th..."
+error #29: gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty "java.lang.AssertionError: daikon.Quant.fuzzy.ne(th..."
+error #30: gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty "java.lang.AssertionError: daikon.Quant.fuzzy.ne(th..."
+error #31: gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty "java.lang.AssertionError: daikon.Quant.fuzzy.ne(th..."
+error #32: gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty "java.lang.AssertionError: daikon.Quant.fuzzy.ne(th..."
+error #33: gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty "java.lang.AssertionError: daikon.Quant.fuzzy.ne(th..."
+error #34: gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty "java.lang.AssertionError: daikon.Quant.fuzzy.ne(th..."
+error #35: gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty "java.lang.AssertionError: daikon.Quant.fuzzy.ne(th..."
+
+====================================================== statistics
+elapsed time:       00:00:15
+states:             new=417, visited=0, backtracked=417, end=0
+search:             maxDepth=50, constraints hit=24
+choice generators:  thread=1 (signal=0, lock=1, shared ref=0), data=164
+heap:               new=1479, released=4, max live=459, gc-cycles=2
+instructions:       13522
+max memory:         404MB
+loaded code:        classes=108, methods=2119
+
+====================================================== search finished: 10/16/14 9:47 PM

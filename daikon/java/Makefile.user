@@ -1,0 +1,2 @@
+CLASSPATH := .:../plume-lib/java/lib/*:../daikon.jar
+

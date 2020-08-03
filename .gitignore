@@ -2,4 +2,4 @@ jpf-idisc/results/*
 build
 .idea
 *.class
-
+jpf-idisc/traces/
