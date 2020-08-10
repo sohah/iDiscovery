@@ -76,6 +76,9 @@ while true; do
 echo ">>analyze daikon traces for possible invariants"
 java -cp "/Users/sohahussein/git/iDiscovery/daikon/daikon.jar" daikon.Daikon traces/*.dtrace.gz --format java > daikon_invariants.txt
 
+if [ $it == 2 ]; then
+java -cp "/Users/sohahussein/git/iDiscovery/daikon/daikon.jar" daikon.Daikon traces/*.dtrace.gz --format dbc > daikon_invariantsForContractDR.txt
+fi
 #synthsize assersions for Java files based on "daikon_invariant.txt", output instrumented version of program with assertions
 echo ">>synthesize assertions for original program"
 java -cp "$idiscdir/build/main:$idiscdir/lib/*" edu.utexas.gsoc.inv.instrument.AssertionSynthesis "$origjavafile" "$genjavafile" "daikon_invariants.txt" "$meth" $out
