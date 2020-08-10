@@ -1,5 +1,5 @@
 jpf-idisc/results/*
 build
 .idea
-*.class
+jpf-idisc/**/*.class
 jpf-idisc/traces/
