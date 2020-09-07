@@ -1,11 +1,5 @@
 package infusion;
 
-import DiscoveryExamples.gpca.*;
-import choco.cp.solver.constraints.integer.bool.Not;
-import gov.nasa.jpf.symbc.Debug;
-import gov.nasa.jpf.symbc.veritesting.RangerDiscovery.Config;
-import org.opt4j.benchmark.N;
-
 // contains JR refinement over "INFUSION_MGR_FunctionalRecovered.java", without making the state symbolic yet.
 
 public class INFUSION_MGR_Functional {

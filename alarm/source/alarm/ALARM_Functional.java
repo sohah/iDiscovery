@@ -1,7 +1,7 @@
 package alarm;
 
 
-import static DiscoveryExamples.gpca.Div_s32.div_s32;
+import static alarm.Div_s32.div_s32;
 
 // contains JR refinement over "INFUSION_MGR_FunctionalRecovered.java", without making the state symbolic yet.
 
