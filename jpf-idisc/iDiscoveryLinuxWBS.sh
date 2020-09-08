@@ -3,7 +3,7 @@
 #$1 is which specific technique to use for symbolic execution pruning
 
 #import configurations
-source ./iDiscoveryMac.cfg
+source ./iDiscoveryLinuxWBS.cfg
 
 
 
@@ -74,10 +74,10 @@ it=1
 while true; do
 #analyze the daikon traces, generate "daikon_invariants.txt" file which encodes all daikon invariants
 echo ">>analyze daikon traces for possible invariants"
-java -cp "/Users/sohahussein/git/iDiscovery/daikon/daikon.jar" daikon.Daikon traces/*.dtrace.gz --format java > daikon_invariants.txt
+java -cp "/home/soha/git/iDiscovery/daikon/daikon.jar" daikon.Daikon traces/*.dtrace.gz --format java > daikon_invariants.txt
 
 if [ $it == 2 ]; then
-java -cp "/Users/sohahussein/git/iDiscovery/daikon/daikon.jar" daikon.Daikon traces/*.dtrace.gz --format dbc > daikon_invariantsForContractDR.txt
+java -cp "/home/soha/git/iDiscovery/daikon/daikon.jar" daikon.Daikon traces/*.dtrace.gz --format dbc > daikon_invariantsForContractDR.txt
 fi
 #synthsize assersions for Java files based on "daikon_invariant.txt", output instrumented version of program with assertions
 echo ">>synthesize assertions for original program"
