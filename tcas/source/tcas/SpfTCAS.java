@@ -278,10 +278,10 @@ public class SpfTCAS {
 				result_alt_sep_test != DOWNWARD_RA : true);*/
 
         //Prop4:
-        assert ((Up_Separation >= alim_res &&
+      /*  assert ((Up_Separation >= alim_res &&
                 Down_Separation < alim_res) ?
                 result_alt_sep_test != DOWNWARD_RA : true);
-
+*/
 
         /***************** assertions from repairing**************/
         //assert(alim_res > 399);

@@ -52,7 +52,8 @@ public class ASTTreeParser {
         srcMethod = srcMeth;
         typeMap = new HashMap<String, String>();
         retType = "void";
-        initializeTypeMap();
+        System.out.println("MAP INITIALIZATION FOR RJC IS TURNED OFF.... TURN IT ON IF YOU ARE RUNNING RJC.");
+//        initializeTypeMap();
     }
 
     public void initializeTypeMap() {
@@ -150,7 +151,7 @@ public class ASTTreeParser {
                         for (SingleVariableDeclaration para : paras) {
                             Type type = para.getType();
                             fullName += type;
-                            if ((i++) < paras.size() - 1) fullName += ", ";
+                            if ((i++) < paras.size() - 1) fullName += ",";
                         }
                         fullName += ")";
 

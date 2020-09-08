@@ -1,0 +1,1238 @@
+Daikon version 4.6.4, released June 23, 2010; http://pag.csail.mit.edu/daikon.
+Reading declaration files                                                                                [10:08:32 AM]:                                                                                                                                                Processing trace data; reading 98 dtrace files:
+[10:08:33 AM]: Reading traces/alarm-iter0-11.dtrace.gz (line 12953, 40.43%) ...[10:08:34 AM]: Reading traces/alarm-iter0-19.dtrace.gz (line 25000, 78.03%) ...[10:08:35 AM]: Reading traces/alarm-iter0-28.dtrace.gz (line 12274, 38.31%) ...[10:08:36 AM]: Checking size of traces/alarm-iter0-37.dtrace.gz                [10:08:37 AM]: Reading traces/alarm-iter0-47.dtrace.gz (line 21134, 65.97%) ...[10:08:38 AM]: Checking size of traces/alarm-iter1-13.dtrace.gz                [10:08:39 AM]: Reading traces/alarm-iter1-24.dtrace.gz (line 1905, 5.95%) ...  [10:08:40 AM]: Reading traces/alarm-iter1-35.dtrace.gz (line 3469, 10.83%) ... [10:08:41 AM]: Reading traces/alarm-iter1-45.dtrace.gz (line 31812, 99.30%) ...[10:08:41 AM]: Finished reading traces/alarm-iter1-9.dtrace.gz                 
+                                                                                                                                                              ===========================================================================
+alarm.ALARM_Functional:::CLASS
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == alarm.ALARM_Functional.ALARM_Functional_IN_Alarms
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == alarm.ALARM_Functional.ALARM_Functional_IN_Check
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == alarm.ALARM_Functional.ALARM_Functional_IN_Disabled
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == alarm.ALARM_Functional.ALARM_Functional_IN_No
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == alarm.ALARM_Functional.ALARM_Functional_IN_OFF_i
+alarm.ALARM_Functional.ALARM_Functional_IN_Monitor == alarm.ALARM_Functional.ALARM_Functional_IN_NOT_ON
+alarm.ALARM_Functional.ALARM_Functional_IN_Monitor == alarm.ALARM_Functional.ALARM_Functional_IN_OFF
+alarm.ALARM_Functional.ALARM_Functional_IN_Monitor == alarm.ALARM_Functional.ALARM_Functional_IN_ON_a
+alarm.ALARM_Functional.ALARM_Functional_IN_Monitor == alarm.ALARM_Functional.ALARM_Functional_IN_Yes
+alarm.ALARM_Functional.ALARM_Functional_IN_ON == alarm.ALARM_Functional.ALARM_Functional_IN_Yes_o
+alarm.ALARM_Functional.ALARM_Functional_IN_ON == alarm.ALARM_Functional.ALARM_Functional_IN_counting
+===========================================================================
+alarm.ALARM_Functional.ALARM_Functional(alarm.Infusion_Manager_Outputs, alarm.Top_Level_Mode_Outputs, alarm.System_Monitor_Output, alarm.Log_Output, alarm.Operator_Commands, alarm.Drug_Database_Inputs, alarm.Device_Sensor_Inputs, alarm.Device_Configuration_Inputs, alarm.System_Status_Outputs, alarm.Config_Outputs, alarm.Alarm_Outputs, alarm.B_ALARM_Functional_c_T, alarm.DW_ALARM_Functional_f_T):::ENTER
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg0.Commanded_Flow_Rate
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg0.Current_System_Mode
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg0.Log_Message_ID
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg0.Actual_Infusion_Duration
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg1.Log_Message_ID
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg3.Log
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg4.Disable_Audio
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg4.Configuration_Type
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg5.Drug_Name
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg5.Drug_Concentration_High
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg5.Drug_Concentration_Low
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg5.VTBI_High
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg5.VTBI_Low
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg5.Interval_Patient_Bolus
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg5.Number_Max_Patient_Bolus
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg5.Flow_Rate_KVO
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg5.Flow_Rate_High
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg5.Flow_Rate_Low
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg6.Flow_Rate
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg7.Audio_Enable_Duration
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg7.Audio_Level
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg7.Config_Warning_Duration
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg7.Empty_Reservoir
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg7.Low_Reservoir
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg7.Max_Config_Duration
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg7.Max_Duration_Over_Infusion
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg7.Max_Duration_Under_Infusion
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg7.Max_Paused_Duration
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg7.Max_Idle_Duration
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg7.Tolerance_Max
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg7.Tolerance_Min
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg7.Log_Interval
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg7.System_Test_Interval
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg7.Max_Display_Duration
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg7.Max_Confirm_Stop_Duration
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg8.Reservoir_Volume
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg8.Volume_Infused
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg8.Log_Message_ID
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.Patient_ID
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.Drug_Name
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.Drug_Concentration
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.Infusion_Total_Duration
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.VTBI_Total
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.Flow_Rate_Basal
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.Flow_Rate_Intermittent_Bolus
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.Duration_Intermittent_Bolus
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.Interval_Intermittent_Bolus
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.Flow_Rate_Patient_Bolus
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.Duration_Patient_Bolus
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.Lockout_Period_Patient_Bolus
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.Max_Number_of_Patient_Bolus
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.Flow_Rate_KVO
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.Entered_Reservoir_Volume
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.Reservoir_Volume
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.Configured
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.Error_Message_ID
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.Log_Message_ID
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.Config_Timer
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.Config_Mode
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg11.ALARM_OUT_Display_Audio_Disabled_Indicator
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg11.ALARM_OUT_Display_Notification_Command
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg11.ALARM_OUT_Audio_Notification_Command
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg11.ALARM_OUT_Highest_Level_Alarm
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg11.ALARM_OUT_Log_Message_ID
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_Notification
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_Visual
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_Visual
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_Audio
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_Audio
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_CheckAlarm
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_CancelAlarm
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_CancelAlarm
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_SetAlarmStatus
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_Level4
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_IsEmptyReservoir
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_IsEmptyReservoir
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_IsSystemMonitorFailed
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_IsSystemMonitorFailed
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_IsEnviromentalError
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_IsEnviromentalError
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_Level3
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_IsOverInfusionFlowRate
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_IsOverInfusionFlowRate
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_InfusionNotStartedWarning
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_InfusionNotStartedWarning
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_IsOverInfusionVTBI
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_IsOverInfusionVTBI
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_IsAirInLine
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_IsAirInLine
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_IsOcclusion
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_IsOcclusion
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_IsDoorOpen
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_IsDoorOpen
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_Level2
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_IsLowReservoir
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_IsLowReservoir
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_Level1
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_IsUnderInfusion
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_IsUnderInfusion
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_IsFlowRateNotStable
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_IsFlowRateNotStable
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_IsIdleTimeExceeded
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_IsIdleTimeExceeded
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_IsPausedTimeExceeded
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_IsPausedTimeExceeded
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_IsConfigTimeWarning
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_IsConfigTimeWarning
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_IsBatteryError
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_IsBatteryError
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_IsPumpHot
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_IsPumpHot
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_IsLoggingFailed
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_IsLoggingFailed
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_IsHardwareError
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_IsHardwareError
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.overInfusionTimer
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.underInfusionTimer
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.currentAlarm
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.audioTimer
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.cancelAlarm
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.Max_Alarm_Level
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.idletimer
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.pausedtimer
+arg0.New_Infusion == arg1.System_On
+arg0.New_Infusion == arg1.Request_Confirm_Stop
+arg0.New_Infusion == arg2.System_Monitor_Failed
+arg0.New_Infusion == arg3.Logging_Failed
+arg0.New_Infusion == arg4.System_Start
+arg0.New_Infusion == arg4.System_Stop
+arg0.New_Infusion == arg4.Infusion_Initiate
+arg0.New_Infusion == arg4.Infusion_Inhibit
+arg0.New_Infusion == arg4.Infusion_Cancel
+arg0.New_Infusion == arg4.Data_Config
+arg0.New_Infusion == arg4.Next
+arg0.New_Infusion == arg4.Back
+arg0.New_Infusion == arg4.Cancel
+arg0.New_Infusion == arg4.Keyboard
+arg0.New_Infusion == arg4.Notification_Cancel
+arg0.New_Infusion == arg4.Confirm_Stop
+arg0.New_Infusion == arg5.Known_Prescription
+arg0.New_Infusion == arg6.Flow_Rate_Not_Stable
+arg0.New_Infusion == arg6.Air_In_Line
+arg0.New_Infusion == arg6.Occlusion
+arg0.New_Infusion == arg6.Door_Open
+arg0.New_Infusion == arg6.Temp
+arg0.New_Infusion == arg6.Air_Pressure
+arg0.New_Infusion == arg6.Humidity
+arg0.New_Infusion == arg6.Battery_Depleted
+arg0.New_Infusion == arg6.Battery_Low
+arg0.New_Infusion == arg6.Battery_Unable_To_Charge
+arg0.New_Infusion == arg6.Supply_Voltage
+arg0.New_Infusion == arg6.CPU_In_Error
+arg0.New_Infusion == arg6.RTC_In_Error
+arg0.New_Infusion == arg6.Watchdog_Interrupted
+arg0.New_Infusion == arg6.Memory_Corrupted
+arg0.New_Infusion == arg6.Pump_Too_Hot
+arg0.New_Infusion == arg6.Pump_Overheated
+arg0.New_Infusion == arg6.Pump_Primed
+arg0.New_Infusion == arg6.Post_Successful
+arg0.New_Infusion == arg8.Reservoir_Empty
+arg0.New_Infusion == arg8.In_Therapy
+arg0.New_Infusion == arg9.Request_Config_Type
+arg0.New_Infusion == arg9.Request_Confirm_Infusion_Initiate
+arg0.New_Infusion == arg9.Request_Patient_Drug_Info
+arg0.New_Infusion == arg9.Request_Infusion_Info
+arg0.New_Infusion == arg11.System_On
+arg0.New_Infusion == arg11.System_Monitor_Failed
+arg0.New_Infusion == arg11.Logging_Failed
+arg0.New_Infusion == arg11.Infusion_Initiate
+arg0.New_Infusion == arg11.Notification_Cancel
+arg0.New_Infusion == arg11.Flow_Rate_Not_Stable
+arg0.New_Infusion == arg11.Air_In_Line
+arg0.New_Infusion == arg11.Occlusion
+arg0.New_Infusion == arg11.Door_Open
+arg0.New_Infusion == arg11.Temp
+arg0.New_Infusion == arg11.Air_Pressure
+arg0.New_Infusion == arg11.Humidity
+arg0.New_Infusion == arg11.Battery_Depleted
+arg0.New_Infusion == arg11.Battery_Low
+arg0.New_Infusion == arg11.Battery_Unable_To_Charge
+arg0.New_Infusion == arg11.Supply_Voltage
+arg0.New_Infusion == arg11.CPU_In_Error
+arg0.New_Infusion == arg11.RTC_In_Error
+arg0.New_Infusion == arg11.Watchdog_Interrupted
+arg0.New_Infusion == arg11.Memory_Corrupted
+arg0.New_Infusion == arg11.Pump_Too_Hot
+arg0.New_Infusion == arg11.Pump_Overheated
+arg0.New_Infusion == arg11.Reservoir_Empty
+arg0.New_Infusion == arg11.In_Therapy
+arg10.Is_Audio_Disabled == arg10.Notification_Message
+arg10.Is_Audio_Disabled == arg10.Audio_Notification_Command
+arg10.Is_Audio_Disabled == arg10.Highest_Level_Alarm
+arg10.Is_Audio_Disabled == arg10.Log_Message_ID
+arg11.Commanded_Flow_Rate == arg11.Current_System_Mode
+arg11.Commanded_Flow_Rate == arg11.Disable_Audio
+arg11.Commanded_Flow_Rate == arg11.VTBI_High
+arg11.Commanded_Flow_Rate == arg11.Flow_Rate_High
+arg11.Commanded_Flow_Rate == arg11.Flow_Rate_Low
+arg11.Commanded_Flow_Rate == arg11.Flow_Rate
+arg11.Commanded_Flow_Rate == arg11.Audio_Enable_Duration
+arg11.Commanded_Flow_Rate == arg11.Audio_Level
+arg11.Commanded_Flow_Rate == arg11.Config_Warning_Duration
+arg11.Commanded_Flow_Rate == arg11.Low_Reservoir
+arg11.Commanded_Flow_Rate == arg11.Max_Duration_Over_Infusion
+arg11.Commanded_Flow_Rate == arg11.Max_Duration_Under_Infusion
+arg11.Commanded_Flow_Rate == arg11.Max_Paused_Duration
+arg11.Commanded_Flow_Rate == arg11.Max_Idle_Duration
+arg11.Commanded_Flow_Rate == arg11.Tolerance_Max
+arg11.Commanded_Flow_Rate == arg11.Tolerance_Min
+arg11.Commanded_Flow_Rate == arg11.Reservoir_Volume
+arg11.Commanded_Flow_Rate == arg11.Volume_Infused
+arg11.Commanded_Flow_Rate == arg11.Config_Timer
+arg11.Commanded_Flow_Rate == arg12.is_active_c2_ALARM_Functional
+arg0 != null
+arg0.New_Infusion == false
+arg1 != null
+arg2 != null
+arg3 != null
+arg4 != null
+arg5 != null
+arg6 != null
+arg7 != null
+arg8 != null
+arg9 != null
+arg10 != null
+arg10.Is_Audio_Disabled == 0 || arg10.Is_Audio_Disabled == 1
+arg11 != null
+arg11.Commanded_Flow_Rate == 0 || arg11.Commanded_Flow_Rate == 1
+arg12 != null
+arg12.is_c2_ALARM_Functional == 0 || arg12.is_c2_ALARM_Functional == 2
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay >= arg10.Is_Audio_Disabled
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay >= arg11.Commanded_Flow_Rate
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay != arg12.is_c2_ALARM_Functional
+alarm.ALARM_Functional.ALARM_Functional_IN_Monitor > arg10.Is_Audio_Disabled
+alarm.ALARM_Functional.ALARM_Functional_IN_Monitor > arg11.Commanded_Flow_Rate
+alarm.ALARM_Functional.ALARM_Functional_IN_Monitor >= arg12.is_c2_ALARM_Functional
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD <= arg10.Is_Audio_Disabled
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD <= arg11.Commanded_Flow_Rate
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD <= arg12.is_c2_ALARM_Functional
+alarm.ALARM_Functional.ALARM_Functional_IN_ON > arg10.Is_Audio_Disabled
+alarm.ALARM_Functional.ALARM_Functional_IN_ON > arg11.Commanded_Flow_Rate
+alarm.ALARM_Functional.ALARM_Functional_IN_ON > arg12.is_c2_ALARM_Functional
+alarm.ALARM_Functional.ALARM_Functional_IN_Silenced > arg10.Is_Audio_Disabled
+alarm.ALARM_Functional.ALARM_Functional_IN_Silenced > arg11.Commanded_Flow_Rate
+alarm.ALARM_Functional.ALARM_Functional_IN_Silenced > arg12.is_c2_ALARM_Functional
+arg10.Is_Audio_Disabled != arg11.Commanded_Flow_Rate
+arg10.Is_Audio_Disabled != arg12.is_c2_ALARM_Functional
+arg11.Commanded_Flow_Rate <= arg12.is_c2_ALARM_Functional
+===========================================================================
+alarm.ALARM_Functional.ALARM_Functional(alarm.Infusion_Manager_Outputs, alarm.Top_Level_Mode_Outputs, alarm.System_Monitor_Output, alarm.Log_Output, alarm.Operator_Commands, alarm.Drug_Database_Inputs, alarm.Device_Sensor_Inputs, alarm.Device_Configuration_Inputs, alarm.System_Status_Outputs, alarm.Config_Outputs, alarm.Alarm_Outputs, alarm.B_ALARM_Functional_c_T, alarm.DW_ALARM_Functional_f_T):::EXIT
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg0.Commanded_Flow_Rate
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg0.Current_System_Mode
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg0.Log_Message_ID
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg0.Actual_Infusion_Duration
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg1.Log_Message_ID
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg3.Log
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg4.Disable_Audio
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg4.Configuration_Type
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg5.Drug_Name
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg5.Drug_Concentration_High
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg5.Drug_Concentration_Low
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg5.VTBI_High
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg5.VTBI_Low
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg5.Interval_Patient_Bolus
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg5.Number_Max_Patient_Bolus
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg5.Flow_Rate_KVO
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg5.Flow_Rate_High
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg5.Flow_Rate_Low
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg6.Flow_Rate
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg7.Audio_Enable_Duration
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg7.Audio_Level
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg7.Config_Warning_Duration
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg7.Empty_Reservoir
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg7.Low_Reservoir
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg7.Max_Config_Duration
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg7.Max_Duration_Over_Infusion
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg7.Max_Duration_Under_Infusion
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg7.Max_Paused_Duration
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg7.Max_Idle_Duration
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg7.Tolerance_Max
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg7.Tolerance_Min
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg7.Log_Interval
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg7.System_Test_Interval
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg7.Max_Display_Duration
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg7.Max_Confirm_Stop_Duration
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg8.Reservoir_Volume
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg8.Volume_Infused
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg8.Log_Message_ID
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.Patient_ID
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.Drug_Name
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.Drug_Concentration
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.Infusion_Total_Duration
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.VTBI_Total
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.Flow_Rate_Basal
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.Flow_Rate_Intermittent_Bolus
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.Duration_Intermittent_Bolus
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.Interval_Intermittent_Bolus
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.Flow_Rate_Patient_Bolus
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.Duration_Patient_Bolus
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.Lockout_Period_Patient_Bolus
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.Max_Number_of_Patient_Bolus
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.Flow_Rate_KVO
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.Entered_Reservoir_Volume
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.Reservoir_Volume
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.Configured
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.Error_Message_ID
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.Log_Message_ID
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.Config_Timer
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9.Config_Mode
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg11.Commanded_Flow_Rate
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg11.Current_System_Mode
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg11.Disable_Audio
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg11.VTBI_High
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg11.Flow_Rate_High
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg11.Flow_Rate_Low
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg11.Flow_Rate
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg11.Audio_Enable_Duration
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg11.Audio_Level
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg11.Config_Warning_Duration
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg11.Low_Reservoir
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg11.Max_Duration_Over_Infusion
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg11.Max_Duration_Under_Infusion
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg11.Max_Paused_Duration
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg11.Max_Idle_Duration
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg11.Tolerance_Max
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg11.Tolerance_Min
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg11.Reservoir_Volume
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg11.Volume_Infused
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg11.Config_Timer
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg12.is_active_c2_ALARM_Functional
+alarm.ALARM_Functional.ALARM_Functional_IN_Monitor == arg12.is_c2_ALARM_Functional
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg10.Is_Audio_Disabled
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg10.Notification_Message
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg10.Audio_Notification_Command
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg10.Highest_Level_Alarm
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg10.Log_Message_ID
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg11.ALARM_OUT_Display_Audio_Disabled_Indicator
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg11.ALARM_OUT_Display_Notification_Command
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg11.ALARM_OUT_Audio_Notification_Command
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg11.ALARM_OUT_Highest_Level_Alarm
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg11.ALARM_OUT_Log_Message_ID
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_Notification
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_Visual
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_Visual
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_Audio
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_Audio
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_CheckAlarm
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_CancelAlarm
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_CancelAlarm
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_SetAlarmStatus
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_Level4
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_IsEmptyReservoir
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_IsEmptyReservoir
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_IsSystemMonitorFailed
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_IsSystemMonitorFailed
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_IsEnviromentalError
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_IsEnviromentalError
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_Level3
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_IsOverInfusionFlowRate
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_IsOverInfusionFlowRate
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_InfusionNotStartedWarning
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_InfusionNotStartedWarning
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_IsOverInfusionVTBI
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_IsOverInfusionVTBI
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_IsAirInLine
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_IsAirInLine
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_IsOcclusion
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_IsOcclusion
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_IsDoorOpen
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_IsDoorOpen
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_Level2
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_IsLowReservoir
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_IsLowReservoir
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_Level1
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_IsUnderInfusion
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_IsUnderInfusion
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_IsFlowRateNotStable
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_IsFlowRateNotStable
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_IsIdleTimeExceeded
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_IsIdleTimeExceeded
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_IsPausedTimeExceeded
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_IsPausedTimeExceeded
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_IsConfigTimeWarning
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_IsConfigTimeWarning
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_IsBatteryError
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_IsBatteryError
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_IsPumpHot
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_IsPumpHot
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_IsLoggingFailed
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_IsLoggingFailed
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_IsHardwareError
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.is_active_IsHardwareError
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.overInfusionTimer
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.underInfusionTimer
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.currentAlarm
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.audioTimer
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.cancelAlarm
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.Max_Alarm_Level
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.idletimer
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg12.pausedtimer
+arg0.New_Infusion == arg1.System_On
+arg0.New_Infusion == arg1.Request_Confirm_Stop
+arg0.New_Infusion == arg2.System_Monitor_Failed
+arg0.New_Infusion == arg3.Logging_Failed
+arg0.New_Infusion == arg4.System_Start
+arg0.New_Infusion == arg4.System_Stop
+arg0.New_Infusion == arg4.Infusion_Initiate
+arg0.New_Infusion == arg4.Infusion_Inhibit
+arg0.New_Infusion == arg4.Infusion_Cancel
+arg0.New_Infusion == arg4.Data_Config
+arg0.New_Infusion == arg4.Next
+arg0.New_Infusion == arg4.Back
+arg0.New_Infusion == arg4.Cancel
+arg0.New_Infusion == arg4.Keyboard
+arg0.New_Infusion == arg4.Notification_Cancel
+arg0.New_Infusion == arg4.Confirm_Stop
+arg0.New_Infusion == arg5.Known_Prescription
+arg0.New_Infusion == arg6.Flow_Rate_Not_Stable
+arg0.New_Infusion == arg6.Air_In_Line
+arg0.New_Infusion == arg6.Occlusion
+arg0.New_Infusion == arg6.Door_Open
+arg0.New_Infusion == arg6.Temp
+arg0.New_Infusion == arg6.Air_Pressure
+arg0.New_Infusion == arg6.Humidity
+arg0.New_Infusion == arg6.Battery_Depleted
+arg0.New_Infusion == arg6.Battery_Low
+arg0.New_Infusion == arg6.Battery_Unable_To_Charge
+arg0.New_Infusion == arg6.Supply_Voltage
+arg0.New_Infusion == arg6.CPU_In_Error
+arg0.New_Infusion == arg6.RTC_In_Error
+arg0.New_Infusion == arg6.Watchdog_Interrupted
+arg0.New_Infusion == arg6.Memory_Corrupted
+arg0.New_Infusion == arg6.Pump_Too_Hot
+arg0.New_Infusion == arg6.Pump_Overheated
+arg0.New_Infusion == arg6.Pump_Primed
+arg0.New_Infusion == arg6.Post_Successful
+arg0.New_Infusion == arg8.Reservoir_Empty
+arg0.New_Infusion == arg8.In_Therapy
+arg0.New_Infusion == arg9.Request_Config_Type
+arg0.New_Infusion == arg9.Request_Confirm_Infusion_Initiate
+arg0.New_Infusion == arg9.Request_Patient_Drug_Info
+arg0.New_Infusion == arg9.Request_Infusion_Info
+arg0.New_Infusion == arg11.System_On
+arg0.New_Infusion == arg11.System_Monitor_Failed
+arg0.New_Infusion == arg11.Logging_Failed
+arg0.New_Infusion == arg11.Infusion_Initiate
+arg0.New_Infusion == arg11.Notification_Cancel
+arg0.New_Infusion == arg11.Flow_Rate_Not_Stable
+arg0.New_Infusion == arg11.Air_In_Line
+arg0.New_Infusion == arg11.Occlusion
+arg0.New_Infusion == arg11.Door_Open
+arg0.New_Infusion == arg11.Temp
+arg0.New_Infusion == arg11.Air_Pressure
+arg0.New_Infusion == arg11.Humidity
+arg0.New_Infusion == arg11.Battery_Depleted
+arg0.New_Infusion == arg11.Battery_Low
+arg0.New_Infusion == arg11.Battery_Unable_To_Charge
+arg0.New_Infusion == arg11.Supply_Voltage
+arg0.New_Infusion == arg11.CPU_In_Error
+arg0.New_Infusion == arg11.RTC_In_Error
+arg0.New_Infusion == arg11.Watchdog_Interrupted
+arg0.New_Infusion == arg11.Memory_Corrupted
+arg0.New_Infusion == arg11.Pump_Too_Hot
+arg0.New_Infusion == arg11.Pump_Overheated
+arg0.New_Infusion == arg11.Reservoir_Empty
+arg0.New_Infusion == arg11.In_Therapy
+arg0.New_Infusion == \old(arg0.New_Infusion)
+arg0.New_Infusion == \old(arg1.System_On)
+arg0.New_Infusion == \old(arg1.Request_Confirm_Stop)
+arg0.New_Infusion == \old(arg2.System_Monitor_Failed)
+arg0.New_Infusion == \old(arg3.Logging_Failed)
+arg0.New_Infusion == \old(arg4.System_Start)
+arg0.New_Infusion == \old(arg4.System_Stop)
+arg0.New_Infusion == \old(arg4.Infusion_Initiate)
+arg0.New_Infusion == \old(arg4.Infusion_Inhibit)
+arg0.New_Infusion == \old(arg4.Infusion_Cancel)
+arg0.New_Infusion == \old(arg4.Data_Config)
+arg0.New_Infusion == \old(arg4.Next)
+arg0.New_Infusion == \old(arg4.Back)
+arg0.New_Infusion == \old(arg4.Cancel)
+arg0.New_Infusion == \old(arg4.Keyboard)
+arg0.New_Infusion == \old(arg4.Notification_Cancel)
+arg0.New_Infusion == \old(arg4.Confirm_Stop)
+arg0.New_Infusion == \old(arg5.Known_Prescription)
+arg0.New_Infusion == \old(arg6.Flow_Rate_Not_Stable)
+arg0.New_Infusion == \old(arg6.Air_In_Line)
+arg0.New_Infusion == \old(arg6.Occlusion)
+arg0.New_Infusion == \old(arg6.Door_Open)
+arg0.New_Infusion == \old(arg6.Temp)
+arg0.New_Infusion == \old(arg6.Air_Pressure)
+arg0.New_Infusion == \old(arg6.Humidity)
+arg0.New_Infusion == \old(arg6.Battery_Depleted)
+arg0.New_Infusion == \old(arg6.Battery_Low)
+arg0.New_Infusion == \old(arg6.Battery_Unable_To_Charge)
+arg0.New_Infusion == \old(arg6.Supply_Voltage)
+arg0.New_Infusion == \old(arg6.CPU_In_Error)
+arg0.New_Infusion == \old(arg6.RTC_In_Error)
+arg0.New_Infusion == \old(arg6.Watchdog_Interrupted)
+arg0.New_Infusion == \old(arg6.Memory_Corrupted)
+arg0.New_Infusion == \old(arg6.Pump_Too_Hot)
+arg0.New_Infusion == \old(arg6.Pump_Overheated)
+arg0.New_Infusion == \old(arg6.Pump_Primed)
+arg0.New_Infusion == \old(arg6.Post_Successful)
+arg0.New_Infusion == \old(arg8.Reservoir_Empty)
+arg0.New_Infusion == \old(arg8.In_Therapy)
+arg0.New_Infusion == \old(arg9.Request_Config_Type)
+arg0.New_Infusion == \old(arg9.Request_Confirm_Infusion_Initiate)
+arg0.New_Infusion == \old(arg9.Request_Patient_Drug_Info)
+arg0.New_Infusion == \old(arg9.Request_Infusion_Info)
+arg0.New_Infusion == \old(arg11.System_On)
+arg0.New_Infusion == \old(arg11.System_Monitor_Failed)
+arg0.New_Infusion == \old(arg11.Logging_Failed)
+arg0.New_Infusion == \old(arg11.Infusion_Initiate)
+arg0.New_Infusion == \old(arg11.Notification_Cancel)
+arg0.New_Infusion == \old(arg11.Flow_Rate_Not_Stable)
+arg0.New_Infusion == \old(arg11.Air_In_Line)
+arg0.New_Infusion == \old(arg11.Occlusion)
+arg0.New_Infusion == \old(arg11.Door_Open)
+arg0.New_Infusion == \old(arg11.Temp)
+arg0.New_Infusion == \old(arg11.Air_Pressure)
+arg0.New_Infusion == \old(arg11.Humidity)
+arg0.New_Infusion == \old(arg11.Battery_Depleted)
+arg0.New_Infusion == \old(arg11.Battery_Low)
+arg0.New_Infusion == \old(arg11.Battery_Unable_To_Charge)
+arg0.New_Infusion == \old(arg11.Supply_Voltage)
+arg0.New_Infusion == \old(arg11.CPU_In_Error)
+arg0.New_Infusion == \old(arg11.RTC_In_Error)
+arg0.New_Infusion == \old(arg11.Watchdog_Interrupted)
+arg0.New_Infusion == \old(arg11.Memory_Corrupted)
+arg0.New_Infusion == \old(arg11.Pump_Too_Hot)
+arg0.New_Infusion == \old(arg11.Pump_Overheated)
+arg0.New_Infusion == \old(arg11.Reservoir_Empty)
+arg0.New_Infusion == \old(arg11.In_Therapy)
+arg0.New_Infusion == false
+===========================================================================
+alarm.ALARM_Functional.ALARM_FunctionalSymWrapper(int, int, boolean, int, int, boolean, boolean, int, boolean, int, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, int, boolean, int, boolean, boolean, int, int, int, int, int, int, int, int, int, int, int, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, boolean, int, int, int, boolean, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, boolean, boolean, boolean, boolean, int, int, int, int, int, int, int, int):::ENTER
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg0
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg1
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg3
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg4
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg7
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg9
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg21
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg23
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg26
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg27
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg28
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg29
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg30
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg31
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg32
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg33
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg34
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg35
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg36
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg56
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg57
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg58
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg59
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg60
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg61
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg62
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg63
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg64
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg65
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg66
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg67
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg68
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg69
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg70
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg71
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg73
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg74
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg75
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg77
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg78
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg79
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg80
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg81
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg82
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg83
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg84
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg85
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg86
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg87
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg88
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg89
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg90
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg91
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg92
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg93
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg94
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg99
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg100
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg101
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg102
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg103
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg104
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg105
+alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay == arg106
+arg2 == arg5
+arg2 == arg6
+arg2 == arg8
+arg2 == arg10
+arg2 == arg11
+arg2 == arg12
+arg2 == arg13
+arg2 == arg14
+arg2 == arg15
+arg2 == arg16
+arg2 == arg17
+arg2 == arg18
+arg2 == arg19
+arg2 == arg20
+arg2 == arg22
+arg2 == arg24
+arg2 == arg25
+arg2 == arg37
+arg2 == arg38
+arg2 == arg39
+arg2 == arg40
+arg2 == arg41
+arg2 == arg42
+arg2 == arg43
+arg2 == arg44
+arg2 == arg45
+arg2 == arg46
+arg2 == arg47
+arg2 == arg48
+arg2 == arg49
+arg2 == arg50
+arg2 == arg51
+arg2 == arg52
+arg2 == arg53
+arg2 == arg54
+arg2 == arg55
+arg2 == arg72
+arg2 == arg76
+arg2 == arg95
+arg2 == arg96
+arg2 == arg97
+arg2 == arg98
+arg2 == false
+===========================================================================
+alarm.ALARM_Functional.ALARM_FunctionalSymWrapper(int, int, boolean, int, int, boolean, boolean, int, boolean, int, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, int, boolean, int, boolean, boolean, int, int, int, int, int, int, int, int, int, int, int, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, boolean, int, int, int, boolean, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, boolean, boolean, boolean, boolean, int, int, int, int, int, int, int, int):::EXIT
+===========================================================================
+alarm.ALARM_Functional.ALARM_Functional_Init(alarm.B_ALARM_Functional_c_T, alarm.DW_ALARM_Functional_f_T):::ENTER
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.Commanded_Flow_Rate
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.Current_System_Mode
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.Disable_Audio
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.VTBI_High
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.Flow_Rate_High
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.Flow_Rate_Low
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.Flow_Rate
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.Audio_Enable_Duration
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.Audio_Level
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.Config_Warning_Duration
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.Low_Reservoir
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.Max_Duration_Over_Infusion
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.Max_Duration_Under_Infusion
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.Max_Paused_Duration
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.Max_Idle_Duration
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.Tolerance_Max
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.Tolerance_Min
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.Reservoir_Volume
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.Volume_Infused
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.Config_Timer
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.ALARM_OUT_Display_Audio_Disabled_Indicator
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.ALARM_OUT_Display_Notification_Command
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.ALARM_OUT_Audio_Notification_Command
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.ALARM_OUT_Highest_Level_Alarm
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.ALARM_OUT_Log_Message_ID
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_c2_ALARM_Functional
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_c2_ALARM_Functional
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_Notification
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_Visual
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_Visual
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_Audio
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_Audio
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_CheckAlarm
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_CancelAlarm
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_CancelAlarm
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_SetAlarmStatus
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_Level4
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_IsEmptyReservoir
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_IsEmptyReservoir
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_IsSystemMonitorFailed
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_IsSystemMonitorFailed
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_IsEnviromentalError
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_IsEnviromentalError
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_Level3
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_IsOverInfusionFlowRate
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_IsOverInfusionFlowRate
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_InfusionNotStartedWarning
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_InfusionNotStartedWarning
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_IsOverInfusionVTBI
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_IsOverInfusionVTBI
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_IsAirInLine
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_IsAirInLine
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_IsOcclusion
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_IsOcclusion
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_IsDoorOpen
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_IsDoorOpen
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_Level2
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_IsLowReservoir
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_IsLowReservoir
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_Level1
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_IsUnderInfusion
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_IsUnderInfusion
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_IsFlowRateNotStable
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_IsFlowRateNotStable
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_IsIdleTimeExceeded
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_IsIdleTimeExceeded
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_IsPausedTimeExceeded
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_IsPausedTimeExceeded
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_IsConfigTimeWarning
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_IsConfigTimeWarning
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_IsBatteryError
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_IsBatteryError
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_IsPumpHot
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_IsPumpHot
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_IsLoggingFailed
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_IsLoggingFailed
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_IsHardwareError
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_IsHardwareError
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.overInfusionTimer
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.underInfusionTimer
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.currentAlarm
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.audioTimer
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.cancelAlarm
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.Max_Alarm_Level
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.idletimer
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.pausedtimer
+arg0.System_On == arg0.System_Monitor_Failed
+arg0.System_On == arg0.Logging_Failed
+arg0.System_On == arg0.Infusion_Initiate
+arg0.System_On == arg0.Notification_Cancel
+arg0.System_On == arg0.Flow_Rate_Not_Stable
+arg0.System_On == arg0.Air_In_Line
+arg0.System_On == arg0.Occlusion
+arg0.System_On == arg0.Door_Open
+arg0.System_On == arg0.Temp
+arg0.System_On == arg0.Air_Pressure
+arg0.System_On == arg0.Humidity
+arg0.System_On == arg0.Battery_Depleted
+arg0.System_On == arg0.Battery_Low
+arg0.System_On == arg0.Battery_Unable_To_Charge
+arg0.System_On == arg0.Supply_Voltage
+arg0.System_On == arg0.CPU_In_Error
+arg0.System_On == arg0.RTC_In_Error
+arg0.System_On == arg0.Watchdog_Interrupted
+arg0.System_On == arg0.Memory_Corrupted
+arg0.System_On == arg0.Pump_Too_Hot
+arg0.System_On == arg0.Pump_Overheated
+arg0.System_On == arg0.Reservoir_Empty
+arg0.System_On == arg0.In_Therapy
+arg0 != null
+arg0.System_On == false
+arg1 != null
+===========================================================================
+alarm.ALARM_Functional.ALARM_Functional_Init(alarm.B_ALARM_Functional_c_T, alarm.DW_ALARM_Functional_f_T):::EXIT
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.Commanded_Flow_Rate
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.Current_System_Mode
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.Disable_Audio
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.VTBI_High
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.Flow_Rate_High
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.Flow_Rate_Low
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.Flow_Rate
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.Audio_Enable_Duration
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.Audio_Level
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.Config_Warning_Duration
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.Low_Reservoir
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.Max_Duration_Over_Infusion
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.Max_Duration_Under_Infusion
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.Max_Paused_Duration
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.Max_Idle_Duration
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.Tolerance_Max
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.Tolerance_Min
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.Reservoir_Volume
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.Volume_Infused
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.Config_Timer
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.ALARM_OUT_Display_Audio_Disabled_Indicator
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.ALARM_OUT_Display_Notification_Command
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.ALARM_OUT_Audio_Notification_Command
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.ALARM_OUT_Highest_Level_Alarm
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg0.ALARM_OUT_Log_Message_ID
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_c2_ALARM_Functional
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_c2_ALARM_Functional
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_Notification
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_Visual
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_Visual
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_Audio
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_Audio
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_CheckAlarm
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_CancelAlarm
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_CancelAlarm
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_SetAlarmStatus
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_Level4
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_IsEmptyReservoir
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_IsEmptyReservoir
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_IsSystemMonitorFailed
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_IsSystemMonitorFailed
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_IsEnviromentalError
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_IsEnviromentalError
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_Level3
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_IsOverInfusionFlowRate
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_IsOverInfusionFlowRate
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_InfusionNotStartedWarning
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_InfusionNotStartedWarning
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_IsOverInfusionVTBI
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_IsOverInfusionVTBI
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_IsAirInLine
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_IsAirInLine
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_IsOcclusion
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_IsOcclusion
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_IsDoorOpen
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_IsDoorOpen
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_Level2
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_IsLowReservoir
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_IsLowReservoir
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_Level1
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_IsUnderInfusion
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_IsUnderInfusion
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_IsFlowRateNotStable
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_IsFlowRateNotStable
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_IsIdleTimeExceeded
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_IsIdleTimeExceeded
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_IsPausedTimeExceeded
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_IsPausedTimeExceeded
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_IsConfigTimeWarning
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_IsConfigTimeWarning
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_IsBatteryError
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_IsBatteryError
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_IsPumpHot
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_IsPumpHot
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_IsLoggingFailed
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_IsLoggingFailed
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_IsHardwareError
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_IsHardwareError
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.overInfusionTimer
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.underInfusionTimer
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.currentAlarm
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.audioTimer
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.cancelAlarm
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.Max_Alarm_Level
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.idletimer
+alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD == arg1.pausedtimer
+arg0.System_On == arg0.System_Monitor_Failed
+arg0.System_On == arg0.Logging_Failed
+arg0.System_On == arg0.Infusion_Initiate
+arg0.System_On == arg0.Notification_Cancel
+arg0.System_On == arg0.Flow_Rate_Not_Stable
+arg0.System_On == arg0.Air_In_Line
+arg0.System_On == arg0.Occlusion
+arg0.System_On == arg0.Door_Open
+arg0.System_On == arg0.Temp
+arg0.System_On == arg0.Air_Pressure
+arg0.System_On == arg0.Humidity
+arg0.System_On == arg0.Battery_Depleted
+arg0.System_On == arg0.Battery_Low
+arg0.System_On == arg0.Battery_Unable_To_Charge
+arg0.System_On == arg0.Supply_Voltage
+arg0.System_On == arg0.CPU_In_Error
+arg0.System_On == arg0.RTC_In_Error
+arg0.System_On == arg0.Watchdog_Interrupted
+arg0.System_On == arg0.Memory_Corrupted
+arg0.System_On == arg0.Pump_Too_Hot
+arg0.System_On == arg0.Pump_Overheated
+arg0.System_On == arg0.Reservoir_Empty
+arg0.System_On == arg0.In_Therapy
+arg0.System_On == \old(arg0.System_On)
+arg0.System_On == \old(arg0.System_Monitor_Failed)
+arg0.System_On == \old(arg0.Logging_Failed)
+arg0.System_On == \old(arg0.Infusion_Initiate)
+arg0.System_On == \old(arg0.Notification_Cancel)
+arg0.System_On == \old(arg0.Flow_Rate_Not_Stable)
+arg0.System_On == \old(arg0.Air_In_Line)
+arg0.System_On == \old(arg0.Occlusion)
+arg0.System_On == \old(arg0.Door_Open)
+arg0.System_On == \old(arg0.Temp)
+arg0.System_On == \old(arg0.Air_Pressure)
+arg0.System_On == \old(arg0.Humidity)
+arg0.System_On == \old(arg0.Battery_Depleted)
+arg0.System_On == \old(arg0.Battery_Low)
+arg0.System_On == \old(arg0.Battery_Unable_To_Charge)
+arg0.System_On == \old(arg0.Supply_Voltage)
+arg0.System_On == \old(arg0.CPU_In_Error)
+arg0.System_On == \old(arg0.RTC_In_Error)
+arg0.System_On == \old(arg0.Watchdog_Interrupted)
+arg0.System_On == \old(arg0.Memory_Corrupted)
+arg0.System_On == \old(arg0.Pump_Too_Hot)
+arg0.System_On == \old(arg0.Pump_Overheated)
+arg0.System_On == \old(arg0.Reservoir_Empty)
+arg0.System_On == \old(arg0.In_Therapy)
+arg0.System_On == false
+===========================================================================
+alarm.ALARM_Functional.main(java.lang.String[]):::ENTER
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay) == daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_Monitor-1)
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay) == daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_NOT_ON-1)
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay) == daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_OFF-1)
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay) == daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_ON_a-1)
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay) == daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_Yes-1)
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay-1) == daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD)
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_Alarms-1) == daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD)
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_Check-1) == daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD)
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_Disabled-1) == daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD)
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_Monitor) == daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_ON-1)
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_Monitor) == daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_Yes_o-1)
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_Monitor) == daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_counting-1)
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD) == daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_No-1)
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD) == daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_OFF_i-1)
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_ON) == daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_Silenced-1)
+arg0 != null
+arg0.getClass() == java.lang.String[].class
+daikon.Quant.eltsNotEqual(arg0, null)
+daikon.Quant.size(arg0) == 107
+===========================================================================
+alarm.ALARM_Functional.main(java.lang.String[]):::EXIT
+daikon.Quant.pairwiseEqual(arg0, \old(arg0))
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay) == daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_Monitor-1)
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay) == \old(daikon.Quant.getElement_Object(arg0, \new(alarm.ALARM_Functional.ALARM_Functional_IN_Monitor)-1))
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay) == daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_NOT_ON-1)
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay) == \old(daikon.Quant.getElement_Object(arg0, \new(alarm.ALARM_Functional.ALARM_Functional_IN_NOT_ON)-1))
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay) == daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_OFF-1)
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay) == \old(daikon.Quant.getElement_Object(arg0, \new(alarm.ALARM_Functional.ALARM_Functional_IN_OFF)-1))
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay) == daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_ON_a-1)
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay) == \old(daikon.Quant.getElement_Object(arg0, \new(alarm.ALARM_Functional.ALARM_Functional_IN_ON_a)-1))
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay) == daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_Yes-1)
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay) == \old(daikon.Quant.getElement_Object(arg0, \new(alarm.ALARM_Functional.ALARM_Functional_IN_Yes)-1))
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay-1) == daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD)
+\old(daikon.Quant.getElement_Object(arg0, \new(alarm.ALARM_Functional.ALARM_Functional_IN_AlarmDisplay)-1)) == daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD)
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_Alarms-1) == daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD)
+\old(daikon.Quant.getElement_Object(arg0, \new(alarm.ALARM_Functional.ALARM_Functional_IN_Alarms)-1)) == daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD)
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_Check-1) == daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD)
+\old(daikon.Quant.getElement_Object(arg0, \new(alarm.ALARM_Functional.ALARM_Functional_IN_Check)-1)) == daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD)
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_Disabled-1) == daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD)
+\old(daikon.Quant.getElement_Object(arg0, \new(alarm.ALARM_Functional.ALARM_Functional_IN_Disabled)-1)) == daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD)
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_Monitor) == daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_ON-1)
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_Monitor) == \old(daikon.Quant.getElement_Object(arg0, \new(alarm.ALARM_Functional.ALARM_Functional_IN_ON)-1))
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_Monitor) == daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_Yes_o-1)
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_Monitor) == \old(daikon.Quant.getElement_Object(arg0, \new(alarm.ALARM_Functional.ALARM_Functional_IN_Yes_o)-1))
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_Monitor) == daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_counting-1)
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_Monitor) == \old(daikon.Quant.getElement_Object(arg0, \new(alarm.ALARM_Functional.ALARM_Functional_IN_counting)-1))
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD) == daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_No-1)
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD) == \old(daikon.Quant.getElement_Object(arg0, \new(alarm.ALARM_Functional.ALARM_Functional_IN_No)-1))
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD) == daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_OFF_i-1)
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_NO_ACTIVE_CHILD) == \old(daikon.Quant.getElement_Object(arg0, \new(alarm.ALARM_Functional.ALARM_Functional_IN_OFF_i)-1))
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_ON) == daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_Silenced-1)
+daikon.Quant.getElement_Object(arg0, alarm.ALARM_Functional.ALARM_Functional_IN_ON) == \old(daikon.Quant.getElement_Object(arg0, \new(alarm.ALARM_Functional.ALARM_Functional_IN_Silenced)-1))
+daikon.Quant.eltsNotEqual(arg0, null)
+===========================================================================
+alarm.Alarm_Outputs:::OBJECT
+this.Is_Audio_Disabled == this.Notification_Message
+this.Is_Audio_Disabled == this.Audio_Notification_Command
+this.Is_Audio_Disabled == this.Highest_Level_Alarm
+this.Is_Audio_Disabled == this.Log_Message_ID
+this.Is_Audio_Disabled == 0
+===========================================================================
+alarm.Alarm_Outputs.Alarm_Outputs():::EXIT
+===========================================================================
+alarm.B_ALARM_Functional_c_T:::OBJECT
+this.Commanded_Flow_Rate == this.Current_System_Mode
+this.Commanded_Flow_Rate == this.Disable_Audio
+this.Commanded_Flow_Rate == this.VTBI_High
+this.Commanded_Flow_Rate == this.Flow_Rate_High
+this.Commanded_Flow_Rate == this.Flow_Rate_Low
+this.Commanded_Flow_Rate == this.Flow_Rate
+this.Commanded_Flow_Rate == this.Audio_Enable_Duration
+this.Commanded_Flow_Rate == this.Audio_Level
+this.Commanded_Flow_Rate == this.Config_Warning_Duration
+this.Commanded_Flow_Rate == this.Low_Reservoir
+this.Commanded_Flow_Rate == this.Max_Duration_Over_Infusion
+this.Commanded_Flow_Rate == this.Max_Duration_Under_Infusion
+this.Commanded_Flow_Rate == this.Max_Paused_Duration
+this.Commanded_Flow_Rate == this.Max_Idle_Duration
+this.Commanded_Flow_Rate == this.Tolerance_Max
+this.Commanded_Flow_Rate == this.Tolerance_Min
+this.Commanded_Flow_Rate == this.Reservoir_Volume
+this.Commanded_Flow_Rate == this.Volume_Infused
+this.Commanded_Flow_Rate == this.Config_Timer
+this.Commanded_Flow_Rate == this.ALARM_OUT_Display_Audio_Disabled_Indicator
+this.Commanded_Flow_Rate == this.ALARM_OUT_Display_Notification_Command
+this.Commanded_Flow_Rate == this.ALARM_OUT_Audio_Notification_Command
+this.Commanded_Flow_Rate == this.ALARM_OUT_Highest_Level_Alarm
+this.Commanded_Flow_Rate == this.ALARM_OUT_Log_Message_ID
+this.System_On == this.System_Monitor_Failed
+this.System_On == this.Logging_Failed
+this.System_On == this.Infusion_Initiate
+this.System_On == this.Notification_Cancel
+this.System_On == this.Flow_Rate_Not_Stable
+this.System_On == this.Air_In_Line
+this.System_On == this.Occlusion
+this.System_On == this.Door_Open
+this.System_On == this.Temp
+this.System_On == this.Air_Pressure
+this.System_On == this.Humidity
+this.System_On == this.Battery_Depleted
+this.System_On == this.Battery_Low
+this.System_On == this.Battery_Unable_To_Charge
+this.System_On == this.Supply_Voltage
+this.System_On == this.CPU_In_Error
+this.System_On == this.RTC_In_Error
+this.System_On == this.Watchdog_Interrupted
+this.System_On == this.Memory_Corrupted
+this.System_On == this.Pump_Too_Hot
+this.System_On == this.Pump_Overheated
+this.System_On == this.Reservoir_Empty
+this.System_On == this.In_Therapy
+this.Commanded_Flow_Rate == 0
+this.System_On == false
+===========================================================================
+alarm.B_ALARM_Functional_c_T.B_ALARM_Functional_c_T():::EXIT
+===========================================================================
+alarm.Config_Outputs:::OBJECT
+this.Patient_ID == this.Drug_Name
+this.Patient_ID == this.Drug_Concentration
+this.Patient_ID == this.Infusion_Total_Duration
+this.Patient_ID == this.VTBI_Total
+this.Patient_ID == this.Flow_Rate_Basal
+this.Patient_ID == this.Flow_Rate_Intermittent_Bolus
+this.Patient_ID == this.Duration_Intermittent_Bolus
+this.Patient_ID == this.Interval_Intermittent_Bolus
+this.Patient_ID == this.Flow_Rate_Patient_Bolus
+this.Patient_ID == this.Duration_Patient_Bolus
+this.Patient_ID == this.Lockout_Period_Patient_Bolus
+this.Patient_ID == this.Max_Number_of_Patient_Bolus
+this.Patient_ID == this.Flow_Rate_KVO
+this.Patient_ID == this.Entered_Reservoir_Volume
+this.Patient_ID == this.Reservoir_Volume
+this.Patient_ID == this.Configured
+this.Patient_ID == this.Error_Message_ID
+this.Patient_ID == this.Log_Message_ID
+this.Patient_ID == this.Config_Timer
+this.Patient_ID == this.Config_Mode
+this.Request_Config_Type == this.Request_Confirm_Infusion_Initiate
+this.Request_Config_Type == this.Request_Patient_Drug_Info
+this.Request_Config_Type == this.Request_Infusion_Info
+this.Patient_ID == 0
+this.Request_Config_Type == false
+===========================================================================
+alarm.Config_Outputs.Config_Outputs():::EXIT
+===========================================================================
+alarm.DW_ALARM_Functional_f_T:::OBJECT
+this.is_active_c2_ALARM_Functional == this.is_c2_ALARM_Functional
+this.is_active_c2_ALARM_Functional == this.is_active_Notification
+this.is_active_c2_ALARM_Functional == this.is_Visual
+this.is_active_c2_ALARM_Functional == this.is_active_Visual
+this.is_active_c2_ALARM_Functional == this.is_Audio
+this.is_active_c2_ALARM_Functional == this.is_active_Audio
+this.is_active_c2_ALARM_Functional == this.is_active_CheckAlarm
+this.is_active_c2_ALARM_Functional == this.is_CancelAlarm
+this.is_active_c2_ALARM_Functional == this.is_active_CancelAlarm
+this.is_active_c2_ALARM_Functional == this.is_active_SetAlarmStatus
+this.is_active_c2_ALARM_Functional == this.is_active_Level4
+this.is_active_c2_ALARM_Functional == this.is_IsEmptyReservoir
+this.is_active_c2_ALARM_Functional == this.is_active_IsEmptyReservoir
+this.is_active_c2_ALARM_Functional == this.is_IsSystemMonitorFailed
+this.is_active_c2_ALARM_Functional == this.is_active_IsSystemMonitorFailed
+this.is_active_c2_ALARM_Functional == this.is_IsEnviromentalError
+this.is_active_c2_ALARM_Functional == this.is_active_IsEnviromentalError
+this.is_active_c2_ALARM_Functional == this.is_active_Level3
+this.is_active_c2_ALARM_Functional == this.is_IsOverInfusionFlowRate
+this.is_active_c2_ALARM_Functional == this.is_active_IsOverInfusionFlowRate
+this.is_active_c2_ALARM_Functional == this.is_InfusionNotStartedWarning
+this.is_active_c2_ALARM_Functional == this.is_active_InfusionNotStartedWarning
+this.is_active_c2_ALARM_Functional == this.is_IsOverInfusionVTBI
+this.is_active_c2_ALARM_Functional == this.is_active_IsOverInfusionVTBI
+this.is_active_c2_ALARM_Functional == this.is_IsAirInLine
+this.is_active_c2_ALARM_Functional == this.is_active_IsAirInLine
+this.is_active_c2_ALARM_Functional == this.is_IsOcclusion
+this.is_active_c2_ALARM_Functional == this.is_active_IsOcclusion
+this.is_active_c2_ALARM_Functional == this.is_IsDoorOpen
+this.is_active_c2_ALARM_Functional == this.is_active_IsDoorOpen
+this.is_active_c2_ALARM_Functional == this.is_active_Level2
+this.is_active_c2_ALARM_Functional == this.is_IsLowReservoir
+this.is_active_c2_ALARM_Functional == this.is_active_IsLowReservoir
+this.is_active_c2_ALARM_Functional == this.is_active_Level1
+this.is_active_c2_ALARM_Functional == this.is_IsUnderInfusion
+this.is_active_c2_ALARM_Functional == this.is_active_IsUnderInfusion
+this.is_active_c2_ALARM_Functional == this.is_IsFlowRateNotStable
+this.is_active_c2_ALARM_Functional == this.is_active_IsFlowRateNotStable
+this.is_active_c2_ALARM_Functional == this.is_IsIdleTimeExceeded
+this.is_active_c2_ALARM_Functional == this.is_active_IsIdleTimeExceeded
+this.is_active_c2_ALARM_Functional == this.is_IsPausedTimeExceeded
+this.is_active_c2_ALARM_Functional == this.is_active_IsPausedTimeExceeded
+this.is_active_c2_ALARM_Functional == this.is_IsConfigTimeWarning
+this.is_active_c2_ALARM_Functional == this.is_active_IsConfigTimeWarning
+this.is_active_c2_ALARM_Functional == this.is_IsBatteryError
+this.is_active_c2_ALARM_Functional == this.is_active_IsBatteryError
+this.is_active_c2_ALARM_Functional == this.is_IsPumpHot
+this.is_active_c2_ALARM_Functional == this.is_active_IsPumpHot
+this.is_active_c2_ALARM_Functional == this.is_IsLoggingFailed
+this.is_active_c2_ALARM_Functional == this.is_active_IsLoggingFailed
+this.is_active_c2_ALARM_Functional == this.is_IsHardwareError
+this.is_active_c2_ALARM_Functional == this.is_active_IsHardwareError
+this.is_active_c2_ALARM_Functional == this.overInfusionTimer
+this.is_active_c2_ALARM_Functional == this.underInfusionTimer
+this.is_active_c2_ALARM_Functional == this.currentAlarm
+this.is_active_c2_ALARM_Functional == this.audioTimer
+this.is_active_c2_ALARM_Functional == this.cancelAlarm
+this.is_active_c2_ALARM_Functional == this.Max_Alarm_Level
+this.is_active_c2_ALARM_Functional == this.idletimer
+this.is_active_c2_ALARM_Functional == this.pausedtimer
+this.is_active_c2_ALARM_Functional == 0
+===========================================================================
+alarm.DW_ALARM_Functional_f_T.DW_ALARM_Functional_f_T():::EXIT
+===========================================================================
+alarm.Device_Configuration_Inputs:::OBJECT
+this.Audio_Enable_Duration == this.Audio_Level
+this.Audio_Enable_Duration == this.Config_Warning_Duration
+this.Audio_Enable_Duration == this.Empty_Reservoir
+this.Audio_Enable_Duration == this.Low_Reservoir
+this.Audio_Enable_Duration == this.Max_Config_Duration
+this.Audio_Enable_Duration == this.Max_Duration_Over_Infusion
+this.Audio_Enable_Duration == this.Max_Duration_Under_Infusion
+this.Audio_Enable_Duration == this.Max_Paused_Duration
+this.Audio_Enable_Duration == this.Max_Idle_Duration
+this.Audio_Enable_Duration == this.Tolerance_Max
+this.Audio_Enable_Duration == this.Tolerance_Min
+this.Audio_Enable_Duration == this.Log_Interval
+this.Audio_Enable_Duration == this.System_Test_Interval
+this.Audio_Enable_Duration == this.Max_Display_Duration
+this.Audio_Enable_Duration == this.Max_Confirm_Stop_Duration
+this.Audio_Enable_Duration == 0
+===========================================================================
+alarm.Device_Configuration_Inputs.Device_Configuration_Inputs():::EXIT
+===========================================================================
+alarm.Device_Sensor_Inputs:::OBJECT
+this.Flow_Rate_Not_Stable == this.Air_In_Line
+this.Flow_Rate_Not_Stable == this.Occlusion
+this.Flow_Rate_Not_Stable == this.Door_Open
+this.Flow_Rate_Not_Stable == this.Temp
+this.Flow_Rate_Not_Stable == this.Air_Pressure
+this.Flow_Rate_Not_Stable == this.Humidity
+this.Flow_Rate_Not_Stable == this.Battery_Depleted
+this.Flow_Rate_Not_Stable == this.Battery_Low
+this.Flow_Rate_Not_Stable == this.Battery_Unable_To_Charge
+this.Flow_Rate_Not_Stable == this.Supply_Voltage
+this.Flow_Rate_Not_Stable == this.CPU_In_Error
+this.Flow_Rate_Not_Stable == this.RTC_In_Error
+this.Flow_Rate_Not_Stable == this.Watchdog_Interrupted
+this.Flow_Rate_Not_Stable == this.Memory_Corrupted
+this.Flow_Rate_Not_Stable == this.Pump_Too_Hot
+this.Flow_Rate_Not_Stable == this.Pump_Overheated
+this.Flow_Rate_Not_Stable == this.Pump_Primed
+this.Flow_Rate_Not_Stable == this.Post_Successful
+this.Flow_Rate == 0
+this.Flow_Rate_Not_Stable == false
+===========================================================================
+alarm.Device_Sensor_Inputs.Device_Sensor_Inputs():::EXIT
+===========================================================================
+alarm.Drug_Database_Inputs:::OBJECT
+this.Drug_Name == this.Drug_Concentration_High
+this.Drug_Name == this.Drug_Concentration_Low
+this.Drug_Name == this.VTBI_High
+this.Drug_Name == this.VTBI_Low
+this.Drug_Name == this.Interval_Patient_Bolus
+this.Drug_Name == this.Number_Max_Patient_Bolus
+this.Drug_Name == this.Flow_Rate_KVO
+this.Drug_Name == this.Flow_Rate_High
+this.Drug_Name == this.Flow_Rate_Low
+this.Known_Prescription == false
+this.Drug_Name == 0
+===========================================================================
+alarm.Drug_Database_Inputs.Drug_Database_Inputs():::EXIT
+===========================================================================
+alarm.Infusion_Manager_Outputs:::OBJECT
+this.Commanded_Flow_Rate == this.Current_System_Mode
+this.Commanded_Flow_Rate == this.Log_Message_ID
+this.Commanded_Flow_Rate == this.Actual_Infusion_Duration
+this.Commanded_Flow_Rate == 0
+this.New_Infusion == false
+===========================================================================
+alarm.Infusion_Manager_Outputs.Infusion_Manager_Outputs():::EXIT
+===========================================================================
+alarm.Log_Output:::OBJECT
+this.Log == 0
+this.Logging_Failed == false
+===========================================================================
+alarm.Log_Output.Log_Output():::EXIT
+===========================================================================
+alarm.Operator_Commands:::OBJECT
+this.System_Start == this.System_Stop
+this.System_Start == this.Infusion_Initiate
+this.System_Start == this.Infusion_Inhibit
+this.System_Start == this.Infusion_Cancel
+this.System_Start == this.Data_Config
+this.System_Start == this.Next
+this.System_Start == this.Back
+this.System_Start == this.Cancel
+this.System_Start == this.Keyboard
+this.System_Start == this.Notification_Cancel
+this.System_Start == this.Confirm_Stop
+this.Disable_Audio == this.Configuration_Type
+this.System_Start == false
+this.Disable_Audio == 0
+===========================================================================
+alarm.Operator_Commands.Operator_Commands():::EXIT
+===========================================================================
+alarm.System_Monitor_Output:::OBJECT
+this.System_Monitor_Failed == false
+===========================================================================
+alarm.System_Monitor_Output.System_Monitor_Output():::EXIT
+===========================================================================
+alarm.System_Status_Outputs:::OBJECT
+this.Reservoir_Empty == this.In_Therapy
+this.Reservoir_Volume == this.Volume_Infused
+this.Reservoir_Volume == this.Log_Message_ID
+this.Reservoir_Empty == false
+this.Reservoir_Volume == 0
+===========================================================================
+alarm.System_Status_Outputs.System_Status_Outputs():::EXIT
+===========================================================================
+alarm.Top_Level_Mode_Outputs:::OBJECT
+this.System_On == this.Request_Confirm_Stop
+this.System_On == false
+this.Log_Message_ID == 0
+===========================================================================
+alarm.Top_Level_Mode_Outputs.Top_Level_Mode_Outputs():::EXIT
+Exiting Daikon.

@@ -2,6 +2,7 @@ package infusion;
 
 // contains JR refinement over "INFUSION_MGR_FunctionalRecovered.java", without making the state symbolic yet.
 
+import gov.nasa.jpf.vm.Verify;
 public class INFUSION_MGR_Functional {
     static final int INFUSION_MGR_Functional_IN_ACTIVE = 1;
     static final int INFUSION_MGR_Functional_IN_Basal = 1;
@@ -1084,6 +1085,12 @@ public class INFUSION_MGR_Functional {
             int Log_Message_ID4,
             int Actual_Infusion_Duration) {
 
+		// iDiscovery: new variables introduced by iDiscovery
+
+		// iDiscovery: pre-condition invariants injected by iDiscovery
+
+		// original method body begins
+
         B_INFUSION_MGR_Functional_c_T localB = new B_INFUSION_MGR_Functional_c_T();
 
         DW_INFUSION_MGR_Functional_f_T localDW = new DW_INFUSION_MGR_Functional_f_T();
@@ -1351,11 +1358,15 @@ public class INFUSION_MGR_Functional {
             checkOutput = (rty_IM_OUT.Commanded_Flow_Rate <= rtu_CONFIG_IN.Flow_Rate_KVO);
             assert (!checkCondition || checkOutput);*/
 
-            checkCondition = ((! System_On));
-            checkOutput = (Current_System_Mode == 0);
+          //  checkCondition = ((! System_On));
+            // checkOutput = (Current_System_Mode == 0);
 
-            assert (!checkCondition || checkOutput);
+            // assert (!checkCondition || checkOutput);
         }
+		// original method body ends
+
+
+		// iDiscovery: post-condition invariants injected by iDiscovery
     }
 
     public static void main(String[] args) {

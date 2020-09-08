@@ -81,6 +81,7 @@ java -cp "/home/soha/git/iDiscovery/daikon/daikon.jar" daikon.Daikon traces/*.dt
 #fi
 #synthsize assersions for Java files based on "daikon_invariant.txt", output instrumented version of program with assertions
 echo ">>synthesize assertions for original program"
+echo "java -cp "$idiscdir/build/main:$idiscdir/lib/*" edu.utexas.gsoc.inv.instrument.AssertionSynthesis "$origjavafile" "$genjavafile" "daikon_invariants.txt" "$meth" $out"
 java -cp "$idiscdir/build/main:$idiscdir/lib/*" edu.utexas.gsoc.inv.instrument.AssertionSynthesis "$origjavafile" "$genjavafile" "daikon_invariants.txt" "$meth" $out
 #rebuild the source code for jpf-symbc
 ant -f $targetbuild build

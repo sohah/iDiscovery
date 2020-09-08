@@ -1,20 +1,4 @@
-package wbs;/*
- * Copyright (C) 2014, United States Government, as represented by the
- * Administrator of the National Aeronautics and Space Administration.
- * All rights reserved.
- *
- * Symbolic Pathfinder (jpf-symbc) is licensed under the Apache License,
- * Version 2.0 (the "License"); you may not use this file except
- * in compliance with the License. You may obtain a copy of the License at
- *
- *        http://www.apache.org/licenses/LICENSE-2.0.
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+package wbs;
 
 
 public class WBS {
@@ -38,8 +22,7 @@ public class WBS {
 		Sys_Mode = 0;
 	}
 
-	public void update(int PedalPos, boolean AutoBrake,
-			boolean Skid) {
+	public void update(int PedalPos, boolean AutoBrake, boolean Skid) {
 		int WBS_Node_WBS_AS_MeterValve_Switch;
 		int WBS_Node_WBS_AccumulatorValve_Switch;
 		int WBS_Node_WBS_BSCU_Command_AntiSkidCommand_Normal_Switch;
@@ -245,21 +228,6 @@ public class WBS {
 	   WBS_Node_WBS_BSCU_rlt_PRE1 = WBS_Node_WBS_BSCU_Switch2;
 
 	   WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE = Sys_Mode;
-
-		//Prop1
-		//assert((PedalPos > 0 && PedalPos <= 4 && !Skid) ? (Alt_Pressure > 0 || Nor_Pressure > 0) : true);
-
-		//Prop2
-		//assert((PedalPos > 0 && PedalPos <= 4 && !Skid) ? (Alt_Pressure > 0) : true);
-
-		//Prop3
-		//assert ((PedalPos > 0 && PedalPos <= 4 && !Skid) ? (Nor_Pressure > 0) : true);
-
-		//Prop4
-		//assert((PedalPos > 0 && PedalPos <= 4) ? (Alt_Pressure > 0 || Nor_Pressure > 0) : true);
-
-		//Prop5
-		//assert((PedalPos > 0 && !Skid) ? (Alt_Pressure > 0 || Nor_Pressure > 0) : true);
 
 
 	}

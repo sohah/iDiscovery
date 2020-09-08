@@ -5,6 +5,7 @@ import static alarm.Div_s32.div_s32;
 
 // contains JR refinement over "INFUSION_MGR_FunctionalRecovered.java", without making the state symbolic yet.
 
+import gov.nasa.jpf.vm.Verify;
 public class ALARM_Functional {
     static final int ALARM_Functional_IN_AlarmDisplay = 1;
     static final int ALARM_Functional_IN_Alarms = 1;
@@ -1773,10 +1774,10 @@ public class ALARM_Functional {
         assert (!checkCondition || checkOutput);
 */
         //Prop10: audio_disabled_range
-        checkCondition = (rtu_TLM_MODE_IN.System_On);
+      /*  checkCondition = (rtu_TLM_MODE_IN.System_On);
         checkOutput = (rty_ALARM_OUT.Is_Audio_Disabled == rtu_OP_CMD_IN.Disable_Audio);
         assert (!checkCondition || checkOutput);
-
+*/
 
         /*************** discovery repaired properties *******************/
        /* checkCondition = (rtu_TLM_MODE_IN.System_On && rtu_SYS_STAT_IN.In_Therapy && rtu_SYS_STAT_IN.Reservoir_Empty);
@@ -1938,6 +1939,12 @@ public class ALARM_Functional {
 
     //,B_ALARM_Functional_c_T localB, DW_ALARM_Functional_f_T localDW)
     {
+
+		// iDiscovery: new variables introduced by iDiscovery
+
+		// iDiscovery: pre-condition invariants injected by iDiscovery
+
+		// original method body begins
 
         Infusion_Manager_Outputs rtu_IM_IN = new Infusion_Manager_Outputs();
         rtu_IM_IN.Commanded_Flow_Rate = Commanded_Flow_Rate;
@@ -2209,11 +2216,15 @@ public class ALARM_Functional {
             ALARM_Functional_Init(localB, localDW);
 
             ALARM_Functional(rtu_IM_IN, rtu_tlm_mode_in, rtu_sys_mon_in, rtu_logging_in, rtu_op_cmd_in, rtu_db_in, rtu_sensor_in, rtu_const_in, rtu_sys_stat_in, rtu_config_in, rty_alarm_out, localB, localDW);
-            ALARM_Functional(rtu_IM_IN, rtu_tlm_mode_in, rtu_sys_mon_in, rtu_logging_in, rtu_op_cmd_in, rtu_db_in, rtu_sensor_in, rtu_const_in, rtu_sys_stat_in, rtu_config_in, rty_alarm_out, localB, localDW);
-            ALARM_Functional(rtu_IM_IN, rtu_tlm_mode_in, rtu_sys_mon_in, rtu_logging_in, rtu_op_cmd_in, rtu_db_in, rtu_sensor_in, rtu_const_in, rtu_sys_stat_in, rtu_config_in, rty_alarm_out, localB, localDW);
+            //ALARM_Functional(rtu_IM_IN, rtu_tlm_mode_in, rtu_sys_mon_in, rtu_logging_in, rtu_op_cmd_in, rtu_db_in, rtu_sensor_in, rtu_const_in, rtu_sys_stat_in, rtu_config_in, rty_alarm_out, localB, localDW);
+            //ALARM_Functional(rtu_IM_IN, rtu_tlm_mode_in, rtu_sys_mon_in, rtu_logging_in, rtu_op_cmd_in, rtu_db_in, rtu_sensor_in, rtu_const_in, rtu_sys_stat_in, rtu_config_in, rty_alarm_out, localB, localDW);
 
 
         }
+		// original method body ends
+
+
+		// iDiscovery: post-condition invariants injected by iDiscovery
     }
 
 }

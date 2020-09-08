@@ -1,0 +1,54 @@
+Daikon version 4.6.4, released June 23, 2010; http://pag.csail.mit.edu/daikon.
+Reading declaration files                                                                                [10:03:00 AM]:                                                                                                                                                Processing trace data; reading 24 dtrace files:
+[10:03:00 AM]: Finished reading traces/wbs-iter0-9.dtrace.gz                   
+                                                                               ===========================================================================
+wbs.WBS:::OBJECT
+this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == this.WBS_Node_WBS_BSCU_rlt_PRE1
+this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == this.Nor_Pressure
+this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == this.Alt_Pressure
+this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == this.Sys_Mode
+this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == 0
+this.WBS_Node_WBS_rlt_PRE2 == 0 || this.WBS_Node_WBS_rlt_PRE2 == 100
+this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE <= this.WBS_Node_WBS_rlt_PRE2
+===========================================================================
+wbs.WBS.WBS():::EXIT
+this.WBS_Node_WBS_rlt_PRE2 == 100
+===========================================================================
+wbs.WBS.launch(int, boolean, boolean, int, boolean, boolean, int, boolean, boolean):::ENTER
+arg0 == arg3
+arg0 == arg6
+arg1 == arg2
+arg1 == arg4
+arg1 == arg5
+arg1 == arg7
+arg1 == arg8
+arg0 == 0
+arg1 == false
+===========================================================================
+wbs.WBS.launch(int, boolean, boolean, int, boolean, boolean, int, boolean, boolean):::EXIT
+===========================================================================
+wbs.WBS.main(java.lang.String[]):::ENTER
+arg0 != null
+arg0.getClass() == java.lang.String[].class
+daikon.Quant.eltsNotEqual(arg0, null)
+daikon.Quant.size(arg0) == 3
+===========================================================================
+wbs.WBS.main(java.lang.String[]):::EXIT
+daikon.Quant.pairwiseEqual(arg0, \old(arg0))
+daikon.Quant.eltsNotEqual(arg0, null)
+===========================================================================
+wbs.WBS.update(int, boolean, boolean):::ENTER
+this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == arg0
+arg1 == arg2
+this.WBS_Node_WBS_rlt_PRE2 == 100
+arg1 == false
+===========================================================================
+wbs.WBS.update(int, boolean, boolean):::EXIT
+this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == this.WBS_Node_WBS_rlt_PRE2
+this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == \old(this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE)
+this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == \old(this.WBS_Node_WBS_BSCU_rlt_PRE1)
+this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == \old(this.Nor_Pressure)
+this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == \old(this.Alt_Pressure)
+this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == \old(this.Sys_Mode)
+this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == \old(arg0)
+Exiting Daikon.

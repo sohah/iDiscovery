@@ -1351,10 +1351,10 @@ public class INFUSION_MGR_Functional {
             checkOutput = (rty_IM_OUT.Commanded_Flow_Rate <= rtu_CONFIG_IN.Flow_Rate_KVO);
             assert (!checkCondition || checkOutput);*/
 
-            checkCondition = ((! System_On));
-            checkOutput = (Current_System_Mode == 0);
+          //  checkCondition = ((! System_On));
+            // checkOutput = (Current_System_Mode == 0);
 
-            assert (!checkCondition || checkOutput);
+            // assert (!checkCondition || checkOutput);
         }
     }
 

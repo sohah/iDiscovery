@@ -1,22 +1,7 @@
-package wbs;/*
- * Copyright (C) 2014, United States Government, as represented by the
- * Administrator of the National Aeronautics and Space Administration.
- * All rights reserved.
- *
- * Symbolic Pathfinder (jpf-symbc) is licensed under the Apache License,
- * Version 2.0 (the "License"); you may not use this file except
- * in compliance with the License. You may obtain a copy of the License at
- *
- *        http://www.apache.org/licenses/LICENSE-2.0.
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+package wbs;
 
 
+import gov.nasa.jpf.vm.Verify;
 public class WBS {
 
 	//Internal state
@@ -38,8 +23,13 @@ public class WBS {
 		Sys_Mode = 0;
 	}
 
-	public void update(int PedalPos, boolean AutoBrake,
-			boolean Skid) {
+	public void update(int PedalPos, boolean AutoBrake, boolean Skid) {
+
+		// iDiscovery: new variables introduced by iDiscovery
+
+		// iDiscovery: pre-condition invariants injected by iDiscovery
+
+		// original method body begins
 		int WBS_Node_WBS_AS_MeterValve_Switch;
 		int WBS_Node_WBS_AccumulatorValve_Switch;
 		int WBS_Node_WBS_BSCU_Command_AntiSkidCommand_Normal_Switch;
@@ -246,22 +236,11 @@ public class WBS {
 
 	   WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE = Sys_Mode;
 
-		//Prop1
-		//assert((PedalPos > 0 && PedalPos <= 4 && !Skid) ? (Alt_Pressure > 0 || Nor_Pressure > 0) : true);
 
-		//Prop2
-		//assert((PedalPos > 0 && PedalPos <= 4 && !Skid) ? (Alt_Pressure > 0) : true);
-
-		//Prop3
-		//assert ((PedalPos > 0 && PedalPos <= 4 && !Skid) ? (Nor_Pressure > 0) : true);
-
-		//Prop4
-		//assert((PedalPos > 0 && PedalPos <= 4) ? (Alt_Pressure > 0 || Nor_Pressure > 0) : true);
-
-		//Prop5
-		//assert((PedalPos > 0 && !Skid) ? (Alt_Pressure > 0 || Nor_Pressure > 0) : true);
+		// original method body ends
 
 
+		// iDiscovery: post-condition invariants injected by iDiscovery
 	}
 
 	public static void launch(int pedal1, boolean auto1, boolean skid1, int pedal2, boolean auto2, boolean skid2, int pedal3, boolean auto3, boolean skid3) {

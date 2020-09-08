@@ -1,0 +1,670 @@
+Daikon version 4.6.4, released June 23, 2010; http://pag.csail.mit.edu/daikon.
+Reading declaration files                                                                                [10:13:36 AM]:                                                                                                                                                Processing trace data; reading 98 dtrace files:
+[10:13:37 AM]: Reading traces/infusion-iter0-13.dtrace.gz (line 18873, 98.97%) [10:13:38 AM]: Reading traces/infusion-iter0-26.dtrace.gz (line 4066, 21.32%) .[10:13:39 AM]: Reading traces/infusion-iter0-3.dtrace.gz (line 4127, 21.64%) ..[10:13:40 AM]: Reading traces/infusion-iter1-0.dtrace.gz (line 10961, 57.48%) .[10:13:41 AM]: Reading traces/infusion-iter1-21.dtrace.gz (line 12888, 67.59%) [10:13:42 AM]: Reading traces/infusion-iter1-39.dtrace.gz (line 12973, 68.03%) [10:13:43 AM]: Finished reading traces/infusion-iter1-9.dtrace.gz              
+                                                                                                                                                              ===========================================================================
+infusion.Alarm_Outputs:::OBJECT
+this.Is_Audio_Disabled == this.Notification_Message
+this.Is_Audio_Disabled == this.Audio_Notification_Command
+this.Is_Audio_Disabled == this.Highest_Level_Alarm
+this.Is_Audio_Disabled == this.Log_Message_ID
+this.Is_Audio_Disabled == 0
+===========================================================================
+infusion.Alarm_Outputs.Alarm_Outputs():::EXIT
+===========================================================================
+infusion.B_INFUSION_MGR_Functional_c_T:::OBJECT
+this.Highest_Level_Alarm == this.Infusion_Total_Duration
+this.Highest_Level_Alarm == this.VTBI_Total
+this.Highest_Level_Alarm == this.Flow_Rate_Basal
+this.Highest_Level_Alarm == this.Flow_Rate_Intermittent_Bolus
+this.Highest_Level_Alarm == this.Duration_Intermittent_Bolus
+this.Highest_Level_Alarm == this.Interval_Intermittent_Bolus
+this.Highest_Level_Alarm == this.Flow_Rate_Patient_Bolus
+this.Highest_Level_Alarm == this.Duration_Patient_Bolus
+this.Highest_Level_Alarm == this.Lockout_Period_Patient_Bolus
+this.Highest_Level_Alarm == this.Max_Number_of_Patient_Bolus
+this.Highest_Level_Alarm == this.Flow_Rate_KVO
+this.Highest_Level_Alarm == this.Configured
+this.Highest_Level_Alarm == this.Volume_Infused
+this.Highest_Level_Alarm == this.IM_OUT_Flow_Rate_Commanded
+this.Highest_Level_Alarm == this.IM_OUT_Current_System_Mode
+this.Highest_Level_Alarm == this.IM_OUT_Log_Message_ID
+this.Highest_Level_Alarm == this.IM_OUT_Actual_Infusion_Duration
+this.Infusion_Initiate == this.Infusion_Inhibit
+this.Infusion_Initiate == this.Infusion_Cancel
+this.Infusion_Initiate == this.Patient_Bolus_Request
+this.Infusion_Initiate == this.Reservoir_Empty
+this.Infusion_Initiate == this.IM_OUT_New_Infusion
+this.Highest_Level_Alarm == 0
+this.Infusion_Initiate == false
+===========================================================================
+infusion.B_INFUSION_MGR_Functional_c_T.B_INFUSION_MGR_Functional_c_T():::EXIT
+===========================================================================
+infusion.Config_Outputs:::OBJECT
+this.Patient_ID == this.Drug_Name
+this.Patient_ID == this.Drug_Concentration
+this.Patient_ID == this.Infusion_Total_Duration
+this.Patient_ID == this.VTBI_Total
+this.Patient_ID == this.Flow_Rate_Basal
+this.Patient_ID == this.Flow_Rate_Intermittent_Bolus
+this.Patient_ID == this.Duration_Intermittent_Bolus
+this.Patient_ID == this.Interval_Intermittent_Bolus
+this.Patient_ID == this.Flow_Rate_Patient_Bolus
+this.Patient_ID == this.Duration_Patient_Bolus
+this.Patient_ID == this.Lockout_Period_Patient_Bolus
+this.Patient_ID == this.Max_Number_of_Patient_Bolus
+this.Patient_ID == this.Flow_Rate_KVO
+this.Patient_ID == this.Entered_Reservoir_Volume
+this.Patient_ID == this.Reservoir_Volume
+this.Patient_ID == this.Configured
+this.Patient_ID == this.Error_Message_ID
+this.Patient_ID == this.Log_Message_ID
+this.Patient_ID == this.Config_Timer
+this.Patient_ID == this.Config_Mode
+this.Request_Config_Type == this.Request_Confirm_Infusion_Initiate
+this.Request_Config_Type == this.Request_Patient_Drug_Info
+this.Request_Config_Type == this.Request_Infusion_Info
+this.Patient_ID == 0
+this.Request_Config_Type == false
+===========================================================================
+infusion.Config_Outputs.Config_Outputs():::EXIT
+===========================================================================
+infusion.DW_INFUSION_MGR_Functional_f_T:::OBJECT
+this.is_active_c2_INFUSION_MGR_Functional == this.is_c2_INFUSION_MGR_Functional
+this.is_active_c2_INFUSION_MGR_Functional == this.is_Infusion_Manager
+this.is_active_c2_INFUSION_MGR_Functional == this.is_THERAPY
+this.is_active_c2_INFUSION_MGR_Functional == this.is_Arbiter
+this.is_active_c2_INFUSION_MGR_Functional == this.is_active_Arbiter
+this.is_active_c2_INFUSION_MGR_Functional == this.is_Alarm_Paused
+this.is_active_c2_INFUSION_MGR_Functional == this.is_active_Alarm_Paused
+this.is_active_c2_INFUSION_MGR_Functional == this.is_Manual_Paused
+this.is_active_c2_INFUSION_MGR_Functional == this.is_active_Manual_Paused
+this.is_active_c2_INFUSION_MGR_Functional == this.is_BASAL
+this.is_active_c2_INFUSION_MGR_Functional == this.is_active_BASAL
+this.is_active_c2_INFUSION_MGR_Functional == this.is_Arbiter_d
+this.is_active_c2_INFUSION_MGR_Functional == this.is_active_Arbiter_c
+this.is_active_c2_INFUSION_MGR_Functional == this.is_PATIENT
+this.is_active_c2_INFUSION_MGR_Functional == this.is_active_PATIENT
+this.is_active_c2_INFUSION_MGR_Functional == this.is_INTERMITTENT
+this.is_active_c2_INFUSION_MGR_Functional == this.is_active_INTERMITTENT
+this.is_active_c2_INFUSION_MGR_Functional == this.sbolus_timer
+this.is_active_c2_INFUSION_MGR_Functional == this.pbolus_timer
+this.is_active_c2_INFUSION_MGR_Functional == this.lock_timer
+this.is_active_c2_INFUSION_MGR_Functional == this.number_pbolus
+this.is_active_c2_INFUSION_MGR_Functional == this.sbolusInter_timer
+this.sbolus_req == this.inPatientBolus
+this.is_active_c2_INFUSION_MGR_Functional == 0
+this.sbolus_req == false
+===========================================================================
+infusion.DW_INFUSION_MGR_Functional_f_T.DW_INFUSION_MGR_Functional_f_T():::EXIT
+===========================================================================
+infusion.INFUSION_MGR_Functional:::CLASS
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Basal
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_IDLE
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Infusion_Manager
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_LOCKOUT
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Manual_Paused_KVO
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_OFF
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus == infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NOT_ON
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus == infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_OFF_b
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus == infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus == infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_PAUSED
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus == infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Paused_KVO
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus == infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_THERAPY
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b == infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Patient_Bolus
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b == infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Paused_NoKVO
+===========================================================================
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional(infusion.Top_Level_Mode_Outputs, infusion.Operator_Commands, infusion.Patient_Inputs, infusion.Config_Outputs, infusion.Alarm_Outputs, infusion.System_Status_Outputs, infusion.Infusion_Manager_Outputs, infusion.B_INFUSION_MGR_Functional_c_T, infusion.DW_INFUSION_MGR_Functional_f_T):::ENTER
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg0.Log_Message_ID
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg1.Disable_Audio
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg1.Configuration_Type
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.Patient_ID
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.Drug_Name
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.Drug_Concentration
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.Infusion_Total_Duration
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.VTBI_Total
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.Flow_Rate_Basal
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.Flow_Rate_Intermittent_Bolus
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.Duration_Intermittent_Bolus
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.Interval_Intermittent_Bolus
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.Flow_Rate_Patient_Bolus
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.Duration_Patient_Bolus
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.Lockout_Period_Patient_Bolus
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.Max_Number_of_Patient_Bolus
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.Flow_Rate_KVO
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.Entered_Reservoir_Volume
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.Reservoir_Volume
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.Configured
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.Error_Message_ID
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.Log_Message_ID
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.Config_Timer
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.Config_Mode
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg4.Is_Audio_Disabled
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg4.Notification_Message
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg4.Audio_Notification_Command
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg4.Highest_Level_Alarm
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg4.Log_Message_ID
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg5.Reservoir_Volume
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg5.Volume_Infused
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg5.Log_Message_ID
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg7.IM_OUT_Flow_Rate_Commanded
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg7.IM_OUT_Current_System_Mode
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg7.IM_OUT_Log_Message_ID
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg7.IM_OUT_Actual_Infusion_Duration
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.is_Infusion_Manager
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.is_THERAPY
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.is_Arbiter
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.is_active_Arbiter
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.is_Alarm_Paused
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.is_active_Alarm_Paused
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.is_Manual_Paused
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.is_active_Manual_Paused
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.is_BASAL
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.is_active_BASAL
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.is_Arbiter_d
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.is_active_Arbiter_c
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.is_PATIENT
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.is_active_PATIENT
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.is_INTERMITTENT
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.is_active_INTERMITTENT
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.sbolus_timer
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.pbolus_timer
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.lock_timer
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.number_pbolus
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.sbolusInter_timer
+arg0.System_On == arg0.Request_Confirm_Stop
+arg0.System_On == arg1.System_Start
+arg0.System_On == arg1.System_Stop
+arg0.System_On == arg1.Infusion_Initiate
+arg0.System_On == arg1.Infusion_Inhibit
+arg0.System_On == arg1.Infusion_Cancel
+arg0.System_On == arg1.Data_Config
+arg0.System_On == arg1.Next
+arg0.System_On == arg1.Back
+arg0.System_On == arg1.Cancel
+arg0.System_On == arg1.Keyboard
+arg0.System_On == arg1.Notification_Cancel
+arg0.System_On == arg1.Confirm_Stop
+arg0.System_On == arg2.Patient_Bolus_Request
+arg0.System_On == arg3.Request_Config_Type
+arg0.System_On == arg3.Request_Confirm_Infusion_Initiate
+arg0.System_On == arg3.Request_Patient_Drug_Info
+arg0.System_On == arg3.Request_Infusion_Info
+arg0.System_On == arg5.Reservoir_Empty
+arg0.System_On == arg5.In_Therapy
+arg0.System_On == arg6.New_Infusion
+arg0.System_On == arg7.Infusion_Initiate
+arg0.System_On == arg7.Infusion_Inhibit
+arg0.System_On == arg7.Infusion_Cancel
+arg0.System_On == arg7.Patient_Bolus_Request
+arg0.System_On == arg7.Reservoir_Empty
+arg0.System_On == arg7.IM_OUT_New_Infusion
+arg0.System_On == arg8.sbolus_req
+arg0.System_On == arg8.inPatientBolus
+arg6.Commanded_Flow_Rate == arg6.Current_System_Mode
+arg6.Commanded_Flow_Rate == arg6.Log_Message_ID
+arg6.Commanded_Flow_Rate == arg6.Actual_Infusion_Duration
+arg7.Highest_Level_Alarm == arg7.Infusion_Total_Duration
+arg7.Highest_Level_Alarm == arg7.VTBI_Total
+arg7.Highest_Level_Alarm == arg7.Flow_Rate_Basal
+arg7.Highest_Level_Alarm == arg7.Flow_Rate_Intermittent_Bolus
+arg7.Highest_Level_Alarm == arg7.Duration_Intermittent_Bolus
+arg7.Highest_Level_Alarm == arg7.Interval_Intermittent_Bolus
+arg7.Highest_Level_Alarm == arg7.Flow_Rate_Patient_Bolus
+arg7.Highest_Level_Alarm == arg7.Duration_Patient_Bolus
+arg7.Highest_Level_Alarm == arg7.Lockout_Period_Patient_Bolus
+arg7.Highest_Level_Alarm == arg7.Max_Number_of_Patient_Bolus
+arg7.Highest_Level_Alarm == arg7.Flow_Rate_KVO
+arg7.Highest_Level_Alarm == arg7.Configured
+arg7.Highest_Level_Alarm == arg7.Volume_Infused
+arg7.Highest_Level_Alarm == arg8.is_active_c2_INFUSION_MGR_Functional
+arg0 != null
+arg0.System_On == false
+arg1 != null
+arg2 != null
+arg3 != null
+arg4 != null
+arg5 != null
+arg6 != null
+arg6.Commanded_Flow_Rate == 0 || arg6.Commanded_Flow_Rate == 1
+arg7 != null
+arg7.Highest_Level_Alarm == 0 || arg7.Highest_Level_Alarm == 1
+arg8 != null
+arg8.is_c2_INFUSION_MGR_Functional == 0 || arg8.is_c2_INFUSION_MGR_Functional == 2
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE >= arg6.Commanded_Flow_Rate
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE >= arg7.Highest_Level_Alarm
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != arg8.is_c2_INFUSION_MGR_Functional
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus > arg6.Commanded_Flow_Rate
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus > arg7.Highest_Level_Alarm
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus >= arg8.is_c2_INFUSION_MGR_Functional
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD <= arg6.Commanded_Flow_Rate
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD <= arg7.Highest_Level_Alarm
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD <= arg8.is_c2_INFUSION_MGR_Functional
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b > arg6.Commanded_Flow_Rate
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b > arg7.Highest_Level_Alarm
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b > arg8.is_c2_INFUSION_MGR_Functional
+arg6.Commanded_Flow_Rate != arg7.Highest_Level_Alarm
+arg6.Commanded_Flow_Rate != arg8.is_c2_INFUSION_MGR_Functional
+arg7.Highest_Level_Alarm <= arg8.is_c2_INFUSION_MGR_Functional
+===========================================================================
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional(infusion.Top_Level_Mode_Outputs, infusion.Operator_Commands, infusion.Patient_Inputs, infusion.Config_Outputs, infusion.Alarm_Outputs, infusion.System_Status_Outputs, infusion.Infusion_Manager_Outputs, infusion.B_INFUSION_MGR_Functional_c_T, infusion.DW_INFUSION_MGR_Functional_f_T):::EXIT
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg0.Log_Message_ID
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg1.Disable_Audio
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg1.Configuration_Type
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.Patient_ID
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.Drug_Name
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.Drug_Concentration
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.Infusion_Total_Duration
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.VTBI_Total
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.Flow_Rate_Basal
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.Flow_Rate_Intermittent_Bolus
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.Duration_Intermittent_Bolus
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.Interval_Intermittent_Bolus
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.Flow_Rate_Patient_Bolus
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.Duration_Patient_Bolus
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.Lockout_Period_Patient_Bolus
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.Max_Number_of_Patient_Bolus
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.Flow_Rate_KVO
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.Entered_Reservoir_Volume
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.Reservoir_Volume
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.Configured
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.Error_Message_ID
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.Log_Message_ID
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.Config_Timer
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg3.Config_Mode
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg4.Is_Audio_Disabled
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg4.Notification_Message
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg4.Audio_Notification_Command
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg4.Highest_Level_Alarm
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg4.Log_Message_ID
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg5.Reservoir_Volume
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg5.Volume_Infused
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg5.Log_Message_ID
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg7.Highest_Level_Alarm
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg7.Infusion_Total_Duration
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg7.VTBI_Total
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg7.Flow_Rate_Basal
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg7.Flow_Rate_Intermittent_Bolus
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg7.Duration_Intermittent_Bolus
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg7.Interval_Intermittent_Bolus
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg7.Flow_Rate_Patient_Bolus
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg7.Duration_Patient_Bolus
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg7.Lockout_Period_Patient_Bolus
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg7.Max_Number_of_Patient_Bolus
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg7.Flow_Rate_KVO
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg7.Configured
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg7.Volume_Infused
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg8.is_active_c2_INFUSION_MGR_Functional
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus == arg8.is_c2_INFUSION_MGR_Functional
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg6.Commanded_Flow_Rate
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg6.Current_System_Mode
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg6.Log_Message_ID
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg6.Actual_Infusion_Duration
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg7.IM_OUT_Flow_Rate_Commanded
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg7.IM_OUT_Current_System_Mode
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg7.IM_OUT_Log_Message_ID
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg7.IM_OUT_Actual_Infusion_Duration
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.is_Infusion_Manager
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.is_THERAPY
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.is_Arbiter
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.is_active_Arbiter
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.is_Alarm_Paused
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.is_active_Alarm_Paused
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.is_Manual_Paused
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.is_active_Manual_Paused
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.is_BASAL
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.is_active_BASAL
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.is_Arbiter_d
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.is_active_Arbiter_c
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.is_PATIENT
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.is_active_PATIENT
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.is_INTERMITTENT
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.is_active_INTERMITTENT
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.sbolus_timer
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.pbolus_timer
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.lock_timer
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.number_pbolus
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg8.sbolusInter_timer
+arg0.System_On == arg0.Request_Confirm_Stop
+arg0.System_On == arg1.System_Start
+arg0.System_On == arg1.System_Stop
+arg0.System_On == arg1.Infusion_Initiate
+arg0.System_On == arg1.Infusion_Inhibit
+arg0.System_On == arg1.Infusion_Cancel
+arg0.System_On == arg1.Data_Config
+arg0.System_On == arg1.Next
+arg0.System_On == arg1.Back
+arg0.System_On == arg1.Cancel
+arg0.System_On == arg1.Keyboard
+arg0.System_On == arg1.Notification_Cancel
+arg0.System_On == arg1.Confirm_Stop
+arg0.System_On == arg2.Patient_Bolus_Request
+arg0.System_On == arg3.Request_Config_Type
+arg0.System_On == arg3.Request_Confirm_Infusion_Initiate
+arg0.System_On == arg3.Request_Patient_Drug_Info
+arg0.System_On == arg3.Request_Infusion_Info
+arg0.System_On == arg5.Reservoir_Empty
+arg0.System_On == arg5.In_Therapy
+arg0.System_On == arg6.New_Infusion
+arg0.System_On == arg7.Infusion_Initiate
+arg0.System_On == arg7.Infusion_Inhibit
+arg0.System_On == arg7.Infusion_Cancel
+arg0.System_On == arg7.Patient_Bolus_Request
+arg0.System_On == arg7.Reservoir_Empty
+arg0.System_On == arg7.IM_OUT_New_Infusion
+arg0.System_On == arg8.sbolus_req
+arg0.System_On == arg8.inPatientBolus
+arg0.System_On == \old(arg0.System_On)
+arg0.System_On == \old(arg0.Request_Confirm_Stop)
+arg0.System_On == \old(arg1.System_Start)
+arg0.System_On == \old(arg1.System_Stop)
+arg0.System_On == \old(arg1.Infusion_Initiate)
+arg0.System_On == \old(arg1.Infusion_Inhibit)
+arg0.System_On == \old(arg1.Infusion_Cancel)
+arg0.System_On == \old(arg1.Data_Config)
+arg0.System_On == \old(arg1.Next)
+arg0.System_On == \old(arg1.Back)
+arg0.System_On == \old(arg1.Cancel)
+arg0.System_On == \old(arg1.Keyboard)
+arg0.System_On == \old(arg1.Notification_Cancel)
+arg0.System_On == \old(arg1.Confirm_Stop)
+arg0.System_On == \old(arg2.Patient_Bolus_Request)
+arg0.System_On == \old(arg3.Request_Config_Type)
+arg0.System_On == \old(arg3.Request_Confirm_Infusion_Initiate)
+arg0.System_On == \old(arg3.Request_Patient_Drug_Info)
+arg0.System_On == \old(arg3.Request_Infusion_Info)
+arg0.System_On == \old(arg5.Reservoir_Empty)
+arg0.System_On == \old(arg5.In_Therapy)
+arg0.System_On == \old(arg6.New_Infusion)
+arg0.System_On == \old(arg7.Infusion_Initiate)
+arg0.System_On == \old(arg7.Infusion_Inhibit)
+arg0.System_On == \old(arg7.Infusion_Cancel)
+arg0.System_On == \old(arg7.Patient_Bolus_Request)
+arg0.System_On == \old(arg7.Reservoir_Empty)
+arg0.System_On == \old(arg7.IM_OUT_New_Infusion)
+arg0.System_On == \old(arg8.sbolus_req)
+arg0.System_On == \old(arg8.inPatientBolus)
+arg0.System_On == false
+===========================================================================
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_FunctionalSymWrapper(boolean, boolean, int, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, int, boolean, int, boolean, boolean, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, boolean, boolean, boolean, boolean, int, int, int, int, int, int, int, int, boolean, int, int, int, boolean, int, int, boolean, int, int):::ENTER
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg2
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg13
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg15
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg18
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg19
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg20
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg21
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg22
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg23
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg24
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg25
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg26
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg27
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg28
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg29
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg30
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg31
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg32
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg33
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg34
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg35
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg40
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg41
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg42
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg43
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg44
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg45
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg46
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg47
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg49
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg50
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg51
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg53
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg54
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg56
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE == arg57
+arg0 == arg1
+arg0 == arg3
+arg0 == arg4
+arg0 == arg5
+arg0 == arg6
+arg0 == arg7
+arg0 == arg8
+arg0 == arg9
+arg0 == arg10
+arg0 == arg11
+arg0 == arg12
+arg0 == arg14
+arg0 == arg16
+arg0 == arg17
+arg0 == arg36
+arg0 == arg37
+arg0 == arg38
+arg0 == arg39
+arg0 == arg48
+arg0 == arg52
+arg0 == arg55
+arg0 == false
+===========================================================================
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_FunctionalSymWrapper(boolean, boolean, int, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, int, boolean, int, boolean, boolean, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, boolean, boolean, boolean, boolean, int, int, int, int, int, int, int, int, boolean, int, int, int, boolean, int, int, boolean, int, int):::EXIT
+===========================================================================
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_Init(infusion.B_INFUSION_MGR_Functional_c_T, infusion.DW_INFUSION_MGR_Functional_f_T):::ENTER
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg0.Highest_Level_Alarm
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg0.Infusion_Total_Duration
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg0.VTBI_Total
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg0.Flow_Rate_Basal
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg0.Flow_Rate_Intermittent_Bolus
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg0.Duration_Intermittent_Bolus
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg0.Interval_Intermittent_Bolus
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg0.Flow_Rate_Patient_Bolus
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg0.Duration_Patient_Bolus
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg0.Lockout_Period_Patient_Bolus
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg0.Max_Number_of_Patient_Bolus
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg0.Flow_Rate_KVO
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg0.Configured
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg0.Volume_Infused
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg0.IM_OUT_Flow_Rate_Commanded
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg0.IM_OUT_Current_System_Mode
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg0.IM_OUT_Log_Message_ID
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg0.IM_OUT_Actual_Infusion_Duration
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_c2_INFUSION_MGR_Functional
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.is_c2_INFUSION_MGR_Functional
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.is_Infusion_Manager
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.is_THERAPY
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.is_Arbiter
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_Arbiter
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.is_Alarm_Paused
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_Alarm_Paused
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.is_Manual_Paused
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_Manual_Paused
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.is_BASAL
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_BASAL
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.is_Arbiter_d
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_Arbiter_c
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.is_PATIENT
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_PATIENT
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.is_INTERMITTENT
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_INTERMITTENT
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.sbolus_timer
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.pbolus_timer
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.lock_timer
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.number_pbolus
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.sbolusInter_timer
+arg0.Infusion_Initiate == arg0.Infusion_Inhibit
+arg0.Infusion_Initiate == arg0.Infusion_Cancel
+arg0.Infusion_Initiate == arg0.Patient_Bolus_Request
+arg0.Infusion_Initiate == arg0.Reservoir_Empty
+arg0.Infusion_Initiate == arg0.IM_OUT_New_Infusion
+arg0.Infusion_Initiate == arg1.sbolus_req
+arg0.Infusion_Initiate == arg1.inPatientBolus
+arg0 != null
+arg0.Infusion_Initiate == false
+arg1 != null
+===========================================================================
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_Init(infusion.B_INFUSION_MGR_Functional_c_T, infusion.DW_INFUSION_MGR_Functional_f_T):::EXIT
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg0.Highest_Level_Alarm
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg0.Infusion_Total_Duration
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg0.VTBI_Total
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg0.Flow_Rate_Basal
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg0.Flow_Rate_Intermittent_Bolus
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg0.Duration_Intermittent_Bolus
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg0.Interval_Intermittent_Bolus
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg0.Flow_Rate_Patient_Bolus
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg0.Duration_Patient_Bolus
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg0.Lockout_Period_Patient_Bolus
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg0.Max_Number_of_Patient_Bolus
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg0.Flow_Rate_KVO
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg0.Configured
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg0.Volume_Infused
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg0.IM_OUT_Flow_Rate_Commanded
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg0.IM_OUT_Current_System_Mode
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg0.IM_OUT_Log_Message_ID
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg0.IM_OUT_Actual_Infusion_Duration
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_c2_INFUSION_MGR_Functional
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.is_c2_INFUSION_MGR_Functional
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.is_Infusion_Manager
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.is_THERAPY
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.is_Arbiter
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_Arbiter
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.is_Alarm_Paused
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_Alarm_Paused
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.is_Manual_Paused
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_Manual_Paused
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.is_BASAL
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_BASAL
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.is_Arbiter_d
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_Arbiter_c
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.is_PATIENT
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_PATIENT
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.is_INTERMITTENT
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.is_active_INTERMITTENT
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.sbolus_timer
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.pbolus_timer
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.lock_timer
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.number_pbolus
+infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD == arg1.sbolusInter_timer
+arg0.Infusion_Initiate == arg0.Infusion_Inhibit
+arg0.Infusion_Initiate == arg0.Infusion_Cancel
+arg0.Infusion_Initiate == arg0.Patient_Bolus_Request
+arg0.Infusion_Initiate == arg0.Reservoir_Empty
+arg0.Infusion_Initiate == arg0.IM_OUT_New_Infusion
+arg0.Infusion_Initiate == arg1.sbolus_req
+arg0.Infusion_Initiate == arg1.inPatientBolus
+arg0.Infusion_Initiate == \old(arg0.Infusion_Initiate)
+arg0.Infusion_Initiate == \old(arg0.Infusion_Inhibit)
+arg0.Infusion_Initiate == \old(arg0.Infusion_Cancel)
+arg0.Infusion_Initiate == \old(arg0.Patient_Bolus_Request)
+arg0.Infusion_Initiate == \old(arg0.Reservoir_Empty)
+arg0.Infusion_Initiate == \old(arg0.IM_OUT_New_Infusion)
+arg0.Infusion_Initiate == \old(arg1.sbolus_req)
+arg0.Infusion_Initiate == \old(arg1.inPatientBolus)
+arg0.Infusion_Initiate == false
+===========================================================================
+infusion.INFUSION_MGR_Functional.main(java.lang.String[]):::ENTER
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE) == daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus-1)
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE) == daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NOT_ON-1)
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE) == daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_OFF_b-1)
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE) == daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON-1)
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE) == daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_PAUSED-1)
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE) == daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Paused_KVO-1)
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE) == daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_THERAPY-1)
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE-1) == daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD)
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Basal-1) == daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD)
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_IDLE-1) == daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD)
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Infusion_Manager-1) == daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD)
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus) == daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b-1)
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus) == daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Patient_Bolus-1)
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus) == daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Paused_NoKVO-1)
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_LOCKOUT-1) == daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD)
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Manual_Paused_KVO-1) == daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD)
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD) == daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_OFF-1)
+arg0 != null
+arg0.getClass() == java.lang.String[].class
+daikon.Quant.eltsNotEqual(arg0, null)
+daikon.Quant.size(arg0) == 58
+===========================================================================
+infusion.INFUSION_MGR_Functional.main(java.lang.String[]):::EXIT
+daikon.Quant.pairwiseEqual(arg0, \old(arg0))
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE) == daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus-1)
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE) == \old(daikon.Quant.getElement_Object(arg0, \new(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus)-1))
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE) == daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NOT_ON-1)
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE) == \old(daikon.Quant.getElement_Object(arg0, \new(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NOT_ON)-1))
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE) == daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_OFF_b-1)
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE) == \old(daikon.Quant.getElement_Object(arg0, \new(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_OFF_b)-1))
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE) == daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON-1)
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE) == \old(daikon.Quant.getElement_Object(arg0, \new(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON)-1))
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE) == daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_PAUSED-1)
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE) == \old(daikon.Quant.getElement_Object(arg0, \new(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_PAUSED)-1))
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE) == daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Paused_KVO-1)
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE) == \old(daikon.Quant.getElement_Object(arg0, \new(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Paused_KVO)-1))
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE) == daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_THERAPY-1)
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE) == \old(daikon.Quant.getElement_Object(arg0, \new(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_THERAPY)-1))
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE-1) == daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD)
+\old(daikon.Quant.getElement_Object(arg0, \new(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE)-1)) == daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD)
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Basal-1) == daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD)
+\old(daikon.Quant.getElement_Object(arg0, \new(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Basal)-1)) == daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD)
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_IDLE-1) == daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD)
+\old(daikon.Quant.getElement_Object(arg0, \new(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_IDLE)-1)) == daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD)
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Infusion_Manager-1) == daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD)
+\old(daikon.Quant.getElement_Object(arg0, \new(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Infusion_Manager)-1)) == daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD)
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus) == daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b-1)
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus) == \old(daikon.Quant.getElement_Object(arg0, \new(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b)-1))
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus) == daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Patient_Bolus-1)
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus) == \old(daikon.Quant.getElement_Object(arg0, \new(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Patient_Bolus)-1))
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus) == daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Paused_NoKVO-1)
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus) == \old(daikon.Quant.getElement_Object(arg0, \new(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Paused_NoKVO)-1))
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_LOCKOUT-1) == daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD)
+\old(daikon.Quant.getElement_Object(arg0, \new(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_LOCKOUT)-1)) == daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD)
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Manual_Paused_KVO-1) == daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD)
+\old(daikon.Quant.getElement_Object(arg0, \new(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Manual_Paused_KVO)-1)) == daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD)
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD) == daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_OFF-1)
+daikon.Quant.getElement_Object(arg0, infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD) == \old(daikon.Quant.getElement_Object(arg0, \new(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_OFF)-1))
+daikon.Quant.eltsNotEqual(arg0, null)
+===========================================================================
+infusion.Infusion_Manager_Outputs:::OBJECT
+this.Commanded_Flow_Rate == this.Current_System_Mode
+this.Commanded_Flow_Rate == this.Log_Message_ID
+this.Commanded_Flow_Rate == this.Actual_Infusion_Duration
+this.Commanded_Flow_Rate == 0
+this.New_Infusion == false
+===========================================================================
+infusion.Infusion_Manager_Outputs.Infusion_Manager_Outputs():::EXIT
+===========================================================================
+infusion.Operator_Commands:::OBJECT
+this.System_Start == this.System_Stop
+this.System_Start == this.Infusion_Initiate
+this.System_Start == this.Infusion_Inhibit
+this.System_Start == this.Infusion_Cancel
+this.System_Start == this.Data_Config
+this.System_Start == this.Next
+this.System_Start == this.Back
+this.System_Start == this.Cancel
+this.System_Start == this.Keyboard
+this.System_Start == this.Notification_Cancel
+this.System_Start == this.Confirm_Stop
+this.Disable_Audio == this.Configuration_Type
+this.System_Start == false
+this.Disable_Audio == 0
+===========================================================================
+infusion.Operator_Commands.Operator_Commands():::EXIT
+===========================================================================
+infusion.Patient_Inputs:::OBJECT
+this.Patient_Bolus_Request == false
+===========================================================================
+infusion.Patient_Inputs.Patient_Inputs():::EXIT
+===========================================================================
+infusion.System_Status_Outputs:::OBJECT
+this.Reservoir_Empty == this.In_Therapy
+this.Reservoir_Volume == this.Volume_Infused
+this.Reservoir_Volume == this.Log_Message_ID
+this.Reservoir_Empty == false
+this.Reservoir_Volume == 0
+===========================================================================
+infusion.System_Status_Outputs.System_Status_Outputs():::EXIT
+===========================================================================
+infusion.Top_Level_Mode_Outputs:::OBJECT
+this.System_On == this.Request_Confirm_Stop
+this.System_On == false
+this.Log_Message_ID == 0
+===========================================================================
+infusion.Top_Level_Mode_Outputs.Top_Level_Mode_Outputs():::EXIT
+Exiting Daikon.

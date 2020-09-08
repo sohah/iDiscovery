@@ -1,8 +1,8 @@
 target=tcas.SpfTCAS
 classpath=${jpf-symbc}/build/examples
 sourcepath=${jpf-symbc}/src/examples
-#symbolic.method=tcas.SpfTCAS.mainProcess(sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym)
-symbolic.method=tcas.SpfTCAS.mainProcess(sym#sym#sym#con#con#con#con#con#con#con#con#con)
+symbolic.method=tcas.SpfTCAS.mainProcess(sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym)
+#symbolic.method=tcas.SpfTCAS.mainProcess(sym#sym#sym#con#con#con#con#con#con#con#con#con)
 
 
 #symbolic.minint=-500
