@@ -1,4 +1,4 @@
-target=tcas.SpfTCAS
+target=tcas.SpfTCASMain
 classpath=${jpf-symbc}/build/examples
 sourcepath=${jpf-symbc}/src/examples
 symbolic.method=tcas.SpfTCAS.mainProcess(sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym)

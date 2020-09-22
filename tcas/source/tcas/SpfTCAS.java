@@ -3,51 +3,51 @@ package tcas;
 public class SpfTCAS {
 
     //free input
-    public static int Cur_Vertical_Sep;
-    public static int Own_Tracked_Alt;
-    public static int Own_Tracked_Alt_Rate;
-    public static int Other_Tracked_Alt;
-    public static int Alt_Layer_Value;
-    public static int Up_Separation;
-    public static int Down_Separation;
-    public static int Other_RAC;
-    public static int Other_Capability;
-    public static int Climb_Inhibit;
+    public int Cur_Vertical_Sep;
+    public int Own_Tracked_Alt;
+    public int Own_Tracked_Alt_Rate;
+    public int Other_Tracked_Alt;
+    public int Alt_Layer_Value;
+    public int Up_Separation;
+    public int Down_Separation;
+    public int Other_RAC;
+    public int Other_Capability;
+    public int Climb_Inhibit;
 
 
     //all state input
-    public static int OLEV = 600;
-    public static int MAXALTDIFF = 300;
-    public static int MINSEP = 600;
-    public static int NOZCROSS = 100;
-    public static boolean High_Confidence;
-    public static boolean Two_of_Three_Reports_Valid;
-    static int Positive_RA_Alt_Thresh_0;
-    static int Positive_RA_Alt_Thresh_1;
-    static int Positive_RA_Alt_Thresh_2;
-    static int Positive_RA_Alt_Thresh_3;
-    public static int NO_INTENT = 0;
-    public static int DO_NOT_CLIMB = 1;
-    public static int DO_NOT_DESCEND = 2;
-    public static int TCAS_TA = 1;
-    public static int OTHER = 2;
-    public static int UNRESOLVED = 0;
-    public static int UPWARD_RA = 1;
-    public static int DOWNWARD_RA = 2;
+    public int OLEV = 600;
+    public int MAXALTDIFF = 300;
+    public int MINSEP = 600;
+    public int NOZCROSS = 100;
+    public boolean High_Confidence;
+    public boolean Two_of_Three_Reports_Valid;
+    int Positive_RA_Alt_Thresh_0;
+    int Positive_RA_Alt_Thresh_1;
+    int Positive_RA_Alt_Thresh_2;
+    int Positive_RA_Alt_Thresh_3;
+    public int NO_INTENT = 0;
+    public int DO_NOT_CLIMB = 1;
+    public int DO_NOT_DESCEND = 2;
+    public int TCAS_TA = 1;
+    public int OTHER = 2;
+    public int UNRESOLVED = 0;
+    public int UPWARD_RA = 1;
+    public int DOWNWARD_RA = 2;
 
 
     //created field for output
-    private static int result_alt_sep_test = 0;
-    private static int alim_res = 0;
+    private int result_alt_sep_test = 0;
+    private int alim_res = 0;
 
-    public static void initialize() {
+    public void initialize() {
         Positive_RA_Alt_Thresh_0 = 400;
         Positive_RA_Alt_Thresh_1 = 500;
         Positive_RA_Alt_Thresh_2 = 640;
         Positive_RA_Alt_Thresh_3 = 740;
     }
 
-    public static int ALIM() {
+    public int ALIM() {
         if (Alt_Layer_Value == 0) {
             return Positive_RA_Alt_Thresh_0;
         } else if (Alt_Layer_Value == 1) {
@@ -59,7 +59,7 @@ public class SpfTCAS {
         }
     }
 
-    public static int Inhibit_Biased_Climb() {
+    public int Inhibit_Biased_Climb() {
         if (Climb_Inhibit > 0) {
             int ret = Up_Separation + NOZCROSS;
             return ret;
@@ -68,7 +68,7 @@ public class SpfTCAS {
         }
     }
 
-    public static boolean Non_Crossing_Biased_Climb() {
+    public boolean Non_Crossing_Biased_Climb() {
         int upward_preferred;
         int inhibit_biased_climb = Inhibit_Biased_Climb();
         if (inhibit_biased_climb > Down_Separation) {
@@ -103,7 +103,7 @@ public class SpfTCAS {
         }
     }
 
-    public static boolean Non_Crossing_Biased_Descend() {
+    public boolean Non_Crossing_Biased_Descend() {
         int upward_preferred;
         int inhibit_biased_climb = Inhibit_Biased_Climb();
         if (inhibit_biased_climb > Down_Separation) {
@@ -138,7 +138,7 @@ public class SpfTCAS {
         }
     }
 
-    public static boolean Own_Below_Threat() {
+    public boolean Own_Below_Threat() {
         boolean ret = false;
         if (Own_Tracked_Alt < Other_Tracked_Alt) {
             ret = true;
@@ -146,7 +146,7 @@ public class SpfTCAS {
         return ret;
     }
 
-    public static boolean Own_Above_Threat() {
+    public boolean Own_Above_Threat() {
         boolean ret = false;
         if (Other_Tracked_Alt < Own_Tracked_Alt) {
             ret = true;
@@ -154,7 +154,7 @@ public class SpfTCAS {
         return ret;
     }
 
-    public static int alt_assign() {
+    public int alt_assign() {
         int alt_sep = UNRESOLVED;
         boolean need_upward_RA = false;
         boolean non_crossing_biased_climb = Non_Crossing_Biased_Climb();
@@ -194,7 +194,7 @@ public class SpfTCAS {
         return alt_sep;
     }
 
-    public static int alt_sep_test() {
+    public int alt_sep_test() {
         boolean enabled = false;
         boolean tcas_equipped = false;
         boolean intent_not_known = false;
@@ -229,34 +229,34 @@ public class SpfTCAS {
         return alt_sep;
     }
 
-    public static void mainProcess(int Cur_Vertical_Sep, int High_Confidence_flag, int Two_of_Three_Reports_Valid_flag,
-                                   int Own_Tracked_Alt, int Own_Tracked_Alt_Rate, int Other_Tracked_Alt,
-                                   int Alt_Layer_Value, int Up_Separation, int Down_Separation, int Other_RAC, int Other_Capability, int Climb_Inhibit) {
+    public void mainProcess(int Cur_Vertical_Sep, int High_Confidence_flag, int Two_of_Three_Reports_Valid_flag,
+                            int Own_Tracked_Alt, int Own_Tracked_Alt_Rate, int Other_Tracked_Alt,
+                            int Alt_Layer_Value, int Up_Separation, int Down_Separation, int Other_RAC, int Other_Capability, int Climb_Inhibit) {
         initialize();
-        SpfTCAS.Cur_Vertical_Sep = Cur_Vertical_Sep;
+        this.Cur_Vertical_Sep = Cur_Vertical_Sep;
         if (High_Confidence_flag == 0) {
-            SpfTCAS.High_Confidence = false;
+            this.High_Confidence = false;
         } else {
-            SpfTCAS.High_Confidence = true;
+            this.High_Confidence = true;
         }
         if (Two_of_Three_Reports_Valid_flag == 0) {
-            SpfTCAS.Two_of_Three_Reports_Valid = false;
+            this.Two_of_Three_Reports_Valid = false;
         } else {
-            SpfTCAS.Two_of_Three_Reports_Valid = true;
+            this.Two_of_Three_Reports_Valid = true;
         }
 
-        SpfTCAS.Own_Tracked_Alt = Own_Tracked_Alt;
-        SpfTCAS.Own_Tracked_Alt_Rate = Own_Tracked_Alt_Rate;
-        SpfTCAS.Other_Tracked_Alt = Other_Tracked_Alt;
-        SpfTCAS.Alt_Layer_Value = Alt_Layer_Value;
-        SpfTCAS.Up_Separation = Up_Separation;
-        SpfTCAS.Down_Separation = Down_Separation;
-        SpfTCAS.Other_RAC = Other_RAC;
-        SpfTCAS.Other_Capability = Other_Capability;
-        SpfTCAS.Climb_Inhibit = Climb_Inhibit;
+        this.Own_Tracked_Alt = Own_Tracked_Alt;
+        this.Own_Tracked_Alt_Rate = Own_Tracked_Alt_Rate;
+        this.Other_Tracked_Alt = Other_Tracked_Alt;
+        this.Alt_Layer_Value = Alt_Layer_Value;
+        this.Up_Separation = Up_Separation;
+        this.Down_Separation = Down_Separation;
+        this.Other_RAC = Other_RAC;
+        this.Other_Capability = Other_Capability;
+        this.Climb_Inhibit = Climb_Inhibit;
 
         result_alt_sep_test = alt_sep_test();
-        SpfTCAS.alim_res = ALIM();
+        this.alim_res = ALIM();
 
         // MWW assertions.  These come from ACSL safety property paper: http://people.rennes.inria.fr/Arnaud.Gotlieb/CT_ATM_gotlieb.pdf
 
@@ -285,11 +285,5 @@ public class SpfTCAS {
 
         /***************** assertions from repairing**************/
         //assert(alim_res > 399);
-    }
-
-    public static void main(String[] argv) {
-        mainProcess(601, -1, 0, -1, 0, 0, 0, 301, 400, 0, 0, 1);
-        /*mainProcess(601, -1, 0, -1, 0, 0, 0, 301, 400, 0, 0, 1);
-        mainProcess(601, -1, 0, -1, 0, 0§, 0, 301, 400, 0, 0, 1);*/
     }
 }

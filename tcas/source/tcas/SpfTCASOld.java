@@ -1,54 +1,53 @@
 package tcas;
 
-import gov.nasa.jpf.vm.Verify;
-public class SpfTCAS {
+public class SpfTCASOld {
 
     //free input
-    public int Cur_Vertical_Sep;
-    public int Own_Tracked_Alt;
-    public int Own_Tracked_Alt_Rate;
-    public int Other_Tracked_Alt;
-    public int Alt_Layer_Value;
-    public int Up_Separation;
-    public int Down_Separation;
-    public int Other_RAC;
-    public int Other_Capability;
-    public int Climb_Inhibit;
+    public static int Cur_Vertical_Sep;
+    public static int Own_Tracked_Alt;
+    public static int Own_Tracked_Alt_Rate;
+    public static int Other_Tracked_Alt;
+    public static int Alt_Layer_Value;
+    public static int Up_Separation;
+    public static int Down_Separation;
+    public static int Other_RAC;
+    public static int Other_Capability;
+    public static int Climb_Inhibit;
 
 
     //all state input
-    public int OLEV = 600;
-    public int MAXALTDIFF = 300;
-    public int MINSEP = 600;
-    public int NOZCROSS = 100;
-    public boolean High_Confidence;
-    public boolean Two_of_Three_Reports_Valid;
-    int Positive_RA_Alt_Thresh_0;
-    int Positive_RA_Alt_Thresh_1;
-    int Positive_RA_Alt_Thresh_2;
-    int Positive_RA_Alt_Thresh_3;
-    public int NO_INTENT = 0;
-    public int DO_NOT_CLIMB = 1;
-    public int DO_NOT_DESCEND = 2;
-    public int TCAS_TA = 1;
-    public int OTHER = 2;
-    public int UNRESOLVED = 0;
-    public int UPWARD_RA = 1;
-    public int DOWNWARD_RA = 2;
+    public static int OLEV = 600;
+    public static int MAXALTDIFF = 300;
+    public static int MINSEP = 600;
+    public static int NOZCROSS = 100;
+    public static boolean High_Confidence;
+    public static boolean Two_of_Three_Reports_Valid;
+    static int Positive_RA_Alt_Thresh_0;
+    static int Positive_RA_Alt_Thresh_1;
+    static int Positive_RA_Alt_Thresh_2;
+    static int Positive_RA_Alt_Thresh_3;
+    public static int NO_INTENT = 0;
+    public static int DO_NOT_CLIMB = 1;
+    public static int DO_NOT_DESCEND = 2;
+    public static int TCAS_TA = 1;
+    public static int OTHER = 2;
+    public static int UNRESOLVED = 0;
+    public static int UPWARD_RA = 1;
+    public static int DOWNWARD_RA = 2;
 
 
     //created field for output
-    private int result_alt_sep_test = 0;
-    private int alim_res = 0;
+    private static int result_alt_sep_test = 0;
+    private static int alim_res = 0;
 
-    public void initialize() {
+    public static void initialize() {
         Positive_RA_Alt_Thresh_0 = 400;
         Positive_RA_Alt_Thresh_1 = 500;
         Positive_RA_Alt_Thresh_2 = 640;
         Positive_RA_Alt_Thresh_3 = 740;
     }
 
-    public int ALIM() {
+    public static int ALIM() {
         if (Alt_Layer_Value == 0) {
             return Positive_RA_Alt_Thresh_0;
         } else if (Alt_Layer_Value == 1) {
@@ -60,7 +59,7 @@ public class SpfTCAS {
         }
     }
 
-    public int Inhibit_Biased_Climb() {
+    public static int Inhibit_Biased_Climb() {
         if (Climb_Inhibit > 0) {
             int ret = Up_Separation + NOZCROSS;
             return ret;
@@ -69,7 +68,7 @@ public class SpfTCAS {
         }
     }
 
-    public boolean Non_Crossing_Biased_Climb() {
+    public static boolean Non_Crossing_Biased_Climb() {
         int upward_preferred;
         int inhibit_biased_climb = Inhibit_Biased_Climb();
         if (inhibit_biased_climb > Down_Separation) {
@@ -104,7 +103,7 @@ public class SpfTCAS {
         }
     }
 
-    public boolean Non_Crossing_Biased_Descend() {
+    public static boolean Non_Crossing_Biased_Descend() {
         int upward_preferred;
         int inhibit_biased_climb = Inhibit_Biased_Climb();
         if (inhibit_biased_climb > Down_Separation) {
@@ -139,7 +138,7 @@ public class SpfTCAS {
         }
     }
 
-    public boolean Own_Below_Threat() {
+    public static boolean Own_Below_Threat() {
         boolean ret = false;
         if (Own_Tracked_Alt < Other_Tracked_Alt) {
             ret = true;
@@ -147,7 +146,7 @@ public class SpfTCAS {
         return ret;
     }
 
-    public boolean Own_Above_Threat() {
+    public static boolean Own_Above_Threat() {
         boolean ret = false;
         if (Other_Tracked_Alt < Own_Tracked_Alt) {
             ret = true;
@@ -155,7 +154,7 @@ public class SpfTCAS {
         return ret;
     }
 
-    public int alt_assign() {
+    public static int alt_assign() {
         int alt_sep = UNRESOLVED;
         boolean need_upward_RA = false;
         boolean non_crossing_biased_climb = Non_Crossing_Biased_Climb();
@@ -195,7 +194,7 @@ public class SpfTCAS {
         return alt_sep;
     }
 
-    public int alt_sep_test() {
+    public static int alt_sep_test() {
         boolean enabled = false;
         boolean tcas_equipped = false;
         boolean intent_not_known = false;
@@ -230,40 +229,34 @@ public class SpfTCAS {
         return alt_sep;
     }
 
-    public void mainProcess(int Cur_Vertical_Sep, int High_Confidence_flag, int Two_of_Three_Reports_Valid_flag,
-                            int Own_Tracked_Alt, int Own_Tracked_Alt_Rate, int Other_Tracked_Alt,
-                            int Alt_Layer_Value, int Up_Separation, int Down_Separation, int Other_RAC, int Other_Capability, int Climb_Inhibit) {
-
-		// iDiscovery: new variables introduced by iDiscovery
-
-		// iDiscovery: pre-condition invariants injected by iDiscovery
-
-		// original method body begins
+    public static void mainProcess(int Cur_Vertical_Sep, int High_Confidence_flag, int Two_of_Three_Reports_Valid_flag,
+                                   int Own_Tracked_Alt, int Own_Tracked_Alt_Rate, int Other_Tracked_Alt,
+                                   int Alt_Layer_Value, int Up_Separation, int Down_Separation, int Other_RAC, int Other_Capability, int Climb_Inhibit) {
         initialize();
-        this.Cur_Vertical_Sep = Cur_Vertical_Sep;
+        SpfTCASOld.Cur_Vertical_Sep = Cur_Vertical_Sep;
         if (High_Confidence_flag == 0) {
-            this.High_Confidence = false;
+            SpfTCASOld.High_Confidence = false;
         } else {
-            this.High_Confidence = true;
+            SpfTCASOld.High_Confidence = true;
         }
         if (Two_of_Three_Reports_Valid_flag == 0) {
-            this.Two_of_Three_Reports_Valid = false;
+            SpfTCASOld.Two_of_Three_Reports_Valid = false;
         } else {
-            this.Two_of_Three_Reports_Valid = true;
+            SpfTCASOld.Two_of_Three_Reports_Valid = true;
         }
 
-        this.Own_Tracked_Alt = Own_Tracked_Alt;
-        this.Own_Tracked_Alt_Rate = Own_Tracked_Alt_Rate;
-        this.Other_Tracked_Alt = Other_Tracked_Alt;
-        this.Alt_Layer_Value = Alt_Layer_Value;
-        this.Up_Separation = Up_Separation;
-        this.Down_Separation = Down_Separation;
-        this.Other_RAC = Other_RAC;
-        this.Other_Capability = Other_Capability;
-        this.Climb_Inhibit = Climb_Inhibit;
+        SpfTCASOld.Own_Tracked_Alt = Own_Tracked_Alt;
+        SpfTCASOld.Own_Tracked_Alt_Rate = Own_Tracked_Alt_Rate;
+        SpfTCASOld.Other_Tracked_Alt = Other_Tracked_Alt;
+        SpfTCASOld.Alt_Layer_Value = Alt_Layer_Value;
+        SpfTCASOld.Up_Separation = Up_Separation;
+        SpfTCASOld.Down_Separation = Down_Separation;
+        SpfTCASOld.Other_RAC = Other_RAC;
+        SpfTCASOld.Other_Capability = Other_Capability;
+        SpfTCASOld.Climb_Inhibit = Climb_Inhibit;
 
         result_alt_sep_test = alt_sep_test();
-        this.alim_res = ALIM();
+        SpfTCASOld.alim_res = ALIM();
 
         // MWW assertions.  These come from ACSL safety property paper: http://people.rennes.inria.fr/Arnaud.Gotlieb/CT_ATM_gotlieb.pdf
 
@@ -292,9 +285,11 @@ public class SpfTCAS {
 
         /***************** assertions from repairing**************/
         //assert(alim_res > 399);
-		// original method body ends
+    }
 
-
-		// iDiscovery: post-condition invariants injected by iDiscovery
+    public static void main(String[] argv) {
+        mainProcess(601, -1, 0, -1, 0, 0, 0, 301, 400, 0, 0, 1);
+        mainProcess(601, -1, 0, -1, 0, 0, 0, 301, 400, 0, 0, 1);
+        //mainProcess(601, -1, 0, -1, 0, 0§, 0, 301, 400, 0, 0, 1);
     }
 }
