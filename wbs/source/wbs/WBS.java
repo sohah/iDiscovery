@@ -232,8 +232,9 @@ public class WBS {
 
 	}
 
-	public void launch(int pedal1, boolean auto1, boolean skid1) {
+	public void launch(int pedal1, boolean auto1, boolean skid1, int pedal2, boolean auto2, boolean skid2) {
 		update(pedal1, auto1, skid1);
+		update(pedal2, auto2, skid2);
 	}
 
 	/*public static void main(String[] args) {

@@ -7,11 +7,12 @@ public class WBSMain {
 
 
     public void DoSimSymbolic() {
-        this.wbs.launch(0, false, false);
+        this.wbs.launch(0, false, false,0, false, false);
     }
 
-    public void DoSimSymbolic(int p1, boolean p2, boolean p3) {
-        this.wbs.launch(p1, p2, p3);
+    public void DoSimSymbolic(int p1, boolean p2, boolean p3, int p4, boolean p5, boolean p6) {
+        this.wbs.launch(p1, p2, p3,
+                p4,p5,p6);
     }
 
     public static void main(String[] args) {
@@ -27,7 +28,10 @@ public class WBSMain {
         else {
             wbsMain = new WBSMain();
             wbsMain.DoSimSymbolic(Integer.parseInt(args[0]),
-                    Boolean.parseBoolean(args[1]), Boolean.parseBoolean(args[2]));
+                    Boolean.parseBoolean(args[1]), Boolean.parseBoolean(args[2]),
+
+                    Integer.parseInt(args[3]),
+                    Boolean.parseBoolean(args[4]), Boolean.parseBoolean(args[5]));
         }
     }
 }
