@@ -100,6 +100,7 @@ java -cp "$idiscdir/build/main:$idiscdir/lib/*" edu.utexas.gsoc.inv.InvariantExt
 java -cp "$idiscdir/build/main:$idiscdir/lib/*" edu.utexas.gsoc.inv.InvariantExtractor results/$out/invariants/daikon_invariants_iter_$((it-1)).txt "$meth" pre_invariants.txt
 #check the equivalence
 if diff -q cur_invariants.txt pre_invariants.txt; then
+  echo ">> Fixed-point reached"
 break
 fi
 fi

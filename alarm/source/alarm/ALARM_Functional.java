@@ -1806,7 +1806,7 @@ public class ALARM_Functional {
                 1, 1, 1, 1, 1, 1, 1);
     }
 
-    static private void ALARM_FunctionalSymWrapper(//Symbolic input of Infusion_Manager_Outputs
+    static void ALARM_FunctionalSymWrapper(//Symbolic input of Infusion_Manager_Outputs
                                                    int Commanded_Flow_Rate,
                                                    int Current_System_Mode, boolean New_Infusion,
                                                    int Log_Message_ID_1,
