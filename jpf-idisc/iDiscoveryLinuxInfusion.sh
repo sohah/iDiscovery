@@ -75,15 +75,16 @@ while true; do
 #analyze the daikon traces, generate "daikon_invariants.txt" file which encodes all daikon invariants
 echo ">>analyze daikon traces for possible invariants"
 java -cp "/home/soha/git/iDiscovery/daikon/daikon.jar" daikon.Daikon traces/*.dtrace.gz --format java > daikon_invariants.txt
+echo "java -cp "$idiscdir/build/main:$idiscdir/lib/*" edu.utexas.gsoc.inv.instrument.AssertionSynthesis "$origjavafile" "$genjavafile" "daikon_invariants.txt" "$meth" $out"
 
-if [ $it == 2 ]; then
-java -cp "/home/soha/git/iDiscovery/daikon/daikon.jar" daikon.Daikon traces/*.dtrace.gz --format dbc > daikon_invariantsForContractDR.txt
-fi
 #synthsize assersions for Java files based on "daikon_invariant.txt", output instrumented version of program with assertions
 echo ">>synthesize assertions for original program"
 java -cp "$idiscdir/build/main:$idiscdir/lib/*" edu.utexas.gsoc.inv.instrument.AssertionSynthesis "$origjavafile" "$genjavafile" "daikon_invariants.txt" "$meth" $out
 #rebuild the source code for jpf-symbc
 ant -f $targetbuild build
+
+#if [ 1 -eq 0 ]; then
+
 
 #rename invariants result according to the iteration
 mv daikon_invariants.txt results/$out/invariants/daikon_invariants_iter_$it.txt
@@ -95,6 +96,7 @@ java -cp "$idiscdir/build/main:$idiscdir/lib/*" edu.utexas.gsoc.inv.InvariantExt
 java -cp "$idiscdir/build/main:$idiscdir/lib/*" edu.utexas.gsoc.inv.InvariantExtractor results/$out/invariants/daikon_invariants_iter_$((it-1)).txt "$meth" pre_invariants.txt
 #check the equivalence
 if diff -q cur_invariants.txt pre_invariants.txt; then
+  echo ">> Fixed-point reached"
 break
 fi
 fi
@@ -108,6 +110,7 @@ else
     java $JVM_FLAGS -jar lib/RunJPF.jar $sub_green_jpf > symbolic_output.txt
 fi
 
+#if [ 1 -eq 0 ]; then
 
 #collect test inputs from symbolic execution results
 echo ">>generate new daikon tracing cmds"
@@ -122,3 +125,4 @@ chmod 777 feedback_run_daikon.sh
 ./feedback_run_daikon.sh $source_bin
 ((it++))
 done
+#fi

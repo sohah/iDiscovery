@@ -2,7 +2,7 @@ package infusion;
 
 // contains JR refinement over "INFUSION_MGR_FunctionalRecovered.java", without making the state symbolic yet.
 
-public class INFUSION_MGR_Functional {
+public class INFUSION_MGR_FunctionalOld {
     static final int INFUSION_MGR_Functional_IN_ACTIVE = 1;
     static final int INFUSION_MGR_Functional_IN_Basal = 1;
     static final int INFUSION_MGR_Functional_IN_IDLE = 1;

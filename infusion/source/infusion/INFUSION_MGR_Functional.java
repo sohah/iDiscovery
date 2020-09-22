@@ -1015,13 +1015,13 @@ public class INFUSION_MGR_Functional {
         //  assert (rty_IM_OUT.Commanded_Flow_Rate == 0);
     }
 
-    static private void INFUSION_MGR_FunctionalSymWrapper(
+    static void INFUSION_MGR_FunctionalSymWrapper(
             //Inputs of Infusion_Manager_Outputs rtu_TLM_MODE_IN
             boolean System_On,
             boolean Request_Confirm_Stop,
             int Log_Message_ID1,
 
-            //Operator_Commands rtu_OP_CMD_IN
+        //Operator_Commands rtu_OP_CMD_IN
             boolean System_Start,
             boolean System_Stop,
             boolean Infusion_Initiate,
@@ -1063,12 +1063,14 @@ public class INFUSION_MGR_Functional {
             int Config_Timer,
             int Config_Mode,
 
+
             //Alarm_Outputs rtu_ALARM_IN
             int Is_Audio_Disabled,
             int Notification_Message,
             int Audio_Notification_Command,
             int Highest_Level_Alarm,
             int Log_Message_ID3,
+
 
             //System_Status_Outputs rtu_SYS_STAT_IN
             boolean Reservoir_Empty,
@@ -1094,6 +1096,7 @@ public class INFUSION_MGR_Functional {
         rtu_TLM_MODE_IN.System_On = System_On;
         rtu_TLM_MODE_IN.Request_Confirm_Stop = Request_Confirm_Stop;
         rtu_TLM_MODE_IN.Log_Message_ID = Log_Message_ID1;
+
 
         Operator_Commands rtu_OP_CMD_IN = new Operator_Commands();
         rtu_OP_CMD_IN.System_Start = System_Start;
@@ -1163,7 +1166,9 @@ public class INFUSION_MGR_Functional {
         rty_IM_OUT.New_Infusion = New_Infusion;
         rty_IM_OUT.Log_Message_ID = Log_Message_ID4;
         rty_IM_OUT.Actual_Infusion_Duration = Actual_Infusion_Duration;
-        if(            (0<=  Log_Message_ID1)&&
+
+
+        if(     (0<=  Log_Message_ID1)&&
                 (0<=  Disable_Audio)&&
                 (0<=  Configuration_Type)&&
                 (0<=  Patient_ID)&&
@@ -1241,18 +1246,6 @@ public class INFUSION_MGR_Functional {
                     rtu_SYS_STAT_IN, rty_IM_OUT,
                     localB, localDW);
 
-            INFUSION_MGR_Functional(rtu_TLM_MODE_IN,
-                    rtu_OP_CMD_IN, rtu_PATIENT_IN,
-                    rtu_CONFIG_IN, rtu_ALARM_IN,
-                    rtu_SYS_STAT_IN, rty_IM_OUT,
-                    localB, localDW);
-
-            INFUSION_MGR_Functional(rtu_TLM_MODE_IN,
-                    rtu_OP_CMD_IN, rtu_PATIENT_IN,
-                    rtu_CONFIG_IN, rtu_ALARM_IN,
-                    rtu_SYS_STAT_IN, rty_IM_OUT,
-                    localB, localDW);
-
             boolean checkCondition;
             boolean checkOutput;
 
@@ -1316,7 +1309,12 @@ public class INFUSION_MGR_Functional {
         assert (!checkCondition || checkOutput);*/
 
             //Prop10: mode_basal_implies_infusion_rate_basal
-        /*checkCondition = (rtu_TLM_MODE_IN.System_On && rty_IM_OUT.Current_System_Mode == 2);
+        /*checkCondition = (rtu_TLM_MODE_IN.System_On &    INFUSION_MGR_Functional(rtu_TLM_MODE_IN,
+                    rtu_OP_CMD_IN, rtu_PATIENT_IN,
+                    rtu_CONFIG_IN, rtu_ALARM_IN,
+                    rtu_SYS_STAT_IN, rty_IM_OUT,
+                    localB, localDW);
+& rty_IM_OUT.Current_System_Mode == 2);
         checkOutput = (rty_IM_OUT.Commanded_Flow_Rate == rtu_CONFIG_IN.Flow_Rate_Basal);
         assert (!checkCondition || checkOutput);*/
 
@@ -1357,12 +1355,4 @@ public class INFUSION_MGR_Functional {
             // assert (!checkCondition || checkOutput);
         }
     }
-
-    public static void main(String[] args) {
-        INFUSION_MGR_FunctionalSymWrapper(false, false, 1, false, false, false, false, false, false, false, false,
-                false, false, 1, false, 1, false, false, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, false, false, false, false
-                , 1, 1, 1, 1, 1, 1, 1, 1, false, 1, 1, 1, false, 1, 1, false, 1, 1);
-
-    }
-
 }

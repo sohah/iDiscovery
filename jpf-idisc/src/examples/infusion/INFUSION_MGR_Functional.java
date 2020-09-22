@@ -1016,13 +1016,13 @@ public class INFUSION_MGR_Functional {
         //  assert (rty_IM_OUT.Commanded_Flow_Rate == 0);
     }
 
-    static private void INFUSION_MGR_FunctionalSymWrapper(
+    static void INFUSION_MGR_FunctionalSymWrapper(
             //Inputs of Infusion_Manager_Outputs rtu_TLM_MODE_IN
             boolean System_On,
             boolean Request_Confirm_Stop,
             int Log_Message_ID1,
 
-            //Operator_Commands rtu_OP_CMD_IN
+        //Operator_Commands rtu_OP_CMD_IN
             boolean System_Start,
             boolean System_Stop,
             boolean Infusion_Initiate,
@@ -1064,12 +1064,14 @@ public class INFUSION_MGR_Functional {
             int Config_Timer,
             int Config_Mode,
 
+
             //Alarm_Outputs rtu_ALARM_IN
             int Is_Audio_Disabled,
             int Notification_Message,
             int Audio_Notification_Command,
             int Highest_Level_Alarm,
             int Log_Message_ID3,
+
 
             //System_Status_Outputs rtu_SYS_STAT_IN
             boolean Reservoir_Empty,
@@ -1088,6 +1090,1006 @@ public class INFUSION_MGR_Functional {
 		// iDiscovery: new variables introduced by iDiscovery
 
 		// iDiscovery: pre-condition invariants injected by iDiscovery
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(1) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Config_Timer)) {
+				Verify.incrementCounter(1);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Config_Timer");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(2) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != VTBI_Total)) {
+				Verify.incrementCounter(2);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != VTBI_Total");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(3) < 1&& !(Infusion_Initiate == Reservoir_Empty)) {
+				Verify.incrementCounter(3);
+				throw new AssertionError("Infusion_Initiate == Reservoir_Empty");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(4) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Drug_Concentration)) {
+				Verify.incrementCounter(4);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Drug_Concentration");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(5) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Config_Timer)) {
+				Verify.incrementCounter(5);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Config_Timer");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(6) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Log_Message_ID1)) {
+				Verify.incrementCounter(6);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Log_Message_ID1");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(7) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Log_Message_ID2)) {
+				Verify.incrementCounter(7);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Log_Message_ID2");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(8) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Log_Message_ID3)) {
+				Verify.incrementCounter(8);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Log_Message_ID3");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(9) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Log_Message_ID4)) {
+				Verify.incrementCounter(9);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Log_Message_ID4");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(10) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Config_Timer)) {
+				Verify.incrementCounter(10);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Config_Timer");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(11) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Audio_Notification_Command)) {
+				Verify.incrementCounter(11);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Audio_Notification_Command");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(12) < 1&& !(Infusion_Initiate == Confirm_Stop)) {
+				Verify.incrementCounter(12);
+				throw new AssertionError("Infusion_Initiate == Confirm_Stop");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(13) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Audio_Notification_Command)) {
+				Verify.incrementCounter(13);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Audio_Notification_Command");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(14) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != VTBI_Total)) {
+				Verify.incrementCounter(14);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != VTBI_Total");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(15) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Entered_Reservoir_Volume)) {
+				Verify.incrementCounter(15);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Entered_Reservoir_Volume");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(16) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Lockout_Period_Patient_Bolus)) {
+				Verify.incrementCounter(16);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Lockout_Period_Patient_Bolus");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(17) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Configured)) {
+				Verify.incrementCounter(17);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Configured");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(18) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Volume_Infused)) {
+				Verify.incrementCounter(18);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Volume_Infused");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(19) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Flow_Rate_KVO)) {
+				Verify.incrementCounter(19);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Flow_Rate_KVO");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(20) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Reservoir_Volume)) {
+				Verify.incrementCounter(20);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Reservoir_Volume");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(21) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Disable_Audio)) {
+				Verify.incrementCounter(21);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Disable_Audio");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(22) < 1&& !(Infusion_Initiate == Back)) {
+				Verify.incrementCounter(22);
+				throw new AssertionError("Infusion_Initiate == Back");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(23) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Flow_Rate_Intermittent_Bolus)) {
+				Verify.incrementCounter(23);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Flow_Rate_Intermittent_Bolus");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(24) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Log_Message_ID4)) {
+				Verify.incrementCounter(24);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Log_Message_ID4");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(25) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Lockout_Period_Patient_Bolus)) {
+				Verify.incrementCounter(25);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Lockout_Period_Patient_Bolus");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(26) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Max_Number_of_Patient_Bolus)) {
+				Verify.incrementCounter(26);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Max_Number_of_Patient_Bolus");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(27) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Log_Message_ID1)) {
+				Verify.incrementCounter(27);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Log_Message_ID1");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(28) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus != Commanded_Flow_Rate)) {
+				Verify.incrementCounter(28);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus != Commanded_Flow_Rate");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(29) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Log_Message_ID2)) {
+				Verify.incrementCounter(29);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Log_Message_ID2");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(30) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Notification_Message)) {
+				Verify.incrementCounter(30);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Notification_Message");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(31) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Log_Message_ID3)) {
+				Verify.incrementCounter(31);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Log_Message_ID3");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(32) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Entered_Reservoir_Volume)) {
+				Verify.incrementCounter(32);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Entered_Reservoir_Volume");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(33) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Flow_Rate_KVO)) {
+				Verify.incrementCounter(33);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Flow_Rate_KVO");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(34) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Flow_Rate_Basal)) {
+				Verify.incrementCounter(34);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Flow_Rate_Basal");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(35) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Flow_Rate_Patient_Bolus)) {
+				Verify.incrementCounter(35);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Flow_Rate_Patient_Bolus");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(36) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Flow_Rate_KVO)) {
+				Verify.incrementCounter(36);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Flow_Rate_KVO");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(37) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Reservoir_Volume2)) {
+				Verify.incrementCounter(37);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Reservoir_Volume2");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(38) < 1&& !(System_On == System_Start)) {
+				Verify.incrementCounter(38);
+				throw new AssertionError("System_On == System_Start");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(39) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Commanded_Flow_Rate)) {
+				Verify.incrementCounter(39);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Commanded_Flow_Rate");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(40) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Log_Message_ID)) {
+				Verify.incrementCounter(40);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Log_Message_ID");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(41) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Flow_Rate_Basal)) {
+				Verify.incrementCounter(41);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Flow_Rate_Basal");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(42) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Config_Mode)) {
+				Verify.incrementCounter(42);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Config_Mode");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(43) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Flow_Rate_Basal)) {
+				Verify.incrementCounter(43);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Flow_Rate_Basal");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(44) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Error_Message_ID)) {
+				Verify.incrementCounter(44);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Error_Message_ID");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(45) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Configuration_Type)) {
+				Verify.incrementCounter(45);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Configuration_Type");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(46) < 1&& !(Request_Confirm_Stop == Request_Patient_Drug_Info)) {
+				Verify.incrementCounter(46);
+				throw new AssertionError("Request_Confirm_Stop == Request_Patient_Drug_Info");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(47) < 1&& !(Infusion_Initiate == Keyboard)) {
+				Verify.incrementCounter(47);
+				throw new AssertionError("Infusion_Initiate == Keyboard");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(48) < 1&& !(System_Stop == Request_Infusion_Info)) {
+				Verify.incrementCounter(48);
+				throw new AssertionError("System_Stop == Request_Infusion_Info");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(49) < 1&& !(Infusion_Initiate == Infusion_Cancel)) {
+				Verify.incrementCounter(49);
+				throw new AssertionError("Infusion_Initiate == Infusion_Cancel");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(50) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Patient_ID)) {
+				Verify.incrementCounter(50);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Patient_ID");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(51) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Reservoir_Volume)) {
+				Verify.incrementCounter(51);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Reservoir_Volume");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(52) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Config_Mode)) {
+				Verify.incrementCounter(52);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Config_Mode");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(53) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Configured)) {
+				Verify.incrementCounter(53);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Configured");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(54) < 1&& !(Infusion_Initiate == false)) {
+				Verify.incrementCounter(54);
+				throw new AssertionError("Infusion_Initiate == false");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(55) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Is_Audio_Disabled)) {
+				Verify.incrementCounter(55);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Is_Audio_Disabled");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(56) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Duration_Patient_Bolus)) {
+				Verify.incrementCounter(56);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Duration_Patient_Bolus");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(57) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Current_System_Mode)) {
+				Verify.incrementCounter(57);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Current_System_Mode");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(58) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Actual_Infusion_Duration)) {
+				Verify.incrementCounter(58);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Actual_Infusion_Duration");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(59) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Audio_Notification_Command)) {
+				Verify.incrementCounter(59);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Audio_Notification_Command");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(60) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Log_Message_ID4)) {
+				Verify.incrementCounter(60);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Log_Message_ID4");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(61) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Reservoir_Volume)) {
+				Verify.incrementCounter(61);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Reservoir_Volume");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(62) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Max_Number_of_Patient_Bolus)) {
+				Verify.incrementCounter(62);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Max_Number_of_Patient_Bolus");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(63) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus != Actual_Infusion_Duration)) {
+				Verify.incrementCounter(63);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus != Actual_Infusion_Duration");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(64) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Log_Message_ID3)) {
+				Verify.incrementCounter(64);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Log_Message_ID3");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(65) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Log_Message_ID2)) {
+				Verify.incrementCounter(65);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Log_Message_ID2");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(66) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Log_Message_ID1)) {
+				Verify.incrementCounter(66);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Log_Message_ID1");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(67) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Interval_Intermittent_Bolus)) {
+				Verify.incrementCounter(67);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Interval_Intermittent_Bolus");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(68) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Highest_Level_Alarm)) {
+				Verify.incrementCounter(68);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Highest_Level_Alarm");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(69) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Max_Number_of_Patient_Bolus)) {
+				Verify.incrementCounter(69);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Max_Number_of_Patient_Bolus");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(70) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Infusion_Total_Duration)) {
+				Verify.incrementCounter(70);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Infusion_Total_Duration");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(71) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Lockout_Period_Patient_Bolus)) {
+				Verify.incrementCounter(71);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Lockout_Period_Patient_Bolus");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(72) < 1&& !(Infusion_Initiate == New_Infusion)) {
+				Verify.incrementCounter(72);
+				throw new AssertionError("Infusion_Initiate == New_Infusion");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(73) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Is_Audio_Disabled)) {
+				Verify.incrementCounter(73);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Is_Audio_Disabled");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(74) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Log_Message_ID)) {
+				Verify.incrementCounter(74);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Log_Message_ID");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(75) < 1&& !(Infusion_Initiate == Data_Config)) {
+				Verify.incrementCounter(75);
+				throw new AssertionError("Infusion_Initiate == Data_Config");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(76) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Configured)) {
+				Verify.incrementCounter(76);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Configured");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(77) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Flow_Rate_Patient_Bolus)) {
+				Verify.incrementCounter(77);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Flow_Rate_Patient_Bolus");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(78) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Configuration_Type)) {
+				Verify.incrementCounter(78);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Configuration_Type");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(79) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Volume_Infused)) {
+				Verify.incrementCounter(79);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Volume_Infused");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(80) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Notification_Message)) {
+				Verify.incrementCounter(80);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Notification_Message");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(81) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Duration_Intermittent_Bolus)) {
+				Verify.incrementCounter(81);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Duration_Intermittent_Bolus");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(82) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Error_Message_ID)) {
+				Verify.incrementCounter(82);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Error_Message_ID");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(83) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Infusion_Total_Duration)) {
+				Verify.incrementCounter(83);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Infusion_Total_Duration");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(84) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus != Volume_Infused)) {
+				Verify.incrementCounter(84);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus != Volume_Infused");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(85) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Duration_Intermittent_Bolus)) {
+				Verify.incrementCounter(85);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Duration_Intermittent_Bolus");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(86) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Disable_Audio)) {
+				Verify.incrementCounter(86);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Disable_Audio");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(87) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus != Reservoir_Volume2)) {
+				Verify.incrementCounter(87);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus != Reservoir_Volume2");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(88) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Duration_Intermittent_Bolus)) {
+				Verify.incrementCounter(88);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Duration_Intermittent_Bolus");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(89) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Flow_Rate_Intermittent_Bolus)) {
+				Verify.incrementCounter(89);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Flow_Rate_Intermittent_Bolus");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(90) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Highest_Level_Alarm)) {
+				Verify.incrementCounter(90);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Highest_Level_Alarm");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(91) < 1&& !(Infusion_Initiate == Infusion_Inhibit)) {
+				Verify.incrementCounter(91);
+				throw new AssertionError("Infusion_Initiate == Infusion_Inhibit");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(92) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Commanded_Flow_Rate)) {
+				Verify.incrementCounter(92);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Commanded_Flow_Rate");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(93) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Flow_Rate_Patient_Bolus)) {
+				Verify.incrementCounter(93);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Flow_Rate_Patient_Bolus");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(94) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Interval_Intermittent_Bolus)) {
+				Verify.incrementCounter(94);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Interval_Intermittent_Bolus");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(95) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Interval_Intermittent_Bolus)) {
+				Verify.incrementCounter(95);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Interval_Intermittent_Bolus");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(96) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Error_Message_ID)) {
+				Verify.incrementCounter(96);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Error_Message_ID");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(97) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Current_System_Mode)) {
+				Verify.incrementCounter(97);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Current_System_Mode");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(98) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Reservoir_Volume2)) {
+				Verify.incrementCounter(98);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Reservoir_Volume2");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(99) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Config_Mode)) {
+				Verify.incrementCounter(99);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Config_Mode");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(100) < 1&& !(Infusion_Initiate == Patient_Bolus_Request)) {
+				Verify.incrementCounter(100);
+				throw new AssertionError("Infusion_Initiate == Patient_Bolus_Request");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(101) < 1&& !(Infusion_Initiate == In_Therapy)) {
+				Verify.incrementCounter(101);
+				throw new AssertionError("Infusion_Initiate == In_Therapy");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(102) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Flow_Rate_Intermittent_Bolus)) {
+				Verify.incrementCounter(102);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Flow_Rate_Intermittent_Bolus");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(103) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Drug_Name)) {
+				Verify.incrementCounter(103);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Drug_Name");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(104) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus != Log_Message_ID2)) {
+				Verify.incrementCounter(104);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus != Log_Message_ID2");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(105) < 1&& !(Infusion_Initiate == Request_Config_Type)) {
+				Verify.incrementCounter(105);
+				throw new AssertionError("Infusion_Initiate == Request_Config_Type");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(106) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus != Log_Message_ID1)) {
+				Verify.incrementCounter(106);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus != Log_Message_ID1");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(107) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus != Current_System_Mode)) {
+				Verify.incrementCounter(107);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus != Current_System_Mode");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(108) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Infusion_Total_Duration)) {
+				Verify.incrementCounter(108);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Infusion_Total_Duration");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(109) < 1&& !(Infusion_Initiate == Notification_Cancel)) {
+				Verify.incrementCounter(109);
+				throw new AssertionError("Infusion_Initiate == Notification_Cancel");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(110) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Actual_Infusion_Duration)) {
+				Verify.incrementCounter(110);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Actual_Infusion_Duration");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(111) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus != Flow_Rate_Patient_Bolus)) {
+				Verify.incrementCounter(111);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus != Flow_Rate_Patient_Bolus");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(112) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Volume_Infused)) {
+				Verify.incrementCounter(112);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Volume_Infused");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(113) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus != Log_Message_ID4)) {
+				Verify.incrementCounter(113);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus != Log_Message_ID4");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(114) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus != Log_Message_ID3)) {
+				Verify.incrementCounter(114);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus != Log_Message_ID3");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(115) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Drug_Concentration)) {
+				Verify.incrementCounter(115);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Drug_Concentration");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(116) < 1&& !(Infusion_Initiate == Cancel)) {
+				Verify.incrementCounter(116);
+				throw new AssertionError("Infusion_Initiate == Cancel");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(117) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Patient_ID)) {
+				Verify.incrementCounter(117);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Patient_ID");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(118) < 1&& !(Infusion_Initiate == Request_Confirm_Infusion_Initiate)) {
+				Verify.incrementCounter(118);
+				throw new AssertionError("Infusion_Initiate == Request_Confirm_Infusion_Initiate");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(119) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Commanded_Flow_Rate)) {
+				Verify.incrementCounter(119);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Commanded_Flow_Rate");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(120) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus != Audio_Notification_Command)) {
+				Verify.incrementCounter(120);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_Intermittent_Bolus != Audio_Notification_Command");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(121) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Log_Message_ID)) {
+				Verify.incrementCounter(121);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Log_Message_ID");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(122) < 1&& !(Infusion_Initiate == Next)) {
+				Verify.incrementCounter(122);
+				throw new AssertionError("Infusion_Initiate == Next");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(123) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Is_Audio_Disabled)) {
+				Verify.incrementCounter(123);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ACTIVE != Is_Audio_Disabled");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(124) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Current_System_Mode)) {
+				Verify.incrementCounter(124);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_NO_ACTIVE_CHILD != Current_System_Mode");
+			}
+			Verify.ignoreIf(true);
+		}
+
+		if(Verify.getBoolean()){
+			if (Verify.getCounter(125) < 1&& !(infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Reservoir_Volume2)) {
+				Verify.incrementCounter(125);
+				throw new AssertionError("infusion.INFUSION_MGR_Functional.INFUSION_MGR_Functional_IN_ON_b != Reservoir_Volume2");
+			}
+			Verify.ignoreIf(true);
+		}
+
 
 		// original method body begins
 
@@ -1101,6 +2103,7 @@ public class INFUSION_MGR_Functional {
         rtu_TLM_MODE_IN.System_On = System_On;
         rtu_TLM_MODE_IN.Request_Confirm_Stop = Request_Confirm_Stop;
         rtu_TLM_MODE_IN.Log_Message_ID = Log_Message_ID1;
+
 
         Operator_Commands rtu_OP_CMD_IN = new Operator_Commands();
         rtu_OP_CMD_IN.System_Start = System_Start;
@@ -1170,7 +2173,9 @@ public class INFUSION_MGR_Functional {
         rty_IM_OUT.New_Infusion = New_Infusion;
         rty_IM_OUT.Log_Message_ID = Log_Message_ID4;
         rty_IM_OUT.Actual_Infusion_Duration = Actual_Infusion_Duration;
-        if(            (0<=  Log_Message_ID1)&&
+
+
+        if(     (0<=  Log_Message_ID1)&&
                 (0<=  Disable_Audio)&&
                 (0<=  Configuration_Type)&&
                 (0<=  Patient_ID)&&
@@ -1248,18 +2253,6 @@ public class INFUSION_MGR_Functional {
                     rtu_SYS_STAT_IN, rty_IM_OUT,
                     localB, localDW);
 
-            INFUSION_MGR_Functional(rtu_TLM_MODE_IN,
-                    rtu_OP_CMD_IN, rtu_PATIENT_IN,
-                    rtu_CONFIG_IN, rtu_ALARM_IN,
-                    rtu_SYS_STAT_IN, rty_IM_OUT,
-                    localB, localDW);
-
-            INFUSION_MGR_Functional(rtu_TLM_MODE_IN,
-                    rtu_OP_CMD_IN, rtu_PATIENT_IN,
-                    rtu_CONFIG_IN, rtu_ALARM_IN,
-                    rtu_SYS_STAT_IN, rty_IM_OUT,
-                    localB, localDW);
-
             boolean checkCondition;
             boolean checkOutput;
 
@@ -1323,7 +2316,12 @@ public class INFUSION_MGR_Functional {
         assert (!checkCondition || checkOutput);*/
 
             //Prop10: mode_basal_implies_infusion_rate_basal
-        /*checkCondition = (rtu_TLM_MODE_IN.System_On && rty_IM_OUT.Current_System_Mode == 2);
+        /*checkCondition = (rtu_TLM_MODE_IN.System_On &    INFUSION_MGR_Functional(rtu_TLM_MODE_IN,
+                    rtu_OP_CMD_IN, rtu_PATIENT_IN,
+                    rtu_CONFIG_IN, rtu_ALARM_IN,
+                    rtu_SYS_STAT_IN, rty_IM_OUT,
+                    localB, localDW);
+& rty_IM_OUT.Current_System_Mode == 2);
         checkOutput = (rty_IM_OUT.Commanded_Flow_Rate == rtu_CONFIG_IN.Flow_Rate_Basal);
         assert (!checkCondition || checkOutput);*/
 
@@ -1368,12 +2366,4 @@ public class INFUSION_MGR_Functional {
 
 		// iDiscovery: post-condition invariants injected by iDiscovery
     }
-
-    public static void main(String[] args) {
-        INFUSION_MGR_FunctionalSymWrapper(false, false, 1, false, false, false, false, false, false, false, false,
-                false, false, 1, false, 1, false, false, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, false, false, false, false
-                , 1, 1, 1, 1, 1, 1, 1, 1, false, 1, 1, 1, false, 1, 1, false, 1, 1);
-
-    }
-
 }
