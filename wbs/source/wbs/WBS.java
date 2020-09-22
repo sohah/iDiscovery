@@ -232,14 +232,12 @@ public class WBS {
 
 	}
 
-	public static void launch(int pedal1, boolean auto1, boolean skid1, int pedal2, boolean auto2, boolean skid2, int pedal3, boolean auto3, boolean skid3) {
-		WBS wbs = new WBS();
-		wbs.update(pedal1, auto1, skid1);
-		// wbs.update(pedal2, auto2, skid2);
-		//wbs.update(pedal3, auto3, skid3);
+	public void launch(int pedal1, boolean auto1, boolean skid1) {
+		update(pedal1, auto1, skid1);
 	}
 
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
+
 		launch(0,false,false,0,false,false,0,false,false);
-	}
+	}*/
 }

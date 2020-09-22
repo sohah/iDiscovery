@@ -1,4 +1,4 @@
-target=wbs.WBS
+target=wbs.WBSMain
 classpath=${jpf-symbc}/build/examples
 
 symbolic.method = wbs.WBS.update(sym#sym#sym)
