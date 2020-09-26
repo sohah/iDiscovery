@@ -1,27 +1,18 @@
-#The path of the iDiscovery project
-idiscdir="."
-#The path of the Daikon library
-daikondir="/home/soha/git/iDiscovery/daikon/daikon.jar"
-#The name of the project under test
-sub="tcas"
-#The full name for the class under test
-fullsub="tcas.SpfTCASMain"
-#The full name for the method under test (following Symbolic PathFinder's naming format)
-meth="tcas.SpfTCAS.mainProcess(int,int,int,int,int,int,int,int,int,int,int,int)"
-#The path of the original file for the class under test
-origjavafile="/home/soha/git/iDiscovery/tcas/source/tcas/SpfTCAS.java"
-#The path for storing the file with synthesized assertions
-genjavafile="/home/soha/git/iDiscovery/jpf-idisc/src/examples/tcas/SpfTCAS.java"
+target=tcas.SpfTCASMain
+classpath=${jpf-symbc}/build/examples
+sourcepath=${jpf-symbc}/src/examples
+symbolic.method=tcas.SpfTCAS.launch(sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym)
+#symbolic.method=tcas.SpfTCAS.mainProcess(sym#sym#sym#con#con#con#con#con#con#con#con#con)
 
 
-#The path for project jpf property file when symbolic execution
-sub_jpf="/home/soha/git/iDiscovery/jpf-idisc/src/examples/tcas/SpfTCAS.jpf"
-#The path for project jpf property file when symbolic execution using Green solution reuse
-sub_green_jpf="src/examples/rjc/rjc-green.jpf"
-#The binary dir for the original program under test
-source_bin="/home/soha/git/iDiscovery/tcas/source"
+#symbolic.minint=-500
+#symbolic.maxint=500
+#symbolic.minreal=-100.0
+#symbolic.maxreal=100.0
+#symbolic.undefined=0
+search.depth_limit=50
+listener=edu.utexas.gsoc.symbc.listeners.MySymbolicListener
 
-#jvm flags
-JVM_FLAGS="-Xmx1024m -ea"
-#build file for jpf-idisc
-targetbuild="build.xml"
+#report.publisher=console
+symbolic.dp=coral
+#choco.time_bound=200000000

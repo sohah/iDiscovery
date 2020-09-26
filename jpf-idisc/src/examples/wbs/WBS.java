@@ -1,7 +1,6 @@
 package wbs;
 
 
-import gov.nasa.jpf.vm.Verify;
 public class WBS {
 
 	//Internal state
@@ -233,129 +232,13 @@ public class WBS {
 
 	}
 
-	public void launch(int pedal1, boolean auto1, boolean skid1, int pedal2, boolean auto2, boolean skid2) {
-
-		// iDiscovery: new variables introduced by iDiscovery
-		int iDiscovery_PreVariable_1=this.WBS_Node_WBS_BSCU_rlt_PRE1;
-		int iDiscovery_PreVariable_2=this.Nor_Pressure;
-		int iDiscovery_PreVariable_4=this.Sys_Mode;
-		int iDiscovery_PreVariable_5=this.WBS_Node_WBS_rlt_PRE2;
-		int iDiscovery_PreVariable_3=this.Alt_Pressure;
-		int iDiscovery_PreVariable_0=this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE;
-
-		// iDiscovery: pre-condition invariants injected by iDiscovery
-		if(Verify.getBoolean()){
-			if (Verify.getCounter(1) < 1&& !(this.WBS_Node_WBS_rlt_PRE2 == 100)) {
-				Verify.incrementCounter(1);
-				throw new AssertionError("this.WBS_Node_WBS_rlt_PRE2 == 100");
-			}
-			Verify.ignoreIf(true);
-		}
-
-		if(Verify.getBoolean()){
-			if (Verify.getCounter(2) < 1&& !(this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == this.Nor_Pressure)) {
-				Verify.incrementCounter(2);
-				throw new AssertionError("this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == this.Nor_Pressure");
-			}
-			Verify.ignoreIf(true);
-		}
-
-		if(Verify.getBoolean()){
-			if (Verify.getCounter(3) < 1&& !(this.WBS_Node_WBS_rlt_PRE2 > pedal1)) {
-				Verify.incrementCounter(3);
-				throw new AssertionError("this.WBS_Node_WBS_rlt_PRE2 > pedal1");
-			}
-			Verify.ignoreIf(true);
-		}
-
-		if(Verify.getBoolean()){
-			if (Verify.getCounter(4) < 1&& !(this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == this.WBS_Node_WBS_BSCU_rlt_PRE1)) {
-				Verify.incrementCounter(4);
-				throw new AssertionError("this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == this.WBS_Node_WBS_BSCU_rlt_PRE1");
-			}
-			Verify.ignoreIf(true);
-		}
-
-		if(Verify.getBoolean()){
-			if (Verify.getCounter(5) < 1&& !(this.WBS_Node_WBS_rlt_PRE2 != pedal2)) {
-				Verify.incrementCounter(5);
-				throw new AssertionError("this.WBS_Node_WBS_rlt_PRE2 != pedal2");
-			}
-			Verify.ignoreIf(true);
-		}
-
-
-		// original method body begins
+	public void launch(int pedal1, boolean auto1, boolean skid1, int pedal2, boolean auto2, boolean skid2,
+	int pedal3, boolean auto3, boolean skid3,
+	int pedal4, boolean auto4, boolean skid4) {
 		update(pedal1, auto1, skid1);
 		update(pedal2, auto2, skid2);
-		// original method body ends
-
-
-		// iDiscovery: post-condition invariants injected by iDiscovery
-		if(Verify.getBoolean()){
-			if (Verify.getCounter(6) < 1&& !(this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == iDiscovery_PreVariable_1)) {
-				Verify.incrementCounter(6);
-				throw new AssertionError("this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == \\old(this.WBS_Node_WBS_BSCU_rlt_PRE1)");
-			}
-			Verify.ignoreIf(true);
-		}
-
-		if(Verify.getBoolean()){
-			if (Verify.getCounter(7) < 1&& !(this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == iDiscovery_PreVariable_0)) {
-				Verify.incrementCounter(7);
-				throw new AssertionError("this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == \\old(this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE)");
-			}
-			Verify.ignoreIf(true);
-		}
-
-		if(Verify.getBoolean()){
-			if (Verify.getCounter(8) < 1&& !(this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == iDiscovery_PreVariable_3)) {
-				Verify.incrementCounter(8);
-				throw new AssertionError("this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == \\old(this.Alt_Pressure)");
-			}
-			Verify.ignoreIf(true);
-		}
-
-		if(Verify.getBoolean()){
-			if (Verify.getCounter(9) < 1&& !(this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == iDiscovery_PreVariable_2)) {
-				Verify.incrementCounter(9);
-				throw new AssertionError("this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == \\old(this.Nor_Pressure)");
-			}
-			Verify.ignoreIf(true);
-		}
-
-		if(Verify.getBoolean()){
-			if (Verify.getCounter(10) < 1&& !(this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == iDiscovery_PreVariable_4)) {
-				Verify.incrementCounter(10);
-				throw new AssertionError("this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == \\old(this.Sys_Mode)");
-			}
-			Verify.ignoreIf(true);
-		}
-
-		if(Verify.getBoolean()){
-			if (Verify.getCounter(11) < 1&& !(this.WBS_Node_WBS_rlt_PRE2 < iDiscovery_PreVariable_5)) {
-				Verify.incrementCounter(11);
-				throw new AssertionError("this.WBS_Node_WBS_rlt_PRE2 < \\old(this.WBS_Node_WBS_rlt_PRE2)");
-			}
-			Verify.ignoreIf(true);
-		}
-
-		if(Verify.getBoolean()){
-			if (Verify.getCounter(12) < 1&& !(this.WBS_Node_WBS_BSCU_rlt_PRE1 < iDiscovery_PreVariable_5)) {
-				Verify.incrementCounter(12);
-				throw new AssertionError("this.WBS_Node_WBS_BSCU_rlt_PRE1 < \\old(this.WBS_Node_WBS_rlt_PRE2)");
-			}
-			Verify.ignoreIf(true);
-		}
-
-		if(Verify.getBoolean()){
-			if (Verify.getCounter(13) < 1&& !(this.WBS_Node_WBS_rlt_PRE2 == this.Nor_Pressure)) {
-				Verify.incrementCounter(13);
-				throw new AssertionError("this.WBS_Node_WBS_rlt_PRE2 == this.Nor_Pressure");
-			}
-			Verify.ignoreIf(true);
-		}
-
+		update(pedal3, auto3, skid3);
+		update(pedal4, auto4, skid4);
 	}
 
 	/*public static void main(String[] args) {

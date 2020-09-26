@@ -1,6 +1,5 @@
 package tcas;
 
-import gov.nasa.jpf.vm.Verify;
 public class SpfTCAS {
 
     //free input
@@ -233,12 +232,6 @@ public class SpfTCAS {
     public void mainProcess(int Cur_Vertical_Sep, int High_Confidence_flag, int Two_of_Three_Reports_Valid_flag,
                             int Own_Tracked_Alt, int Own_Tracked_Alt_Rate, int Other_Tracked_Alt,
                             int Alt_Layer_Value, int Up_Separation, int Down_Separation, int Other_RAC, int Other_Capability, int Climb_Inhibit) {
-
-		// iDiscovery: new variables introduced by iDiscovery
-
-		// iDiscovery: pre-condition invariants injected by iDiscovery
-
-		// original method body begins
         initialize();
         this.Cur_Vertical_Sep = Cur_Vertical_Sep;
         if (High_Confidence_flag == 0) {
@@ -292,9 +285,14 @@ public class SpfTCAS {
 
         /***************** assertions from repairing**************/
         //assert(alim_res > 399);
-		// original method body ends
+    }
+
+    public void launch(int p1, int p2, int p3, int p4, int p5, int p6, int p7, int p8, int p9, int p10, int p11, int p12,
+                       int p13, int p14, int p15, int p16, int p17, int p18, int p19, int p20, int p21, int p22, int p23, int p24) {
+
+        mainProcess(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12);
+        mainProcess(p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24);
 
 
-		// iDiscovery: post-condition invariants injected by iDiscovery
     }
 }

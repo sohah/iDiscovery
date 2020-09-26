@@ -1,7 +1,7 @@
 target=wbs.WBSMain
 classpath=${jpf-symbc}/build/examples
 
-symbolic.method = wbs.WBS.launch(sym#sym#sym#sym#sym#sym)
+symbolic.method = wbs.WBS.launch(sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym)
 
 
 #symbolic.minint=-500
