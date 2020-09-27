@@ -37,8 +37,8 @@ public class WBSMain {
                     Integer.parseInt(args[3]),
                     Boolean.parseBoolean(args[4]), Boolean.parseBoolean(args[5]),
 
-                    Integer.parseInt(args[5]),
-                    Boolean.parseBoolean(args[6]), Boolean.parseBoolean(args[8]),
+                    Integer.parseInt(args[6]),
+                    Boolean.parseBoolean(args[7]), Boolean.parseBoolean(args[8]),
 
                     Integer.parseInt(args[9]),
                     Boolean.parseBoolean(args[10]), Boolean.parseBoolean(args[11]));
