@@ -6,6 +6,9 @@
 source ./iDiscoveryLinuxInfusion.cfg
 
 
+now1=$(date +"%T")
+echo "Current time : $now1"
+
 
 #indicate wether assertion separation optimization is applied
 sep=false
@@ -97,6 +100,9 @@ java -cp "$idiscdir/build/main:$idiscdir/lib/*" edu.utexas.gsoc.inv.InvariantExt
 #check the equivalence
 if diff -q cur_invariants.txt pre_invariants.txt; then
   echo ">> Fixed-point reached"
+  now2=$(date +"%T")
+  echo "Current time : $now2"
+  echo "total time = $now2-$now1"
 break
 fi
 fi
