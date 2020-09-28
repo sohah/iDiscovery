@@ -1,0 +1,101 @@
+Daikon version 4.6.4, released June 23, 2010; http://pag.csail.mit.edu/daikon.
+Reading declaration files                                                                                [8:16:53 AM]:                                                                                                                                                 Processing trace data; reading 13824 dtrace files:
+[8:16:54 AM]: Reading traces/wbs-iter0-10062.dtrace.gz (line 1042, 69.47%) ... [8:16:55 AM]: Reading traces/wbs-iter0-10230.dtrace.gz (line 206, 13.73%) ...  [8:16:56 AM]: Checking size of traces/wbs-iter0-10435.dtrace.gz                [8:16:57 AM]: Checking size of traces/wbs-iter0-10603.dtrace.gz                [8:16:58 AM]: Reading traces/wbs-iter0-1085.dtrace.gz (line 795, 53.00%) ...   [8:16:59 AM]: Reading traces/wbs-iter0-11065.dtrace.gz (line 480, 32.00%) ...  [8:17:00 AM]: Reading traces/wbs-iter0-11325.dtrace.gz (line 439, 29.27%) ...  [8:17:01 AM]: Reading traces/wbs-iter0-11589.dtrace.gz (line 207, 13.80%) ...  [8:17:02 AM]: Reading traces/wbs-iter0-11851.dtrace.gz (line 461, 30.73%) ...  [8:17:03 AM]: Reading traces/wbs-iter0-12112.dtrace.gz (line 362, 24.13%) ...  [8:17:04 AM]: Reading traces/wbs-iter0-12376.dtrace.gz (line 786, 52.40%) ...  [8:17:05 AM]: Reading traces/wbs-iter0-1263.dtrace.gz (line 847, 56.47%) ...   [8:17:06 AM]: Reading traces/wbs-iter0-12906.dtrace.gz (line 947, 63.13%) ...  [8:17:07 AM]: Reading traces/wbs-iter0-13170.dtrace.gz (line 710, 47.33%) ...  [8:17:08 AM]: Reading traces/wbs-iter0-13438.dtrace.gz (line 654, 43.60%) ...  [8:17:09 AM]: Checking size of traces/wbs-iter0-13706.dtrace.gz                [8:17:10 AM]: Reading traces/wbs-iter0-1529.dtrace.gz (line 469, 31.27%) ...   [8:17:11 AM]: Reading traces/wbs-iter0-1797.dtrace.gz (line 835, 55.67%) ...   [8:17:12 AM]: Reading traces/wbs-iter0-2063.dtrace.gz (line 939, 62.60%) ...   [8:17:13 AM]: Reading traces/wbs-iter0-2331.dtrace.gz (line 472, 31.47%) ...   [8:17:14 AM]: Reading traces/wbs-iter0-25.dtrace.gz (line 750, 50.00%) ...     [8:17:15 AM]: Reading traces/wbs-iter0-2868.dtrace.gz (line 933, 62.20%) ...   [8:17:16 AM]: Reading traces/wbs-iter0-3137.dtrace.gz (line 640, 42.67%) ...   [8:17:17 AM]: Reading traces/wbs-iter0-3405.dtrace.gz (line 0, 0.00%) ...      [8:17:18 AM]: Reading traces/wbs-iter0-3673.dtrace.gz (line 706, 47.07%) ...   [8:17:19 AM]: Reading traces/wbs-iter0-3942.dtrace.gz (line 766, 51.07%) ...   [8:17:20 AM]: Reading traces/wbs-iter0-420.dtrace.gz (line 25, 1.67%) ...      [8:17:21 AM]: Reading traces/wbs-iter0-4478.dtrace.gz (line 491, 32.73%) ...   [8:17:22 AM]: Reading traces/wbs-iter0-4746.dtrace.gz (line 288, 19.20%) ...   [8:17:23 AM]: Reading traces/wbs-iter0-5012.dtrace.gz (line 655, 43.67%) ...   [8:17:24 AM]: Reading traces/wbs-iter0-5281.dtrace.gz (line 589, 39.27%) ...   [8:17:25 AM]: Reading traces/wbs-iter0-5549.dtrace.gz (line 506, 33.73%) ...   [8:17:26 AM]: Reading traces/wbs-iter0-5815.dtrace.gz (line 861, 57.40%) ...   [8:17:27 AM]: Reading traces/wbs-iter0-6084.dtrace.gz (line 846, 56.40%) ...   [8:17:28 AM]: Reading traces/wbs-iter0-6353.dtrace.gz (line 670, 44.67%) ...   [8:17:29 AM]: Reading traces/wbs-iter0-6620.dtrace.gz (line 74, 4.93%) ...     [8:17:30 AM]: Reading traces/wbs-iter0-6890.dtrace.gz (line 355, 23.67%) ...   [8:17:31 AM]: Reading traces/wbs-iter0-7158.dtrace.gz (line 486, 32.40%) ...   [8:17:32 AM]: Reading traces/wbs-iter0-7429.dtrace.gz (line 64, 4.27%) ...     [8:17:33 AM]: Reading traces/wbs-iter0-7698.dtrace.gz (line 129, 8.60%) ...    [8:17:34 AM]: Reading traces/wbs-iter0-7966.dtrace.gz (line 506, 33.73%) ...   [8:17:35 AM]: Reading traces/wbs-iter0-8237.dtrace.gz (line 221, 14.73%) ...   [8:17:36 AM]: Reading traces/wbs-iter0-8508.dtrace.gz (line 509, 33.93%) ...   [8:17:37 AM]: Reading traces/wbs-iter0-8776.dtrace.gz (line 591, 39.40%) ...   [8:17:38 AM]: Reading traces/wbs-iter0-9046.dtrace.gz (line 148, 9.87%) ...    [8:17:39 AM]: Reading traces/wbs-iter0-9313.dtrace.gz (line 955, 63.67%) ...   [8:17:40 AM]: Reading traces/wbs-iter0-9585.dtrace.gz (line 704, 46.93%) ...   [8:17:41 AM]: Reading traces/wbs-iter0-9855.dtrace.gz (line 856, 57.07%) ...   [8:17:42 AM]: Finished reading traces/wbs-iter0-9.dtrace.gz                    
+                                                                               ===========================================================================
+wbs.WBS:::OBJECT
+this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == this.Alt_Pressure
+this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == this.Sys_Mode
+this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == 0
+this.WBS_Node_WBS_BSCU_rlt_PRE1 >= 0
+this.WBS_Node_WBS_rlt_PRE2 >= 0
+this.Nor_Pressure >= 0
+this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE <= this.WBS_Node_WBS_BSCU_rlt_PRE1
+this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE <= this.WBS_Node_WBS_rlt_PRE2
+this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE <= this.Nor_Pressure
+this.WBS_Node_WBS_BSCU_rlt_PRE1 <= this.WBS_Node_WBS_rlt_PRE2
+this.WBS_Node_WBS_BSCU_rlt_PRE1 <= this.Nor_Pressure
+this.WBS_Node_WBS_rlt_PRE2 >= this.Nor_Pressure
+===========================================================================
+wbs.WBS.WBS():::EXIT
+this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == this.WBS_Node_WBS_BSCU_rlt_PRE1
+this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == this.Nor_Pressure
+this.WBS_Node_WBS_rlt_PRE2 == 100
+===========================================================================
+wbs.WBS.launch(int, boolean, boolean, int, boolean, boolean, int, boolean, boolean):::ENTER
+this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == this.WBS_Node_WBS_BSCU_rlt_PRE1
+this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == this.Nor_Pressure
+this.WBS_Node_WBS_rlt_PRE2 == 100
+this.WBS_Node_WBS_rlt_PRE2 > pedal1
+this.WBS_Node_WBS_rlt_PRE2 > pedal2
+this.WBS_Node_WBS_rlt_PRE2 > pedal3
+===========================================================================
+wbs.WBS.launch(int, boolean, boolean, int, boolean, boolean, int, boolean, boolean):::EXIT
+this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == \old(this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE)
+this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == \old(this.WBS_Node_WBS_BSCU_rlt_PRE1)
+this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == \old(this.Nor_Pressure)
+this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == \old(this.Alt_Pressure)
+this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == \old(this.Sys_Mode)
+this.WBS_Node_WBS_rlt_PRE2 == this.Nor_Pressure
+this.WBS_Node_WBS_BSCU_rlt_PRE1 < \old(this.WBS_Node_WBS_rlt_PRE2)
+this.WBS_Node_WBS_rlt_PRE2 < \old(this.WBS_Node_WBS_rlt_PRE2)
+===========================================================================
+wbs.WBS.update(int, boolean, boolean):::ENTER
+===========================================================================
+wbs.WBS.update(int, boolean, boolean):::EXIT
+this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == \old(this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE)
+this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == \old(this.Alt_Pressure)
+this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == \old(this.Sys_Mode)
+this.WBS_Node_WBS_rlt_PRE2 == this.Nor_Pressure
+this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE <= \old(this.WBS_Node_WBS_BSCU_rlt_PRE1)
+this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE <= \old(this.WBS_Node_WBS_rlt_PRE2)
+this.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE <= \old(this.Nor_Pressure)
+===========================================================================
+wbs.WBSMain:::OBJECT
+this.wbs.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == this.wbs.Alt_Pressure
+this.wbs.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == this.wbs.Sys_Mode
+this.wbs != null
+this.wbs.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == 0
+this.wbs.WBS_Node_WBS_BSCU_rlt_PRE1 >= 0
+this.wbs.WBS_Node_WBS_rlt_PRE2 >= 0
+this.wbs.Nor_Pressure >= 0
+this.wbs.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE <= this.wbs.WBS_Node_WBS_BSCU_rlt_PRE1
+this.wbs.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE <= this.wbs.WBS_Node_WBS_rlt_PRE2
+this.wbs.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE <= this.wbs.Nor_Pressure
+this.wbs.WBS_Node_WBS_BSCU_rlt_PRE1 <= this.wbs.WBS_Node_WBS_rlt_PRE2
+this.wbs.WBS_Node_WBS_BSCU_rlt_PRE1 <= this.wbs.Nor_Pressure
+this.wbs.WBS_Node_WBS_rlt_PRE2 >= this.wbs.Nor_Pressure
+===========================================================================
+wbs.WBSMain.DoSimSymbolic(int, boolean, boolean, int, boolean, boolean, int, boolean, boolean):::ENTER
+this.wbs.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == this.wbs.WBS_Node_WBS_BSCU_rlt_PRE1
+this.wbs.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == this.wbs.Nor_Pressure
+this.wbs.WBS_Node_WBS_rlt_PRE2 == 100
+this.wbs.WBS_Node_WBS_rlt_PRE2 > p1
+this.wbs.WBS_Node_WBS_rlt_PRE2 > p4
+this.wbs.WBS_Node_WBS_rlt_PRE2 > p7
+===========================================================================
+wbs.WBSMain.DoSimSymbolic(int, boolean, boolean, int, boolean, boolean, int, boolean, boolean):::EXIT
+this.wbs == \old(this.wbs)
+this.wbs.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == \old(this.wbs.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE)
+this.wbs.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == \old(this.wbs.WBS_Node_WBS_BSCU_rlt_PRE1)
+this.wbs.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == \old(this.wbs.Nor_Pressure)
+this.wbs.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == \old(this.wbs.Alt_Pressure)
+this.wbs.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == \old(this.wbs.Sys_Mode)
+this.wbs.WBS_Node_WBS_rlt_PRE2 == this.wbs.Nor_Pressure
+this.wbs.WBS_Node_WBS_BSCU_rlt_PRE1 < \old(this.wbs.WBS_Node_WBS_rlt_PRE2)
+this.wbs.WBS_Node_WBS_rlt_PRE2 < \old(this.wbs.WBS_Node_WBS_rlt_PRE2)
+===========================================================================
+wbs.WBSMain.WBSMain():::EXIT
+this.wbs.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == this.wbs.WBS_Node_WBS_BSCU_rlt_PRE1
+this.wbs.WBS_Node_WBS_BSCU_SystemModeSelCmd_rlt_PRE == this.wbs.Nor_Pressure
+this.wbs.WBS_Node_WBS_rlt_PRE2 == 100
+===========================================================================
+wbs.WBSMain.main(java.lang.String[]):::ENTER
+args != null
+args.getClass() == java.lang.String[].class
+daikon.Quant.eltsNotEqual(args, null)
+daikon.Quant.size(args) == 9
+===========================================================================
+wbs.WBSMain.main(java.lang.String[]):::EXIT
+daikon.Quant.pairwiseEqual(args, \old(args))
+daikon.Quant.eltsNotEqual(args, null)
+Exiting Daikon.
