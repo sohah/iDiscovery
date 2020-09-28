@@ -1,0 +1,11 @@
+BUILD SUCCESSFUL
+Total time: 0 seconds
+log4j:WARN No appenders could be found for logger (edu.utexas.gsoc.inv.InvariantExtractor).
+log4j:WARN Please initialize the log4j system properly.
+invFile.getAbsolutePath = /home/soha/git/iDiscovery/jpf-idisc/results/separation-restriction-ungreen/invariants/daikon_invariants_iter_9.txt
+log4j:WARN No appenders could be found for logger (edu.utexas.gsoc.inv.InvariantExtractor).
+log4j:WARN Please initialize the log4j system properly.
+invFile.getAbsolutePath = /home/soha/git/iDiscovery/jpf-idisc/results/separation-restriction-ungreen/invariants/daikon_invariants_iter_8.txt
+>> Fixed-point reached
+Current time : 09:30:53
+total time = 09:30:53-09:23:37

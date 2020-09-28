@@ -1,8 +1,8 @@
 target=tcas.SpfTCASMain
 classpath=${jpf-symbc}/build/examples
 sourcepath=${jpf-symbc}/src/examples
-symbolic.method=tcas.SpfTCAS.launch(sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym)
-#symbolic.method=tcas.SpfTCAS.mainProcess(sym#sym#sym#con#con#con#con#con#con#con#con#con)
+#symbolic.method=tcas.SpfTCAS.launch(sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym)
+symbolic.method=tcas.SpfTCAS.mainProcess(sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym)
 
 
 #symbolic.minint=-500
@@ -10,7 +10,7 @@ symbolic.method=tcas.SpfTCAS.launch(sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#
 #symbolic.minreal=-100.0
 #symbolic.maxreal=100.0
 #symbolic.undefined=0
-search.depth_limit=50
+#search.depth_limit=50
 listener=edu.utexas.gsoc.symbc.listeners.MySymbolicListener
 
 #report.publisher=console

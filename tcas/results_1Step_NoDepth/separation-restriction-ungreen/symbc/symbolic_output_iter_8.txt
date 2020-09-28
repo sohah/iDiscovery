@@ -1,0 +1,80 @@
+Running Symbolic PathFinder ...
+symbolic.dp=coral
+symbolic.string_dp_timeout_ms=0
+symbolic.string_dp=none
+symbolic.min_int=-1000000
+symbolic.max_int=1000000
+symbolic.min_double=-8.0
+symbolic.max_double=7.0
+JavaPathfinder v7.0 (rev ${version}) - (C) RIACS/NASA Ames Research Center
+
+
+====================================================== system under test
+tcas.SpfTCASMain.main()
+
+====================================================== search started: 9/28/20 9:30 AM
+
+***Execute symbolic INVOKEVIRTUAL: mainProcess(IIIIIIIIIIII)V  ( Cur_Vertical_Sep_1_SYMINT, High_Confidence_flag_2_SYMINT, Two_of_Three_Reports_Valid_flag_3_SYMINT, Own_Tracked_Alt_4_SYMINT, Own_Tracked_Alt_Rate_5_SYMINT, Other_Tracked_Alt_6_SYMINT, Alt_Layer_Value_7_SYMINT, Up_Separation_8_SYMINT, Down_Separation_9_SYMINT, Other_RAC_10_SYMINT, Other_Capability_11_SYMINT, Climb_Inhibit_12_SYMINT )  
+*************Summary***************
+PC is:constraint # = 3
+Alt_Layer_Value_7_SYMINT[0] == CONST_0 &&
+Two_of_Three_Reports_Valid_flag_3_SYMINT[0] == CONST_0 &&
+High_Confidence_flag_2_SYMINT[0] == CONST_0
+SPC # = 0
+
+Return is:  null
+***********************************
+## Warning: timed out/ don't know (returned PC not-satisfiable) constraint # = 4
+Alt_Layer_Value_7_SYMINT != CONST_0 &&
+Alt_Layer_Value_7_SYMINT == CONST_0 &&
+Two_of_Three_Reports_Valid_flag_3_SYMINT == CONST_0 &&
+High_Confidence_flag_2_SYMINT == CONST_0
+SPC # = 0
+
+Property Violated: PC is constraint # = 4
+Other_RAC_10_SYMINT[-1] == CONST_-1 &&
+Alt_Layer_Value_7_SYMINT[0] == CONST_0 &&
+Two_of_Three_Reports_Valid_flag_3_SYMINT[0] == CONST_0 &&
+High_Confidence_flag_2_SYMINT[0] == CONST_0
+SPC # = 0
+
+Property Violated: result is  "java.lang.AssertionError: this.Other_RAC != \old(p2)..."
+****************************
+
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: this.Other_RAC != \old(p2)
+	at tcas.SpfTCAS.launch(SpfTCAS.java:2071)
+	at tcas.SpfTCASMain.DoSimSymbolic(SpfTCASMain.java:9)
+	at tcas.SpfTCASMain.main(SpfTCASMain.java:23)
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at tcas.SpfTCAS.launch(SpfTCAS.java:2071)
+	at tcas.SpfTCASMain.DoSimSymbolic(SpfTCASMain.java:9)
+	at tcas.SpfTCASMain.main(SpfTCASMain.java:23)
+
+>>> searchFinished
+
+====================================================== Generated Test Inputs: 
+Inputs: Cur_Vertical_Sep_1_SYMINT,High_Confidence_flag_2_SYMINT,Two_of_Three_Reports_Valid_flag_3_SYMINT,Own_Tracked_Alt_4_SYMINT,Own_Tracked_Alt_Rate_5_SYMINT,Other_Tracked_Alt_6_SYMINT,Alt_Layer_Value_7_SYMINT,Up_Separation_8_SYMINT,Down_Separation_9_SYMINT,Other_RAC_10_SYMINT,Other_Capability_11_SYMINT,Climb_Inhibit_12_SYMINT
+
+<TEST>mainProcess:	-2147483648,0,0,-2147483648,-2147483648,-2147483648,0,-2147483648,-2147483648,-2147483648,-2147483648,-2147483648	--> Return Value: --
+<TEST>mainProcess:	-2147483648,0,0,-2147483648,-2147483648,-2147483648,0,-2147483648,-2147483648,-1,-2147483648,-2147483648	--> "java.lang.AssertionError: this.Other_RAC != \old(p2)..."
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.AssertionError: this.Other_RAC != \old(p..."
+
+====================================================== statistics
+elapsed time:       00:00:00
+states:             new=240,visited=0,backtracked=19,end=1
+search:             maxDepth=228,constraints=0
+choice generators:  thread=1 (signal=0,lock=1,sharedRef=0,threadApi=0,reschedule=0), data=229
+heap:               new=391,released=13,maxLive=358,gcCycles=8
+instructions:       4900
+max memory:         480MB
+loaded code:        classes=65,methods=1381
+
+====================================================== search finished: 9/28/20 9:30 AM
