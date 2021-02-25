@@ -1,0 +1,23 @@
+### SPF version of running InfusionMgr############
+
+target=DiscoveryExamples.gpca_InfusionMgr.INFUSION_MGR_FunctionalRecovered
+classpath=${jpf-symbc}/build/examples
+sourcepath=${jpf-symbc}/src/examples
+#symbolic.debug=false
+vm.storage.class=nil
+symbolic.lazy = true
+#symbolic.optimizechoices=false
+symbolic.minint=0
+symbolic.maxint=255
+
+symbolic.method=DiscoveryExamples.gpca_InfusionMgr.INFUSION_MGR_FunctionalRecovered.INFUSION_MGR_FunctionalSymWrapper(sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym#sym)
+
+symbolic.dp=z3
+
+listener = .symbc.SymbolicListener
+jitAnalysis = true
+veritestingMode = 3
+performanceMode = false
+
+################## contract Discovery configurations ###############
+contractDiscoveryOn = false
