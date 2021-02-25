@@ -37,7 +37,7 @@ public class AbsoluteIsFun {
             }
             num1Int = convert(partitions[0]);
             num1Fraction = convert(partitions[1]);
-        }
+        } else num1Int = convert(num1Str);
 
         if (num2Str.contains(".")) {
             String[] partitions = num2Str.split("\\.");
@@ -48,7 +48,7 @@ public class AbsoluteIsFun {
             }
             num2Int = convert(partitions[0]);
             num2Fraction = convert(partitions[1]);
-        }
+        } else num2Int = convert(num2Str);
 
         try {
             sumInt = Math.addExact(num1Int, num2Int);
@@ -73,7 +73,7 @@ public class AbsoluteIsFun {
             System.out.println("sum = " + sumInt + "." + sumFraction);
         else
             System.out.println("sum = " + sumInt);
-        doNoBugEncountered("normal execution");
+        doNoBugEncountered("");
     }
 
     private static int convert(String partition) {
@@ -133,9 +133,9 @@ public class AbsoluteIsFun {
         bugAttemptMsgs[2] = "you can't be doing this to me, you just broke me AGAIN";
         bugAttemptMsgs[3] = "fine, you ARE GOOD!";
 
-        noBugAttemptMsgs[0] = "COME ON, IS THAT ALL YOU GOT!";
-        noBugAttemptMsgs[1] = "YOU CAN'T BE TRYING TO BREAK ME!";
-        noBugAttemptMsgs[2] = "NICE TRY!";
-        noBugAttemptMsgs[3] = "OH BOY, GET SERIOUS!";
+        noBugAttemptMsgs[0] = " COME ON, IS THAT ALL YOU GOT!";
+        noBugAttemptMsgs[1] = " YOU CAN'T BE TRYING TO BREAK ME!";
+        noBugAttemptMsgs[2] = " NICE TRY!";
+        noBugAttemptMsgs[3] = " OH BOY, GET SERIOUS!";
     }
 }
