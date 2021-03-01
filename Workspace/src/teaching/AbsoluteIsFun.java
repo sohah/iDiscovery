@@ -10,11 +10,11 @@ public class AbsoluteIsFun {
     static String[] bugAttemptMsgs = new String[4]; // teasing messages
     static String[] noBugAttemptMsgs = new String[4]; //encouraging messages
 
-    static boolean[] bugsFound = new boolean[2];
+    static boolean[] bugsFound = new boolean[3];
 
-    public static void step(String[] args) throws Exception {
+    public static void step(String[] args) throws ArithmeticException {
         if (args.length != 2) {
-            doNoBugEncountered(" you must add only 2 numbers.");
+            doNoBugEncountered(" you must add only 2 numbers separated by space.");
             return;
         }
 
@@ -54,9 +54,14 @@ public class AbsoluteIsFun {
         if (num2Str.contains(".")) {
             String[] partitions = num2Str.split("\\.");
             if (partitions.length != 2) {
-                doBugEncountered("BUG: the second number has two decimal points!");
-                bugsFound[0] = true;
-                return;
+                if (bugsFound[0]) {
+                    System.out.println("You have already found this bug, I suggest you'd try something else (. \\|/ .)");
+                    return;
+                } else {
+                    doBugEncountered("BUG: the second number has two decimal points!");
+                    bugsFound[0] = true;
+                    return;
+                }
             }
             num2Long = convert(partitions[0]);
             num2FractionLong = convert(partitions[1]);
@@ -74,9 +79,14 @@ public class AbsoluteIsFun {
             sumInt = Math.addExact(num1Int, num2Int);
             sumFraction = Math.addExact(num1FractionInt, num2FractionInt);
         } catch (ArithmeticException e) {
-            doBugEncountered("BUG: Integer overflow is not handled.");
-            bugsFound[1] = true;
-            return;
+            if (bugsFound[1]) {
+                System.out.println("You have already found this bug, I suggest you'd try something else (. \\|/ .)");
+                return;
+            } else {
+                doBugEncountered("BUG: Integer overflow is not handled.");
+                bugsFound[1] = true;
+                return;
+            }
         }
         if (num1FractionInt > 0 || num2FractionInt > 0) {
             float fl1 = new Float(num1Int + "." + num1FractionInt);
@@ -84,9 +94,14 @@ public class AbsoluteIsFun {
 
             float sumfl = new Float(sumInt + "." + sumFraction);
             if (sumfl != fl1 + fl2) {
-                doBugEncountered("BUG: Curry of fraction is not handled.");
-                bugsFound[2] = true;
-                return;
+                if (bugsFound[2]) {
+                    System.out.println("You have already found this bug, I suggest you'd try something else (. \\|/ .)");
+                    return;
+                } else {
+                    doBugEncountered("BUG: Curry of fraction is not handled.");
+                    bugsFound[2] = true;
+                    return;
+                }
             }
         }
         if (sumFraction > 0)
@@ -96,7 +111,7 @@ public class AbsoluteIsFun {
         doNoBugEncountered("");
     }
 
-    private static long convert(String partition) throws Exception {
+    private static long convert(String partition) throws ArithmeticException {
 
         int index = 0;
         long result = 0;
@@ -112,16 +127,16 @@ public class AbsoluteIsFun {
             int digit = (partArr[i] - '0');
             if (digit >= 0 && digit <= 9)
                 result = result * 10 + (partArr[i] - '0');
-            else{
-                doNoBugEncountered(" you can't write that, numbers but be made of digits.");
-                throw new Exception("invalid operation");
+            else {
+                doNoBugEncountered(" you can't write that, numbers must be made of digits.");
+                throw new ArithmeticException("invalid operation");
             }
         }
         return result;
     }
 
     private static void doNoBugEncountered(String specializedMsg) {
-        System.out.println(" ^^-^^ NOT a bug: smiling evilly ^^-^^" + noBugAttemptMsgs[noBugMsgCounter] + "(" + specializedMsg + ")");
+        System.out.println("NOT a bug " + noBugAttemptMsgs[noBugMsgCounter] + "(" + specializedMsg + ")");
         noBugMsgCounter = noBugMsgCounter == 3 ? 0 : ++noBugMsgCounter;
     }
 
@@ -132,27 +147,34 @@ public class AbsoluteIsFun {
 
     public static void main(String[] args) {
         fillMsgs();
+        int bugsKilled = 0;
         do {
-            System.out.println("ABSOLUTE FUN CALLING ON YOU -- Can you find my 3 hidden bugs");
-            System.out.println("Enter two numbers to compute their Absolute fun sum, or GIVE UP if you Give Up");
+            System.out.println("I AM THE UNBREAKABLE (. \\|/ .)\nCan you find my 3 hidden bugs");
+            System.out.println("Enter two numbers to compute their Absolute fun sum, or type \"GIVE UP\" if you Give Up");
 
             Scanner s = new Scanner(System.in);
             String input;
 
             input = s.nextLine();
-            if (input.equals("GIVE UP")) {
-                int bugsCaught = 0;
-                for (boolean b : bugsFound)
-                    bugsCaught = b ? bugsCaught + 1 : bugsCaught;
-                System.out.println("you found " + bugsCaught + " out of " + "3 seeded bugs.");
+            if (input.equals("GIVE UP"))
                 return;
-            }
             try {
                 step(input.split(" "));
-            } catch (Exception e){
+            } catch (ArithmeticException e) {
             }
-            System.out.println(" try again \n\n");
-        } while (true);
+            bugsKilled = countBugsFound();
+//            System.out.println(" try again \n\n");
+        } while (bugsKilled < 3);
+
+        System.out.println("YOU ROCK! YOU HAVE FOUND ALL MY BUGS!");
+    }
+
+    private static int countBugsFound() {
+        int bugsCaught = 0;
+        for (boolean b : bugsFound)
+            bugsCaught = b ? bugsCaught + 1 : bugsCaught;
+        System.out.println("you found " + bugsCaught + " out of " + "3 seeded bugs.\n");
+        return bugsCaught;
     }
 
     private static void fillMsgs() {
@@ -161,9 +183,9 @@ public class AbsoluteIsFun {
         bugAttemptMsgs[2] = "this can't be happening, did you just broke me AGAIN!";
         bugAttemptMsgs[3] = "fine, you ARE GOOD!";
 
-        noBugAttemptMsgs[0] = " COME ON, IS THAT ALL YOU GOT!";
-        noBugAttemptMsgs[1] = " NOW THAT IS IMPRESSING, TOLD YOU I AM THE UNBREAKABLE!";
-        noBugAttemptMsgs[2] = " NICE TRY! I AM THE UNBREAKABLE!";
-        noBugAttemptMsgs[3] = " OH BOY, GET SERIOUS!";
+        noBugAttemptMsgs[0] = " (. \\|/ .) IS THAT ALL YOU GOT!";
+        noBugAttemptMsgs[1] = " (. \\|/ .) NOW THAT IS IMPRESSING!";
+        noBugAttemptMsgs[2] = " (. \\|/ .) I AM THE UNBREAKABLE!";
+        noBugAttemptMsgs[3] = " (. \\|/ .) OH BOY, GET SERIOUS!";
     }
 }
