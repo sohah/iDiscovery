@@ -268,7 +268,7 @@ public class WBS {
 							  int pedal4, boolean auto4, boolean skid4,
 							  int pedal5, boolean auto5, boolean skid5) {
 
-		int maxSteps = 1;//Integer.parseInt(System.getenv("MAX_STEPS"));
+		int maxSteps = 5;//Integer.parseInt(System.getenv("MAX_STEPS"));
 
 		WBS wbs = new WBS();
 
