@@ -2,10 +2,9 @@ package TestCaseCoverage.TCG_PaperExample;
 
 public class TCG_PaperExample_8bits {
 
-   public static void main(String[] args) {
+    public static void main(String[] args) {
         separateBits_8(1);
     }
-
 
 
     public static int separateBits_8(int i) {
@@ -14,7 +13,33 @@ public class TCG_PaperExample_8bits {
             while (i != 0) {// the loop
                 int trailHasZero = (i & 1);
                 if (trailHasZero == 0) {
-                    int numberOfTrailingZeros = numberOfTrailingZeros_8(i);
+//                    int numberOfTrailingZeros = numberOfTrailingZeros_8(i);
+                    int numberOfTrailingZeros;
+                    int y;
+                    int x;
+                    x = i << 24;
+                    if (x == 0) numberOfTrailingZeros = 8;
+                    else {
+                        int n = 7;
+
+                        y = (x << 4);
+                        if (y != 0) {
+                            n = (n - 4);
+                            x = y;
+                        }
+                        y = (x << 2);
+                        if (y != 0) {
+                            n = (n - 2);
+                            x = y;
+                        }
+//        return (n - ((((i << 1)) >>> 7)));
+                        y = (x << 1);
+                        if (y != 0) {
+                            n = (n - 1);
+                        }
+
+                        numberOfTrailingZeros= n;
+                    }
                     i = (i >> numberOfTrailingZeros);
                 } else {
                     j = (j >>> 1);
@@ -27,31 +52,31 @@ public class TCG_PaperExample_8bits {
         }
         return j;
     }
-
-    public static int numberOfTrailingZeros_8(int x) {
-        // HD, Figure 5-14
-        int y;
-        x = x << 24;
-        if (x == 0) return 8;
-        int n = 7;
-
-        y = (x << 4);
-        if (y != 0) {
-            n = (n - 4);
-            x = y;
-        }
-        y = (x << 2);
-        if (y != 0) {
-            n = (n - 2);
-            x = y;
-        }
-//        return (n - ((((i << 1)) >>> 7)));
-        y = (x << 1);
-        if (y != 0) {
-            n = (n - 1);
-        }
-
-        return n;
-    }
+//
+//    public static int numberOfTrailingZeros_8(int x) {
+//        // HD, Figure 5-14
+//        int y;
+//        x = x << 24;
+//        if (x == 0) return 8;
+//        int n = 7;
+//
+//        y = (x << 4);
+//        if (y != 0) {
+//            n = (n - 4);
+//            x = y;
+//        }
+//        y = (x << 2);
+//        if (y != 0) {
+//            n = (n - 2);
+//            x = y;
+//        }
+////        return (n - ((((i << 1)) >>> 7)));
+//        y = (x << 1);
+//        if (y != 0) {
+//            n = (n - 1);
+//        }
+//
+//        return n;
+//    }
 
 }
